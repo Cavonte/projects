@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.image {
+    height: 1200px;
+    width: 100%;
+    max-width: 100%;
+    background: #55e6c5;
+    z-index: 1;
+    }
+
+.content {
+    height: 750px;
+    width:100%;
+    background: white;
+    z-index: 2;
+}
+.content h1 {
+    font-size: 40px;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 30px 60px;
+}
+.content p {
+    font-size:20px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 30px 60px;
+}
+#wall_1 {
+    background: url(../Images/darkBackground.png) no-repeat;
+    background-attachment: fixed;
+  
+}
+#hello  img {    
+    display: block;
+    margin:  auto;
+    width: 50%;
+    padding-top: 24%;
+  }
+
+#landingButtons {
+    width: 50%;
+    margin: 0 auto; 
+    margin-top: 3%;
+    
+
+}
+/*buttons for front page*/
+
+.linkedIn {
+   position: absolute;
+  right: 60%;
+  -moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+  box-shadow:inset 0px 0px 0px 0px #ffffff;
+  background-color:#ffffff;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  padding:12px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.linkedIn:hover {
+  background-color:#f6f6f6;
+}
+.linkedIn:active {
+  position:relative;
+  /*top:1px;*/
+}
+
+.contacts {
+  position: absolute;
+  right: 37% ;
+  -moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
+  box-shadow:inset 0px 0px 0px 0px #ffffff;
+  background-color:#ffffff;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  padding:12px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.contacts:hover {
+  background-color:#f6f6f6;
+}
+.contacts:active {
+  position:relative;
+ /*top:1px;*/
+}
+
+#scrollText {
+    display: block;
+    margin:  auto;
+    width: 34%;
+   padding-top: 9%;
+   
+
+}
+
+
+#wall_2 {
+    background: url(../Images/school.png) repeat;
+    background-attachment: fixed;
+    
+    /*height: auto;*/
+}
+#wall_3 {
+    background: url(../Images/skulls.png) repeat;
+    background-attachment: fixed;
+   /*  max-width: 100%;
+    height: auto;*/
+}
+
+
+#navigation{
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    background: rgba(255,255,255,1);
+     z-index: 100;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+}
+
+
+/*body {margin:0;}*/
+#navBar {
+    height: 55px;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+  /*background-color: #333;*/
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  height: 25px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+#content_1 {position: relative;}
+
+h1::first-letter {
+    font-size: 60px;
+    font-weight: 600;
+    color:#3cb0f8;
+}
+
+
+
