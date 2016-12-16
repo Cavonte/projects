@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 .image {
     height: 1200px;
@@ -11,24 +12,48 @@
     }
 
 .content {
-    height: 750px;
+    height: 1000px;
     width:100%;
-    background: white;
+    /*margin-top: -px;*/
+    background: #282b2e;
     z-index: 2;
 }
+
+#aboutMe {
+  position: absolute;
+  left: 25%;
+  padding-top: 7%;
+}
+#lineAboutMe {
+   position: absolute;
+  left: 20%;
+  padding-top: 32%;
+}
+#detailsAboutMe {
+  position: absolute;
+  left: 5%;
+  padding-top: 38%;
+}
+
+#picture {
+  position: absolute;
+  right: 0%;
+  padding-top: 6%;
+}
+
 .content h1 {
     font-size: 40px;
-    color: #464646;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    margin: 30px 60px;
+    /*margin: 30px 60px;*/
 }
 .content p {
     font-size:20px;
-    color: #343434;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    margin: 30px 60px;
+    /*margin: 30px 60px;*/
 }
 #wall_1 {
     background: url(../Images/darkBackground.png) no-repeat;
@@ -76,7 +101,7 @@
   background-color:#f6f6f6;
 }
 .linkedIn:active {
-  position:relative;
+  /*position:relative;*/
   /*top:1px;*/
 }
 
@@ -105,7 +130,7 @@
   background-color:#f6f6f6;
 }
 .contacts:active {
-  position:relative;
+  /*position:relative;*/
  /*top:1px;*/
 }
 
