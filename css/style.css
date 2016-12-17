@@ -139,17 +139,30 @@
     margin:  auto;
     width: 34%;
    padding-top: 9%;
-   
-
-}
+ }
 
 
 #wall_2 {
-    background: url(../Images/school.png) repeat;
+    /*background: url(../Images/school.png) repeat;*/
+    background-color: #9999a1;
+    /*background-color: red;*/
     background-attachment: fixed;
     
     /*height: auto;*/
 }
+
+#workExp {
+  padding: 3%;
+}
+
+#headerWork{
+  font-size: 35;
+  position: relative;
+  left:50%;
+  text-decoration-style: bold;
+}
+
+
 #wall_3 {
     background: url(../Images/skulls.png) repeat;
     background-attachment: fixed;
