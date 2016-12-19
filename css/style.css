@@ -55,6 +55,7 @@
     font-weight: 300;
     /*margin: 30px 60px;*/
 }
+/* end of about me*/
 #wall_1 {
     background: url(../Images/darkBackground.png) no-repeat;
     background-attachment: fixed;
@@ -140,26 +141,80 @@
     width: 34%;
    padding-top: 9%;
  }
+ /*end of fit section with backgroumd image*/
 
 
 #wall_2 {
-    /*background: url(../Images/school.png) repeat;*/
-    background-color: #9999a1;
+    background: url(../Images/page3.png) repeat; 
+    max-height: 900px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
     /*background-color: red;*/
     background-attachment: fixed;
+
     
     /*height: auto;*/
 }
 
 #workExp {
-  padding: 3%;
+  padding-top: 4%;
+  text-align:center;
+}
+#nuancePic {
+/*float : left;*/
+height: 100%;
+width: 100%;
+}
+#muxlabPic {
+/*display: block;*/
+height: 100%;
+width: 100%;
+}
+#nuance, #muxlab {
+    display: inline-block;
+    margin-left: 15%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    /*padding: 1px;*/
+    transition: 0.3s;
+    float : left;
+    width:15%;
+    height:15%;   
 }
 
+#muxlab:hover {
+    box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
+}
+#nuance:hover{
+    box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
+}
+
+#exp,  #exp2 {
+padding: 65px;
+font-size: 18px;
+ color: white;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-variant: normal;
+font-weight: 10;
+text-align: justify;
+}
+#exp h3,  #exp2 h3{
+padding-left: 550px;
+}
+#exp ul,  #exp2 ul{
+padding-left: 575px;
+}
 #headerWork{
   font-size: 35;
-  position: relative;
-  left:50%;
+  display: block;
+  margin: auto;  
   text-decoration-style: bold;
+  font-size: 40px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 
