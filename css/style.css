@@ -58,8 +58,7 @@
 /* end of about me*/
 #wall_1 {
     background: url(../Images/darkBackground.png) no-repeat;
-    background-attachment: fixed;
-  
+    background-attachment: fixed;  
 }
 #hello  img {    
     display: block;
@@ -154,11 +153,9 @@
     /*background-color: red;*/
     background-attachment: fixed;
 
-    
-    /*height: auto;*/
 }
 
-#workExp {
+#workExp, #projects,#skillTools {
   padding-top: 4%;
   text-align:center;
 }
@@ -191,22 +188,22 @@ width: 100%;
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
 }
 
-#exp,  #exp2 {
+#exp,#exp2,#proj,#proj2,#proj3,#proj4 {
 padding: 65px;
-font-size: 18px;
+font-size: 16px;
  color: white;
 font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 font-variant: normal;
 font-weight: 10;
 text-align: justify;
 }
-#exp h3,  #exp2 h3{
+#exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
 padding-left: 550px;
 }
-#exp ul,  #exp2 ul{
+#exp ul,  #exp2 ul, #proj ul,#proj2 ul,#proj3 ul,#proj4 ul {
 padding-left: 575px;
 }
-#headerWork{
+#headerWork,#headerProjects,#headerSkills{
   font-size: 35;
   display: block;
   margin: auto;  
@@ -216,14 +213,56 @@ padding-left: 575px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+#contentProject1, #contentProject2, #contentProject3, #contentProject4 {
+  width:  1300px;
+}
 
+#content_2 {
+  height: 1500px;
+}
+
+#skill1 , #skill2, #skill3 ,#skill4 {
+  padding: 35px;
+}
+
+.skillList {
+    padding: 65px;
+font-size: 20px;
+ color: white;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-variant: normal;
+font-weight: 10;
+text-align: justify;
+padding-left: 300px;
+}
+
+.skillList ul {
+  display: inline-block;
+}
+#tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
+   display: inline-block;
+    margin-left: 10%;  
+    float : left;
+    width:15%;
+    height:15%;
+    margin-top:20px;  
+  }
 
 #wall_3 {
-    background: url(../Images/skulls.png) repeat;
+    background: url(../Images/page5.png) repeat; 
+    max-height: 700px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
+    /*background-color: red;*/
     background-attachment: fixed;
-   /*  max-width: 100%;
-    height: auto;*/
-}
+   }
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
 
 
 #navigation{
