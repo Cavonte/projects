@@ -155,7 +155,7 @@
 
 }
 
-#workExp, #projects,#skillTools {
+#workExp, #projects,#skillTools, #other, #gallery, #contacts {
   padding-top: 4%;
   text-align:center;
 }
@@ -165,7 +165,7 @@ height: 100%;
 width: 100%;
 }
 #muxlabPic {
-/*display: block;*/
+display: block;
 height: 100%;
 width: 100%;
 }
@@ -203,7 +203,7 @@ padding-left: 550px;
 #exp ul,  #exp2 ul, #proj ul,#proj2 ul,#proj3 ul,#proj4 ul {
 padding-left: 575px;
 }
-#headerWork,#headerProjects,#headerSkills{
+#headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
   font-size: 35;
   display: block;
   margin: auto;  
@@ -250,7 +250,7 @@ padding-left: 300px;
 
 #wall_3 {
     background: url(../Images/page5.png) repeat; 
-    max-height: 700px;
+    max-height: 800px;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%; 
@@ -260,10 +260,39 @@ padding-left: 300px;
    }
 
 .mySlides {display:none}
+
+#content_3 {
+  height 100px;
+}
+#slideShow {
+  max-width: 100%;
+  height: auto;
+  padding: 35px;
+}
+#slideShow img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+  max-height: 700px;
+  border-radius: 8px;
+
+}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
+#contactColumns  h3 , p{
 
+/*font-size: 20px;*/
+color: white;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-variant: normal;
+font-weight: 10;
+text-align: center;
+vertical-align: middle;
+line-height: 90px; 
+/*padding-left: 300px;*/
+}
 
 #navigation{
     height: 55px;
@@ -275,6 +304,17 @@ padding-left: 300px;
      z-index: 100;
     -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
 }
+
+#wall_4 {
+  background: url(../Images/page5.png) repeat; 
+    max-height: 500px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
+    /*background-color: red;*/
+    background-attachment: fixed;
+  }
 
 
 /*body {margin:0;}*/
