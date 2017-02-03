@@ -12,6 +12,7 @@
 <script src="js/jquery.stellar.js"></script>
 <script src="js/scrip.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
+ <script type="text/javascript" src="js/slideshow.js"></script>
 <script>
 function parallax(){
     var prlx_lyr_1 = document.getElementById('navigation');
@@ -20,7 +21,7 @@ function parallax(){
 window.addEventListener("scroll", parallax, false);
 </script>
 </head>
-<body>
+<body onload="carousel()">
 <div id="navigation">
   <!-- <div id="logo"><img src="Images/logo.png"></div> -->
   <div id="navBar">
@@ -34,7 +35,6 @@ window.addEventListener("scroll", parallax, false);
   </div>
 </div>
 <div id="wall_1" class="image" data-stellar-background-ratio="0.4">
-  <!-- <div id="logo"><img src="Images/MainText.png"></div> -->
   <div id="hello">
     <img src="Images/MainText.png">
   </div>
@@ -59,17 +59,15 @@ window.addEventListener("scroll", parallax, false);
     <img src="Images/detailsAbout.png">
   </div>
   <div id="picture">
-    <img src="Images/photo.png">
+    <!-- <img src="Images/photo.png"> -->
   </div>
 </div>
-<div id="wall_2" class="image" data-stellar-background-ratio="0.4">
+<div id="wall_2" class="image" data-stellar-background-ratio="1.2">
   <div id="workExp">
     <header id="headerWork"> Work Experience </header>
     <div id="exp">
       <p>
-        <a href="http://www.nuance.fr/index.htm" id="muxlab">
-        <img src="Images/muxlab.jpg" id="muxlabPic"></a>
-        <h3> Software Engineer Intern Summer 2016 Muxlab, Montreal, QC</h3>
+       <h3> Software Engineer Intern Summer 2016 Muxlab, Montreal, QC</h3>
         <ul class="a">
           <li> Designed, developed and integrated drivers for the Muxlab Products (Over IP Matrices and Network Controllers)</li>
           <li>Performed verification and validation of the developed products</li>
@@ -80,11 +78,13 @@ window.addEventListener("scroll", parallax, false);
           <h4>Technologies: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet</h4>
           </li>
         </ul>
-      </p>
+      </p>  
+        <a href="http://www.nuance.fr/index.htm" id="muxlab">
+        <img src="Images/muxlab.jpg" id="muxlabPic"></a>
+      
+      
     </div>
-    <div id="exp2">
-      <a href="http://muxlab.com/" id="nuance">
-      <img src="Images/nuance.png" id="nuancePic"></a>
+    <div id="exp2">      
       <p>
         <h3> Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC </h3>
         <ul class="a">
@@ -98,6 +98,8 @@ window.addEventListener("scroll", parallax, false);
           </li>
         </ul>
       </p>
+      <a href="http://muxlab.com/" id="nuance">
+      <img src="Images/nuance.png" id="nuancePic"></a>
     </div>
   </div>
 </div>
@@ -105,7 +107,7 @@ window.addEventListener("scroll", parallax, false);
   <div id="projects">
     <header id="headerProjects"> Projects </header>
     <div id="proj">
-      <p>
+      
         <div id="tagsProject1">
           Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench
         </div>
@@ -120,7 +122,7 @@ window.addEventListener("scroll", parallax, false);
             <li>Obtained the highest mark and praises for the best project of the classs</li>
           </ul>
         </div>
-      </p>
+      
     </div>
     <div id="proj2">
       <p>
@@ -172,8 +174,48 @@ window.addEventListener("scroll", parallax, false);
   </div>
 </div>
 
-<div id="wall_3" class="image" data-stellar-background-ratio="0.4">
-  <div id="skillTools">
+<div id="wall_3" class="image" data-stellar-background-ratio="0.1">
+<div id="gallery">
+    <header id="headerGallery">Gallery</header>
+    <div id="paraGallery">
+      <p>
+        Here are a few Screenshots of the Conference Room Scheduler and other works (Image Editing).
+      </p>
+    </div>
+
+    
+    <div class="w3-content w3-display-container" id="slideShow">
+    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc6.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc8.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc9.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc10.png" style="height:700px;">
+      <img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/bsys.png" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/cat.jpg" style="width:100%; height:100%">      
+      <img class="mySlides w3-animate-zoom" src="../Images/page5.png" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/page3.png" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="width:100%; height:100%">
+      <img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="width:100%; height:100%">
+      <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:auto;">    
+    </div>
+      <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+  
+    </div>
+  </div>
+
+  
+</div>
+
+<div id="content_3" class="content">
+<div id="skillTools">
     <header id="headerSkills"> Skills and tools </header>
     <div class="skillList" id="skills">
       <div id="skill1">
@@ -205,86 +247,9 @@ window.addEventListener("scroll", parallax, false);
       </div>
     </div>
   </div>
-</div>
-
-<div id="content_3" class="content">
-  <div id="gallery">
-    <header id="headerGallery">Gallery</header>
-    <div id="paraGallery">
-      <p>
-        Here are a few Screenshots of the Conference Room Scheduler and other works (Image Editing).
-      </p>
-    </div>
-
-    
-    <div class="w3-content w3-display-container" id="slideShow">
-    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc1.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc2.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc3.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc4.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc5.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc6.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc6.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc6.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc7.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc8.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc9.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/Screenshots/sc10.png" style="width:20%; height:700px;">
-      <img class="mySlides w3-animate-fading" src="../Images/padd.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/bsys.png" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/tiger.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/cat.jpg" style="width:100%; height:100%">      
-      <img class="mySlides w3-animate-fading" src="../Images/page5.png" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/page3.png" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/AC.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/Bokeh 3.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-fading" src="../Images/Space.jpg" style="width:100%; height:100%">
-      <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:auto;">
-    
-    </div>
-      <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
   
-    </div>
-  </div>
 </div>
-  <script>
-var myIndex = 0;
-carousel();
-showDivs(myIndex);
-
-
-function plusDivs(n) {
-    showDivs(myIndex += n);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {myIndex = 1} 
-    if (n < 1) {myIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[myIndex-1].style.display = "block"; 
-}
-
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 9000);    
-}
-
-</script>
-
-
+ 
 <div id="wall_4" class="image" data-stellar-background-ratio="0.4">
 
 <div id="contacts">

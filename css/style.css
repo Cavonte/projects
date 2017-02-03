@@ -29,6 +29,9 @@
   left: 20%;
   padding-top: 32%;
 }
+@media screen and (max-width: 1300px) {
+
+}
 #detailsAboutMe {
   position: absolute;
   left: 5%;
@@ -60,6 +63,16 @@
     background: url(../Images/darkBackground.png) no-repeat;
     background-attachment: fixed;  
 }
+
+ @media screen and (max-width: 1300px) {
+  #wall_1 {
+    background: url(../Images/darkBackground.png) no-repeat;
+    background-attachment: fixed;
+    max-height: 800px;  
+}
+ }
+
+
 #hello  img {    
     display: block;
     margin:  auto;
@@ -140,12 +153,22 @@
     width: 34%;
    padding-top: 9%;
  }
+ @media screen and (max-width: 1000px) {
+  #scrollText {
+    display: block;
+    margin:  auto;
+    /*width: 34%;*/
+   padding-top: 9%;
+ }
+}
+
+
  /*end of fit section with backgroumd image*/
 
 
 #wall_2 {
     background: url(../Images/page3.png) repeat; 
-    max-height: 900px;
+    max-height: 1100px;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%; 
@@ -153,6 +176,20 @@
     /*background-color: red;*/
     background-attachment: fixed;
 
+}
+
+@media screen and (max-width: 1300px) {
+  #wall_2 {
+    background: url(../Images/page3.png) repeat; 
+    max-height: 1000px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
+    /*background-color: red;*/
+    background-attachment: fixed;
+
+}
 }
 
 #workExp, #projects,#skillTools, #other, #gallery, #contacts {
@@ -169,9 +206,9 @@ display: block;
 height: 100%;
 width: 100%;
 }
-#nuance, #muxlab {
-    display: inline-block;
-    margin-left: 15%;
+#nuance, #muxlab {   
+    margin-left: 10%;
+    margin-top:-10%;
     border: 1px solid #ddd;
     border-radius: 3px;
     /*padding: 1px;*/
@@ -180,6 +217,22 @@ width: 100%;
     width:15%;
     height:15%;   
 }
+@media screen and (max-width: 1300px) {
+  #nuance, #muxlab {
+    display: inline-block;
+    margin-left: 42%;
+    margin-top:20px;
+    margin-bottom:20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    /*padding: 1px;*/
+    transition: 0.3s;
+    float : left;
+    width:15%;
+    height:15%;   
+}
+}
+
 
 #muxlab:hover {
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
@@ -190,19 +243,32 @@ width: 100%;
 
 #exp,#exp2,#proj,#proj2,#proj3,#proj4 {
 padding: 65px;
+margin-top: 20px;
 font-size: 16px;
- color: white;
+color: white;
 font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 font-variant: normal;
 font-weight: 10;
 text-align: justify;
 }
+
 #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-padding-left: 550px;
+padding-left: 29%;
 }
 #exp ul,  #exp2 ul, #proj ul,#proj2 ul,#proj3 ul,#proj4 ul {
-padding-left: 575px;
+padding-left: 29%;
 }
+@media screen and (max-width: 1300px) {
+  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
+    padding-left: 11%;
+}
+
+#exp ul,  #exp2 ul, #proj ul,#proj2 ul,#proj3 ul,#proj4 ul {
+padding-left: 15%;
+}
+}
+
+
 #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
   font-size: 35;
   display: block;
@@ -215,10 +281,24 @@ padding-left: 575px;
 }
 #contentProject1, #contentProject2, #contentProject3, #contentProject4 {
   width:  1300px;
+  margin-left: 5%;
+}
+
+#tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
+   display: block;
+    float : left;
+    width:15%;
+    height:15%;
+    margin-top:20px;  
 }
 
 #content_2 {
   height: 1500px;
+}
+@media screen and (max-width: 1300px) {
+#content_2 {
+  height:1350px;
+}
 }
 
 #skill1 , #skill2, #skill3 ,#skill4 {
@@ -226,9 +306,9 @@ padding-left: 575px;
 }
 
 .skillList {
-    padding: 65px;
+padding: 65px;
 font-size: 20px;
- color: white;
+color: white;
 font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 font-variant: normal;
 font-weight: 10;
@@ -236,28 +316,40 @@ text-align: justify;
 padding-left: 300px;
 }
 
+@media screen and (max-width: 1300px) {
+ .skillList {
+  padding-left: 15%;
+ } 
+}
+
 .skillList ul {
   display: inline-block;
 }
-#tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
-   display: inline-block;
-    margin-left: 10%;  
-    float : left;
-    width:15%;
-    height:15%;
-    margin-top:20px;  
-  }
 
 #wall_3 {
     background: url(../Images/page5.png) repeat; 
-    max-height: 800px;
+    max-height: 1000px;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     -webkit-background-size: 100% 100%; 
     background-size: 100% 100%;
     /*background-color: red;*/
     background-attachment: fixed;
-   }
+}
+
+@media screen and (max-width: 1300px) {
+#wall_3 {
+    background: url(../Images/page5.png) repeat; 
+    max-height: 700px;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; 
+    background-size: 100% 100%;
+    /*background-color: red;*/
+    background-attachment: fixed;
+}
+  
+}
 
 .mySlides {display:none}
 
@@ -265,7 +357,7 @@ padding-left: 300px;
   height 100px;
 }
 #slideShow {
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
   padding: 35px;
 }
@@ -276,7 +368,16 @@ padding-left: 300px;
   height: auto;
   max-height: 700px;
   border-radius: 8px;
-
+}
+@media screen and (max-width: 1300px) {
+  #slideShow img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 8px;
+}
 }
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
