@@ -29,14 +29,30 @@
   left: 20%;
   padding-top: 32%;
 }
-@media screen and (max-width: 1300px) {
-
-}
 #detailsAboutMe {
   position: absolute;
   left: 5%;
   padding-top: 38%;
 }
+@media screen and (max-width: 1300px) {
+#aboutMe {
+  position: inherit;
+  margin: 0 auto; 
+  width: 90%;
+}
+#lineAboutMe {
+  position: inherit;
+  margin: 0  auto;
+  width: 100%;
+  padding: 20px;
+  
+}
+#detailsAboutMe {
+   left: 5%;
+   padding-top: 50px;
+}
+}
+
 
 #picture {
   position: absolute;
@@ -149,15 +165,15 @@
 
 #scrollText {
     display: block;
-    margin:  auto;
+    margin: 0 auto;
     width: 34%;
    padding-top: 9%;
  }
- @media screen and (max-width: 1000px) {
+ @media screen and (max-width: 1300px) {
   #scrollText {
     display: block;
-    margin:  auto;
-    /*width: 34%;*/
+    width: 50%;
+    margin: 0 auto;    
    padding-top: 9%;
  }
 }
@@ -297,7 +313,7 @@ padding-left: 15%;
 }
 @media screen and (max-width: 1300px) {
 #content_2 {
-  height:1350px;
+  height:1400px;
 }
 }
 
