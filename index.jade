@@ -1,0 +1,206 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Bruce Edouard Brazier
+    
+    //link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/normalize.css') 
+    //link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/skeleton.css') 
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,200', rel='stylesheet', type='text/css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
+    link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+    script(src='js/jquery.stellar.js')
+    script(src='js/scrip.js')
+    script(src='js/jquery.nicescroll.js')
+    script(type='text/javascript', src='js/slideshow.js')
+    //script(type='text/javascript', src='js/parallax.js')  
+    script(src='js/parallax.js')
+          
+  body(onload='//carousel()')
+    #wall_1.image(data-stellar-background-ratio='0.4')      
+      #hello
+        img(src='Images/MainText.png')
+      #bar
+        //hr
+      #landingButtons
+        a.linkedIn(href='#') LinkedIn
+        a.contacts(href='#') Contacts
+      #scrollText
+        img(src='Images/scroll.png')
+    #content_1.content
+      .images
+          p
+          #aboutMe.content_1-transition
+            img(src='Images/aboutMe.png')
+          #lineAboutMe.content_1-transition
+            img(src='Images/lineAbout.png')
+          #detailsAboutMe.content_1-transition
+            img(src='Images/detailsAbout.png')
+          #picture
+            // <img src="Images/photo.png">
+    #wall_2.image(data-stellar-background-ratio='1.2')
+      #workExp
+        header#headerWork.content_2-transition  Work Experience 
+        #exp.content_2-transition
+          p
+          h3  Software Engineer Intern Summer 2016 Muxlab, Montreal, QC
+          ul.a
+            li
+              | Designed, developed and integrated drivers for the Muxlab Products (Over IP Matrices and Network Controllers)
+            li Performed verification and validation of the developed products
+            li
+              | Interacted with 3rd party software and frameworks and integrated them with the Muxlab products
+            li Documented projects and drivers according to Muxlab’s Standards
+            li
+              | Supported both internal and external customers such as quality assurance and Muxlab Partners
+            li
+              h4 Technologies: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet
+          p
+          a#muxlab(href='http://www.nuance.fr/index.htm')
+            img#muxlabPic(src='Images/muxlab.jpg')
+        #exp2.content_2-transition
+          p
+          h3  Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC 
+          ul.a
+            li Contributed to the design, development and evolution of the system/products
+            li  Designed, documented, implemented and tested the server components
+            li  Ensured products meet all relevant specifications and quality standards
+            li
+              | Supported internal customers such as quality assurance, professional services, and hosted operations staff
+            li
+              | Implemented a software that increased the team’s efficiency by automating a daily task.
+            li
+              h4 Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN
+          p
+          a#nuance(href='http://muxlab.com/')
+            img#nuancePic(src='Images/nuance.png')
+    #content_2.content
+      #projects
+        header#headerProjects  Projects 
+        #proj
+          #tagsProject1
+            | Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench
+          #contentProject1
+            h3  Conference Room Reservation System (Mobile) Fall 2016
+            ul.a
+              li
+                | Mobile Application where a user can Reserve a conference room, join a waitlist and manage room bookings.
+              li
+                | Worked with a team of 6 members using the Agile Methodology and sprints of 2 weeks. Used GitHub for Version control, Issues, tasks distribution and Milestone tracking
+              li
+                | Researched and documented the Room Booking competition, their features, and their interfaces
+              li
+                | Executed most visual design stages from Concept to Implementation and Quality Assurance
+              li
+                | Optimized the response time of the application using Multi-threading and Code Refactoring
+              li Obtained the highest mark and praises for the best project of the classs
+        #proj2
+          p
+            #tagsProject2
+              | Tags : GitHub, PHP, MySQL, Photoshop
+            #contentProject2
+              h3 Vp Webmaster (Bsys Concordia) Fall 2015
+              ul.a
+                li
+                  | Maintain the site. i.e. update the content, fix broken links and images, add new pictures, content, and events
+                li
+                  | Work with the other Executives Members to ensure the progress and well-being of the club
+                li
+                  | Create and maintain an emergency backup using version control and the hosting service.
+        #proj3
+          p
+            #tagsProject3
+              | Tags : SVN, Eclipse, Data Structures, Java GUI
+            #contentProject3
+              h3 DEC Integrative Project 2014-2015
+              ul.a
+                li
+                  | Worked with a team member to fulfill academic requirements for integrative project course by creating an interactive and educative game.
+                li  Submitted weekly reports to supervisor 
+                li
+                  | Developed and executed the physics and the calculation of the game. (Debugging, research and consultation)
+                li
+                  | Designed the visual components of the project (Controlling and updating the frame and other components)
+        #proj4
+          p
+            #tagsProject4
+              | Tags : WampServer64,PHP, HTML5, CSS, MySQL, JavaScript, Bootstrap, Sublime, Photoshop
+            #contentProject4
+              h3 Rental Website February 2015
+              ul.a
+                li
+                  | Rental website where a user can register as a tenant or an owner and specify their preferences so that they can be matched to their counterpart
+                li
+                  | Designed the user interface by researching different customization tools and templates (such as bootstrap) and also by using personal knowledge of HTML5, CSS, and JavaScript
+                li
+                  | Designed and implemented a matching algorithm where a user can look for a property/tenant that meets his preferences.
+                li
+                  | Programmed the server-side of the website using PHP as well as a user database using Mysql
+    #wall_3.image(data-stellar-background-ratio='0.1')
+      #gallery
+        header#headerGallery Gallery
+        #paraGallery
+          p
+            | Here are a few Screenshots of the Conference Room Scheduler and other works (Image Editing).
+        #slideShow.w3-content.w3-display-container
+          a.w3-btn-floating.w3-display-left(onclick='plusDivs(-1)') ❮
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc1.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc3.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc4.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc5.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc6.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc7.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc8.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc9.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc10.png', style='height:700px;')
+          img.mySlides.w3-animate-zoom(src='../Images/padd.jpg', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/bsys.png', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/tiger.jpg', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/cat.jpg', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/page5.png', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/page3.png', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/AC.jpg', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/Bokeh 3.jpg', style='width:100%; height:100%')
+          img.mySlides.w3-animate-zoom(src='../Images/Space.jpg', style='width:100%; height:100%')
+          .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle(style='width:auto;')
+          a.w3-btn-floating.w3-display-right(onclick='plusDivs(+1)') ❯
+    #content_3.content
+      #skillTools
+        header#headerSkills  Skills and tools 
+        #skills.skillList
+          #skill1
+            p
+            h4 Applications
+            |            &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio
+            p
+          #skill2
+            p
+            h4 Programming
+            |            &#8226 Java &#8226 JavaScript &#8226 Html &#8226 CSS &#8226 Bash Scripting &#8226 PHP &#8226 Python (Basic) &#8226 C++ &#8226 Tcl &#8226 Lua &#8226 Expect
+            p
+          #skill3
+            p
+            h4 Other
+            |            &#8226 MySQL 
+            |            &#8226 Bamboo 
+            |            &#8226 Unity 
+            |            &#8226 VMware Vsphere &#8226 Wamp &#8226 Scrum &#8226 HPSA &#8226 Photoshop Cs5 &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP
+            p
+          #skill4
+            p
+            h4 Operating Systems
+            |            &#8226 Windows Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
+            p
+    #wall_4.image(data-stellar-background-ratio='0.4')
+      #contacts
+        header#headerContact Contact
+        #contactColumns
+          p
+            a(href='https://ca.linkedin.com/in/edouardbrazier')
+              img(src='Images/link.png', style='width: 15%; height: 15%;')
+            a(href='https://github.com/Cavonte')
+              img(src='Images/git.png', style='width: 15%; height: 15%;')
+          

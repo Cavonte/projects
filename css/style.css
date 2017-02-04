@@ -18,6 +18,18 @@
     background: #282b2e;
     z-index: 2;
 }
+/*transitions*/
+.content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
+opacity: 0;
+transform: translateX(-50px);
+transition: all 0.5s ease-in-out;
+}
+
+.is-showing {
+  opacity:1 ;
+  transform: translateX(50px);
+}
+
 
 #aboutMe {
   position: absolute;
@@ -35,6 +47,25 @@
   padding-top: 38%;
 }
 @media screen and (max-width: 1300px) {
+#aboutMe {
+  position: inherit;
+  margin: 0 auto; 
+  width: 90%;
+}
+#lineAboutMe {
+  position: inherit;
+  margin: 0  auto;
+  width: 100%;
+  padding: 20px;
+  
+}
+#detailsAboutMe {
+   left: 5%;
+   padding-top: 50px;
+}
+}
+
+@media screen and (max-width: 600px) {
 #aboutMe {
   position: inherit;
   margin: 0 auto; 
@@ -80,13 +111,21 @@
     background-attachment: fixed;  
 }
 
- @media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   #wall_1 {
     background: url(../Images/darkBackground.png) no-repeat;
     background-attachment: fixed;
     max-height: 800px;  
 }
- }
+}
+
+@media screen and (max-width: 600px) {
+  #wall_1 {
+    background: url(../Images/darkBackground.png) no-repeat;
+    background-attachment: fixed;
+    max-height: 600px;  
+}
+}
 
 
 #hello  img {    
@@ -95,6 +134,12 @@
     width: 50%;
     padding-top: 24%;
   }
+
+ #bar {
+width: 1%;
+margin: 0 auto;
+margin-left: 80%;
+ } 
 
 #landingButtons {
     width: 50%;
@@ -178,6 +223,13 @@
  }
 }
 
+@media screen and (max-width: 600px) {
+  #scrollText{
+    width: 90%;
+    padding-top: 40%;
+  }
+}
+
 
  /*end of fit section with backgroumd image*/
 
@@ -208,10 +260,17 @@
 }
 }
 
+@media screen and (max-width: 600px) {
+  #wall_2{
+    max-height: 1400px;
+  }
+}
+
 #workExp, #projects,#skillTools, #other, #gallery, #contacts {
   padding-top: 4%;
-  text-align:center;
+  text-align:center;  
 }
+
 #nuancePic {
 /*float : left;*/
 height: 100%;
@@ -249,6 +308,16 @@ width: 100%;
 }
 }
 
+@media screen and (max-width: 600px) {
+  #nuance, #muxlab {
+    width: 40%;
+    height: 40%;
+    margin-left: 35%;
+  }
+
+
+}
+
 
 #muxlab:hover {
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
@@ -268,6 +337,16 @@ font-weight: 10;
 text-align: justify;
 }
 
+@media screen and (max-width: 600px) {
+#exp,#exp2,#proj,#proj2,#proj3,#proj4{
+  padding: 0px;
+  margin: 0px 40px 0 0;
+  font-size: 15px;
+}
+
+  
+}
+
 #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
 padding-left: 29%;
 }
@@ -283,6 +362,8 @@ padding-left: 29%;
 padding-left: 15%;
 }
 }
+
+
 
 
 #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
@@ -306,6 +387,19 @@ padding-left: 15%;
     width:15%;
     height:15%;
     margin-top:20px;  
+}
+
+@media screen and (max-width: 600px) {
+
+  #contentProject1, #contentProject2, #contentProject3, #contentProject4 {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+  #tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
+    display: none;
+  }
 }
 
 #content_2 {

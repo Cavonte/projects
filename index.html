@@ -1,275 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Bruce Edouard Brazier</title>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,200' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script src="js/jquery.stellar.js"></script>
-<script src="js/scrip.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
- <script type="text/javascript" src="js/slideshow.js"></script>
-<script>
-function parallax(){
-    var prlx_lyr_1 = document.getElementById('navigation');
-    prlx_lyr_1.style.top = -(window.pageYOffset / 8)+'px';
-}
-window.addEventListener("scroll", parallax, false);
-</script>
-</head>
-<body onload="carousel()">
-<div id="navigation">
-  <!-- <div id="logo"><img src="Images/logo.png"></div> -->
-  <div id="navBar">
-    <ul class="topnav" id="myTopnav">
-      <li><a href="#home">Section 1</a></li>
-      <li><a href="#news">Section 2</a></li>
-      <li class="icon">
-      <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-      </li>
-    </ul>
-  </div>
-</div>
-<div id="wall_1" class="image" data-stellar-background-ratio="0.4">
-  <div id="hello">
-    <img src="Images/MainText.png">
-  </div>
-  <div id="landingButtons">
-    <a href="#" class="linkedIn">LinkedIn</a>
-    <a href="#" class="contacts">Contacts</a>
-  </div>
-  <div id="scrollText">
-    <img src="Images/scroll.png">
-  </div>
-</div>
-<div id="content_1" class="content">
-  <p>
-  </p>
-  <div id="aboutMe">
-    <img src="Images/aboutMe.png">
-  </div>
-  <div id="lineAboutMe">
-    <img src="Images/lineAbout.png">
-  </div>
-  <div id="detailsAboutMe">
-    <img src="Images/detailsAbout.png">
-  </div>
-  <div id="picture">
-    <!-- <img src="Images/photo.png"> -->
-  </div>
-</div>
-<div id="wall_2" class="image" data-stellar-background-ratio="1.2">
-  <div id="workExp">
-    <header id="headerWork"> Work Experience </header>
-    <div id="exp">
-      <p>
-       <h3> Software Engineer Intern Summer 2016 Muxlab, Montreal, QC</h3>
-        <ul class="a">
-          <li> Designed, developed and integrated drivers for the Muxlab Products (Over IP Matrices and Network Controllers)</li>
-          <li>Performed verification and validation of the developed products</li>
-          <li>Interacted with 3rd party software and frameworks and integrated them with the Muxlab products</li>
-          <li>Documented projects and drivers according to Muxlab’s Standards</li>
-          <li>Supported both internal and external customers such as quality assurance and Muxlab Partners</li>
-          <li>
-          <h4>Technologies: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet</h4>
-          </li>
-        </ul>
-      </p>  
-        <a href="http://www.nuance.fr/index.htm" id="muxlab">
-        <img src="Images/muxlab.jpg" id="muxlabPic"></a>
-      
-      
-    </div>
-    <div id="exp2">      
-      <p>
-        <h3> Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC </h3>
-        <ul class="a">
-          <li>Contributed to the design, development and evolution of the system/products</li>
-          <li> Designed, documented, implemented and tested the server components</li>
-          <li> Ensured products meet all relevant specifications and quality standards</li>
-          <li> Supported internal customers such as quality assurance, professional services, and hosted operations staff</li>
-          <li>Implemented a software that increased the team’s efficiency by automating a daily task.</li>
-          <li>
-          <h4>Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN</h4>
-          </li>
-        </ul>
-      </p>
-      <a href="http://muxlab.com/" id="nuance">
-      <img src="Images/nuance.png" id="nuancePic"></a>
-    </div>
-  </div>
-</div>
-<div id="content_2" class="content">
-  <div id="projects">
-    <header id="headerProjects"> Projects </header>
-    <div id="proj">
-      
-        <div id="tagsProject1">
-          Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench
-        </div>
-        <div id="contentProject1">
-          <h3> Conference Room Reservation System (Mobile) Fall 2016</h3>
-          <ul class="a">
-            <li>Mobile Application where a user can Reserve a conference room, join a waitlist and manage room bookings.</li>
-            <li>Worked with a team of 6 members using the Agile Methodology and sprints of 2 weeks. Used GitHub for Version control, Issues, tasks distribution and Milestone tracking</li>
-            <li>Researched and documented the Room Booking competition, their features, and their interfaces</li>
-            <li>Executed most visual design stages from Concept to Implementation and Quality Assurance</li>
-            <li>Optimized the response time of the application using Multi-threading and Code Refactoring</li>
-            <li>Obtained the highest mark and praises for the best project of the classs</li>
-          </ul>
-        </div>
-      
-    </div>
-    <div id="proj2">
-      <p>
-        <div id="tagsProject2">
-          Tags : GitHub, PHP, MySQL, Photoshop
-        </div>
-        <div id="contentProject2">
-          <h3>Vp Webmaster (Bsys Concordia) Fall 2015</h3>
-          <ul class="a">
-            <li> Maintain the site. i.e. update the content, fix broken links and images, add new pictures, content, and events </li>
-            <li> Work with the other Executives Members to ensure the progress and well-being of the club </li>
-            <li> Create and maintain an emergency backup using version control and the hosting service. </li>
-          </ul>
-        </div>
-      </p>
-    </div>
-    <div id="proj3">
-      <p>
-        <div id="tagsProject3">
-          Tags : SVN, Eclipse, Data Structures, Java GUI
-        </div>
-        <div id="contentProject3">
-          <h3>DEC Integrative Project 2014-2015</h3>
-          <ul class="a">
-            <li> Worked with a team member to fulfill academic requirements for integrative project course by creating an interactive and educative game.</li>
-            <li> Submitted weekly reports to supervisor </li>
-            <li> Developed and executed the physics and the calculation of the game. (Debugging, research and consultation) </li>
-            <li> Designed the visual components of the project (Controlling and updating the frame and other components) </li>
-          </ul>
-        </div>
-      </p>
-    </div>
-    <div id="proj4">
-      <p>
-        <div id="tagsProject4">
-          Tags : WampServer64,PHP, HTML5, CSS, MySQL, JavaScript, Bootstrap, Sublime, Photoshop
-        </div>
-        <div id="contentProject4">
-          <h3>Rental Website February 2015</h3>
-          <ul class="a">
-            <li> Rental website where a user can register as a tenant or an owner and specify their preferences so that they can be matched to their counterpart </li>
-            <li> Designed the user interface by researching different customization tools and templates (such as bootstrap) and also by using personal knowledge of HTML5, CSS, and JavaScript </li>
-            <li> Designed and implemented a matching algorithm where a user can look for a property/tenant that meets his preferences. </li>
-            <li> Programmed the server-side of the website using PHP as well as a user database using Mysql </li>
-          </ul>
-        </div>
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="wall_3" class="image" data-stellar-background-ratio="0.1">
-<div id="gallery">
-    <header id="headerGallery">Gallery</header>
-    <div id="paraGallery">
-      <p>
-        Here are a few Screenshots of the Conference Room Scheduler and other works (Image Editing).
-      </p>
-    </div>
-
-    
-    <div class="w3-content w3-display-container" id="slideShow">
-    <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc6.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc8.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc9.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc10.png" style="height:700px;">
-      <img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/bsys.png" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/cat.jpg" style="width:100%; height:100%">      
-      <img class="mySlides w3-animate-zoom" src="../Images/page5.png" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/page3.png" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="width:100%; height:100%">
-      <img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="width:100%; height:100%">
-      <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:auto;">    
-    </div>
-      <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
-  
-    </div>
-  </div>
-
-  
-</div>
-
-<div id="content_3" class="content">
-<div id="skillTools">
-    <header id="headerSkills"> Skills and tools </header>
-    <div class="skillList" id="skills">
-      <div id="skill1">
-        <p>
-          <h4>Applications</h4>
-           &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio
-        </p>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bruce Edouard Brazier</title>
+    <!--link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/normalize.css') -->
+    <!--link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/skeleton.css') -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,200" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/jquery.stellar.js"></script>
+    <script src="js/scrip.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <!--script(type='text/javascript', src='js/parallax.js')  -->
+    <script src="js/parallax.js"></script>
+  </head>
+  <body onload="//carousel()">
+    <div class="image" id="wall_1" data-stellar-background-ratio="0.4">     
+      <div id="hello"><img src="Images/MainText.png"></div>
+      <div id="bar">
+        <!--hr-->
       </div>
-      <div id="skill2">
-        <p>
-          <h4>Programming</h4>
-           &#8226 Java &#8226 JavaScript &#8226 Html &#8226 CSS &#8226 Bash Scripting &#8226 PHP &#8226 Python (Basic) &#8226 C++ &#8226 Tcl &#8226 Lua &#8226 Expect
-        </p>
-      </div>
-      <div id="skill3">
-        <p>
-          <h4>Other</h4>
-           &#8226 MySQL </li>
-           &#8226 Bamboo </li>
-           &#8226 Unity </li>
-           &#8226 VMware Vsphere &#8226 Wamp &#8226 Scrum &#8226 HPSA &#8226 Photoshop Cs5 &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP
-        </p>
-      </div>
-      <div id="skill4">
-        <p>
-          <h4>Operating Systems</h4>
-           &#8226 Windows Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
-        </p>
+      <div id="landingButtons"><a class="linkedIn" href="#">LinkedIn</a><a class="contacts" href="#">Contacts</a></div>
+      <div id="scrollText"><img src="Images/scroll.png"></div>
+    </div>
+    <div class="content" id="content_1">
+      <div class="images">
+        <p></p>
+        <div class="content_1-transition" id="aboutMe"><img src="Images/aboutMe.png"></div>
+        <div class="content_1-transition" id="lineAboutMe"><img src="Images/lineAbout.png"></div>
+        <div class="content_1-transition" id="detailsAboutMe"><img src="Images/detailsAbout.png"></div>
+        <div id="picture">
+          <!-- <img src="Images/photo.png">-->
+        </div>
       </div>
     </div>
-  </div>
-  
-</div>
- 
-<div id="wall_4" class="image" data-stellar-background-ratio="0.4">
-
-<div id="contacts">
- <HEADER id="headerContact">Contact</HEADER>
-
- <div id="contactColumns">
-   <P> <h3> Edouard.12@live.ca </h3> </P>
-   <P> <a href="https://ca.linkedin.com/in/edouardbrazier">
-     <img src="..\Images\link.png" style="width: 15%; height: 15%;"></a>
-  </P>
- <a href="https://github.com/Cavonte">
-     <img src="..\Images\git.png" style="width: 15%; height: 15%;"></a>
-  </P>
-</div>
-
-
-
-
- </div>
-
-</div>
-</body>
+    <div class="image" id="wall_2" data-stellar-background-ratio="1.2">
+      <div id="workExp">
+        <header class="content_2-transition" id="headerWork"> Work Experience </header>
+        <div class="content_2-transition" id="exp">
+          <p></p>
+          <h3> Software Engineer Intern Summer 2016 Muxlab, Montreal, QC</h3>
+          <ul class="a">
+            <li>Designed, developed and integrated drivers for the Muxlab Products (Over IP Matrices and Network Controllers)</li>
+            <li>Performed verification and validation of the developed products</li>
+            <li>Interacted with 3rd party software and frameworks and integrated them with the Muxlab products</li>
+            <li>Documented projects and drivers according to Muxlab’s Standards</li>
+            <li>Supported both internal and external customers such as quality assurance and Muxlab Partners</li>
+            <li>
+              <h4>Technologies: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet</h4>
+            </li>
+          </ul>
+          <p></p><a id="muxlab" href="http://www.nuance.fr/index.htm"><img id="muxlabPic" src="Images/muxlab.jpg"></a>
+        </div>
+        <div class="content_2-transition" id="exp2">
+          <p></p>
+          <h3> Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC </h3>
+          <ul class="a">
+            <li>Contributed to the design, development and evolution of the system/products</li>
+            <li> Designed, documented, implemented and tested the server components</li>
+            <li> Ensured products meet all relevant specifications and quality standards</li>
+            <li>Supported internal customers such as quality assurance, professional services, and hosted operations staff</li>
+            <li>Implemented a software that increased the team’s efficiency by automating a daily task.</li>
+            <li>
+              <h4>Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN</h4>
+            </li>
+          </ul>
+          <p></p><a id="nuance" href="http://muxlab.com/"><img id="nuancePic" src="Images/nuance.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="content_2">
+      <div id="projects">
+        <header id="headerProjects"> Projects </header>
+        <div id="proj">
+          <div id="tagsProject1">Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench</div>
+          <div id="contentProject1">
+            <h3> Conference Room Reservation System (Mobile) Fall 2016</h3>
+            <ul class="a">
+              <li>Mobile Application where a user can Reserve a conference room, join a waitlist and manage room bookings.</li>
+              <li>Worked with a team of 6 members using the Agile Methodology and sprints of 2 weeks. Used GitHub for Version control, Issues, tasks distribution and Milestone tracking</li>
+              <li>Researched and documented the Room Booking competition, their features, and their interfaces</li>
+              <li>Executed most visual design stages from Concept to Implementation and Quality Assurance</li>
+              <li>Optimized the response time of the application using Multi-threading and Code Refactoring</li>
+              <li>Obtained the highest mark and praises for the best project of the classs</li>
+            </ul>
+          </div>
+        </div>
+        <div id="proj2">
+          <p>
+            <div id="tagsProject2">Tags : GitHub, PHP, MySQL, Photoshop</div>
+            <div id="contentProject2">
+              <h3>Vp Webmaster (Bsys Concordia) Fall 2015</h3>
+              <ul class="a">
+                <li>Maintain the site. i.e. update the content, fix broken links and images, add new pictures, content, and events</li>
+                <li>Work with the other Executives Members to ensure the progress and well-being of the club</li>
+                <li>Create and maintain an emergency backup using version control and the hosting service.</li>
+              </ul>
+            </div>
+          </p>
+        </div>
+        <div id="proj3">
+          <p>
+            <div id="tagsProject3">Tags : SVN, Eclipse, Data Structures, Java GUI</div>
+            <div id="contentProject3">
+              <h3>DEC Integrative Project 2014-2015</h3>
+              <ul class="a">
+                <li>Worked with a team member to fulfill academic requirements for integrative project course by creating an interactive and educative game.</li>
+                <li> Submitted weekly reports to supervisor </li>
+                <li>Developed and executed the physics and the calculation of the game. (Debugging, research and consultation)</li>
+                <li>Designed the visual components of the project (Controlling and updating the frame and other components)</li>
+              </ul>
+            </div>
+          </p>
+        </div>
+        <div id="proj4">
+          <p>
+            <div id="tagsProject4">Tags : WampServer64,PHP, HTML5, CSS, MySQL, JavaScript, Bootstrap, Sublime, Photoshop</div>
+            <div id="contentProject4">
+              <h3>Rental Website February 2015</h3>
+              <ul class="a">
+                <li>Rental website where a user can register as a tenant or an owner and specify their preferences so that they can be matched to their counterpart</li>
+                <li>Designed the user interface by researching different customization tools and templates (such as bootstrap) and also by using personal knowledge of HTML5, CSS, and JavaScript</li>
+                <li>Designed and implemented a matching algorithm where a user can look for a property/tenant that meets his preferences.</li>
+                <li>Programmed the server-side of the website using PHP as well as a user database using Mysql</li>
+              </ul>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="image" id="wall_3" data-stellar-background-ratio="0.1">
+      <div id="gallery">
+        <header id="headerGallery">Gallery</header>
+        <div id="paraGallery">
+          <p>Here are a few Screenshots of the Conference Room Scheduler and other works (Image Editing).</p>
+        </div>
+        <div class="w3-content w3-display-container" id="slideShow"><a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">❮</a><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc6.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc8.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc9.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc10.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/bsys.png" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/cat.jpg" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/page5.png" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/page3.png" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="width:100%; height:100%;"><img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="width:100%; height:100%;">
+          <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:auto;"></div><a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">❯</a>
+        </div>
+      </div>
+    </div>
+    <div class="content" id="content_3">
+      <div id="skillTools">
+        <header id="headerSkills"> Skills and tools </header>
+        <div class="skillList" id="skills">
+          <div id="skill1">
+            <p></p>
+            <h4>Applications</h4>           &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio
+            <p></p>
+          </div>
+          <div id="skill2">
+            <p></p>
+            <h4>Programming</h4>           &#8226 Java &#8226 JavaScript &#8226 Html &#8226 CSS &#8226 Bash Scripting &#8226 PHP &#8226 Python (Basic) &#8226 C++ &#8226 Tcl &#8226 Lua &#8226 Expect
+            <p></p>
+          </div>
+          <div id="skill3">
+            <p></p>
+            <h4>Other</h4>
+                       &#8226 MySQL 
+                       &#8226 Bamboo 
+                       &#8226 Unity 
+                       &#8226 VMware Vsphere &#8226 Wamp &#8226 Scrum &#8226 HPSA &#8226 Photoshop Cs5 &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP
+            <p></p>
+          </div>
+          <div id="skill4">
+            <p></p>
+            <h4>Operating Systems</h4>           &#8226 Windows Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image" id="wall_4" data-stellar-background-ratio="0.4">
+      <div id="contacts">
+        <header id="headerContact">Contact</header>
+        <div id="contactColumns">
+          <p><a href="https://ca.linkedin.com/in/edouardbrazier"><img src="Images/link.png" style="width: 15%; height: 15%;"></a><a href="https://github.com/Cavonte"><img src="Images/git.png" style="width: 15%; height: 15%;"></a></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
