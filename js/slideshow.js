@@ -16,13 +16,13 @@ function reset(){
 function showDivs(n) {
     var x = document.getElementsByClassName("mySlides w3-animate-zoom");
     //console.log(x.length);
-    console.log("asked" + n);
+    //console.log("asked" + n);
    if (n >= x.length) {myIndex = 0}  //reach the end.
     if (n < 0) {myIndex = x.length-1} ; //someone trying to back, reset to the end of the slide.
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
-    console.log("passing" +myIndex);
+    //console.log("passing" +myIndex);
     x[myIndex].style.display = "block"; 
 }
 
