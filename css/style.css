@@ -18,6 +18,59 @@
     background: #282b2e;
     z-index: 2;
 }
+
+/*navigationbar*/
+.navbar {
+  position: fixed;
+  z-index: 2;
+  top: 15%;
+  right: 6%;
+}
+
+.navbar ul {
+list-style-type: none;
+width: 80px;
+display:inline-block;
+/*cursor:pointer;*/
+color:#666666;
+/*font-family:Arial;*/
+font-size:15px;
+/*font-weight:bold;*/
+/*padding:12px 20px;*/
+text-align: center;
+}
+
+.navbar li a {
+color: white;
+max-width: 30px; 
+text-decoration: none;
+font-size: 17px;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-variant: normal;
+font-weight: 10;
+-webkit-transition: font-weight 100ms, font-size 100ms; /* For Safari 3.1 to 6.0 */
+transition: font-weight 100ms, font-size 100ms;
+}
+
+.navbar a:hover {
+font-weight : bold;
+font-size : 20px;
+}
+
+.isActive {
+font-weight : bold;
+font-size : 22px;
+}
+
+#hr {
+margin: 0 auto;
+margin-bottom: 45px;
+margin-top: 45px;
+width: 60%;
+}
+
+
+/*endnavigationbar*/
 /*transitions*/
 .content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
 opacity: 0;
@@ -41,7 +94,33 @@ transition: all 0.5s ease-in-out;
   transform: translateX(30px);
 }
 
+@media screen and (max-width: 1280){
+.content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
+opacity: 0;
+transform: translateX(-20px);
+transition: all 0.5s ease-in-out;
+}
+
+.contentTransitionRight {
+opacity: 0;
+transform: translateX(40px);
+transition: all 0.5s ease-in-out;
+}
+
+.is-showing-right {
+  opacity: 1 ;
+  transform: translateX(-20px);
+}
+
+.is-showing {
+  opacity: 1 ;
+  transform: translateX(10px);
+}
+}
+/*end transitions*/
+
 /*footer*/
+/*container added such that the content of the page would be higher then the footer*/
 .section {
   margin-bottom: 300px;
   z-index: 1;
@@ -49,17 +128,21 @@ transition: all 0.5s ease-in-out;
 
 #content_3 {
   height: 300px;
-  background: black;
+  background: #486175;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: -1;
 }
 
+.footerList {
+  list-style-type: none;
+}
+
 
 /*end footer*/
 .aboutMe {
-  width: 50%;
+  max-width: 50%;
   margin: 0 auto;
   padding-top: 10%;
 }
@@ -85,7 +168,7 @@ text-align: justify;
   left: 5%;
   padding-top: 38%;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1280px) {
 #aboutMe {
   position: inherit;
   margin: 0 auto; 
@@ -275,8 +358,6 @@ margin-left: 80%;
 
 
  /*end of fit section with backgroumd image*/
-
-
 #wall_2 {
     background: url(../Images/page3.png) repeat; 
     max-height: 1100px;
@@ -289,7 +370,7 @@ margin-left: 80%;
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1280px) {
   #wall_2 {
     background: url(../Images/page3.png) repeat; 
     max-height: 1000px;
@@ -357,10 +438,7 @@ width: 100%;
     height: 40%;
     margin-left: 35%;
   }
-
-
 }
-
 
 #muxlab:hover {
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
@@ -380,14 +458,20 @@ font-weight: 10;
 text-align: justify;
 }
 
+@media screen and (max-width: 1280px) {
+#exp,#exp2,#proj,#proj2,#proj3,#proj4{
+  padding-top: 20px;
+  margin: 0px 40px 0 0;
+  font-size: 15px;
+}
+}
+
 @media screen and (max-width: 600px) {
 #exp,#exp2,#proj,#proj2,#proj3,#proj4{
   padding: 0px;
   margin: 0px 40px 0 0;
   font-size: 15px;
 }
-
-  
 }
 
 #exp h3,  #exp2 h3 {
@@ -396,9 +480,9 @@ padding-left: 29%;
 #exp ul,  #exp2 ul{
 padding-left: 29%;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1280px) {
   #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-    padding-left: 11%;
+    padding-left: 10%;
 }
 
 #exp ul,  #exp2 ul, #proj ul,#proj2 ul,#proj3 ul,#proj4 ul {
@@ -407,7 +491,7 @@ padding-left: 15%;
 }
 
 #headerSkills {
-   font-size: 35;
+  font-size: 35;
   display: block;
   margin: auto;  
   text-decoration-style: bold;
@@ -453,7 +537,7 @@ padding-left: 15%;
     display: none;
   }
 }
-/*beginning of the grid for for the project.*/
+/*beginning of the grid for for the projects.*/
 * {
     box-sizing: border-box;
 }
@@ -485,9 +569,9 @@ padding-left: 15%;
 #content_2 {
   height: 1700px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1280px) {
 #content_2 {
-  height:1400px;
+  min-height:1400px;
 }
 }
 
@@ -505,9 +589,9 @@ text-align: justify;
 padding: 25px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1280px) {
  .skillList {
-  padding-left: 15%;
+  padding-left: 0%;
  } 
 }
 

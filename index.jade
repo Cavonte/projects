@@ -16,10 +16,10 @@ html(lang='en')
     script(src='js/scrip-dist.js')
     script(src='js/jquery.nicescroll.min.js')
     script(type='text/javascript', src='js/slideshow.js')
-    //script(type='text/javascript', src='js/parallax-dist.js')  
     script(src='js/parallax.js')
           
   body(onload='carousel()')
+
     .section
       #wall_1.image(data-stellar-background-ratio='0.4')      
         #hello
@@ -58,7 +58,7 @@ html(lang='en')
                 #skill3
                   p
                   h4 Other
-                  |&#8226 MySQL &#8226 Agile Process &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
+                  |&#8226 MySQL &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
               .col-3.contentTransitionRight    
                 #skill4
                   p
@@ -69,7 +69,6 @@ html(lang='en')
         #workExp
           header#headerWork.content_2-transition  Work Experience 
           #exp.content_2-transition
-            p
             h3  Software Engineer Intern Summer 2016 Muxlab, Montreal, QC
             ul.a
               li
@@ -82,11 +81,9 @@ html(lang='en')
                 | Supported both internal and external customers such as quality assurance and Muxlab Partners
               li
                 h4 Technologies: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet
-            p
             a#muxlab(href='http://www.nuance.fr/index.htm')
               img#muxlabPic(src='Images/muxlab.jpg')
           #exp2.content_2-transition
-            p
             h3  Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC 
             ul.a
               li Contributed to the design, development and evolution of the system/products
@@ -98,7 +95,6 @@ html(lang='en')
                 | Implemented a software that increased the team’s efficiency by automating a daily task.
               li
                 h4 Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN
-            p
             a#nuance(href='http://muxlab.com/')
               img#nuancePic(src='Images/nuance.png')
       #content_2.content
@@ -123,12 +119,11 @@ html(lang='en')
                     | Optimized the response time of the application using Multi-threading and Code Refactoring
                   li Obtained the highest mark and praises for the best project of the classs
               .col-3
-
           #proj2
             .row
               .col-3.content_3-transition#tagProject
-                | Tags : GitHub, PHP, MySQL, Photoshop
-              .col-9.content_3-transition#contentProject
+                |Tags : GitHub, PHP, MySQL, Photoshop
+              .col-6.content_3-transition#contentProject
                 h3 Vp Webmaster (Bsys Concordia) Fall 2015
                 ul.a
                   li
@@ -202,6 +197,7 @@ html(lang='en')
       strongheader#headerContact Get in touch
       #contactColumns
         .row
+          ul.footerList
           .col-4
             li 
               a(href='https://ca.linkedin.com/in/edouardbrazier') LinkedIn
@@ -213,4 +209,23 @@ html(lang='en')
               a(href='') Email            
       //- #wall_4.image(data-stellar-background-ratio='0.4')
      
-         
+    nav.navbar
+      ul
+        li
+          a.navHome#navHome(href='#wall_1') Home
+        li#hr 
+          hr
+        li 
+          a#navSkills(href='#content_1') Skills
+        li#hr 
+          hr  
+        li
+          a#navExperience(href='#wall_2') Experience
+        li#hr 
+          hr
+        li
+          a#navProjects(href='#content_2') Projects
+        li#hr 
+          hr
+        li
+          a#navGallery(href='#wall_3') Gallery
