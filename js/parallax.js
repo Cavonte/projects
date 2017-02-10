@@ -81,7 +81,7 @@ var minus=500;
 		$('.content_3-transition').removeClass('is-showing');
 	}
 
-	if (wScroll > $('#wall_3').offset().top && wScroll < $('#content_3').offset().top ) {
+	if (wScroll > ($('#wall_3').offset().top-500) && wScroll < $('#content_3').offset().top ) {
 		// console.log("current section is : wall_3" );
 		$('#navGallery').addClass('isActive');
 	}else{
