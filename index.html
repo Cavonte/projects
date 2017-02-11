@@ -19,11 +19,21 @@
   </head>
   <body onload="carousel()">
     <div class="section">
-      <div class="image" id="wall_1" data-stellar-background-ratio="0.4">     
+      <div class="image" id="wall_1" data-stellar-background-ratio="0.3">     
         <div id="hello"><img src="Images/MainText.png"></div>
-        <div id="bar"></div>
         <div id="landingButtons"><a class="linkedIn" href="#">LinkedIn</a><a class="contacts" href="#">Contacts</a></div>
-        <div id="scrollText"><img src="Images/scroll.png"></div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4" id="scrollText">
+            <p>Scroll down for more information about me</p>
+            <div class="row">
+              <div class="col-4"> </div>
+              <div class="col-4" id="scrollIndicator"><a href="#content_1" onclick="selectNav('#navSkills')"><img src="Images/scrolldown.png"></a></div>
+              <div class="col-4"></div>
+            </div>
+          </div>
+          <div class="col-4"></div>
+        </div>
       </div>
       <div class="content" id="content_1">
         <div class="content_1-transition" id="detail"><img src="Images/aboutMe.png"></div>
@@ -86,8 +96,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="colp-3"></div>
+              <div class="col-3"></div>
             </div>
+            <hr>
             <div class="row" id="experience2">
               <div class="col-1"></div>
               <div class="col-2"><a id="nuance" href="http://muxlab.com/"><img id="nuancePic" src="Images/nuance.png"></a></div>
@@ -234,23 +245,23 @@
     </div>
     <nav class="navbar">
       <ul>
-        <li><a class="navHome" id="navHome" href="#wall_1">Home</a></li>
+        <li><a class="navHome" id="navHome" href="#wall_1" onclick="selectNav('#navHome')">Home</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li> <a id="navSkills" href="#content_1">Skills</a></li>
+        <li> <a id="navSkills" href="#content_1" onclick="selectNav('#navSkills')">Skills</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li><a id="navExperience" href="#wall_2">Experience</a></li>
+        <li><a id="navExperience" href="#wall_2" onclick="selectNav('#navExperience')">Experience</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li><a id="navProjects" href="#content_2">Projects</a></li>
+        <li><a id="navProjects" href="#content_2" onclick="selectNav('#navProjects')">Projects</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li><a id="navGallery" href="#wall_3">Gallery</a></li>
+        <li><a id="navGallery" href="#wall_3" onclick="selectNav('#navGallery')">Gallery</a></li>
       </ul>
     </nav>
   </body>

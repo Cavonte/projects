@@ -57,7 +57,7 @@ font-weight : bold;
 font-size : 20px;
 }
 
-.isActive {
+.is-active {
 font-weight : bold;
 font-size : 22px;
 }
@@ -134,6 +134,8 @@ transition: all 0.5s ease-in-out;
   width: 100%;
   z-index: -1;
 }
+
+
 
 .footerList, .toolsList, .creditsList, .contactsList {
   list-style-type: none;
@@ -240,6 +242,8 @@ text-align: justify;
     /*margin: 30px 60px;*/
 }
 /* end of about me*/
+
+/*landing page*/
 #wall_1 {
     background: url(../Images/darkBackground.png) no-repeat;
     background-attachment: fixed;  
@@ -351,39 +355,78 @@ margin-left: 80%;
 }
 
 #scrollText {
-    display: block;
-    margin: 0 auto;
-    width: 34%;
-   padding-top: 9%;
+  /*display: block;*/
+  /* margin: 0 auto; */
+  /* width: 50%; */
+  margin-top: 5%;
+  position: relative;
+  max-height: 200px;
  }
+ #scrollText p {
+font-size: 20px;
+color: white;
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-variant: normal;
+font-weight: 10;
+}
+
+ #scrollIndicator img {
+  position: absolute;
+  top:80%;
+  right: 46%;
+  width: 50px;
+  height: 50px;
+  animation: width .2s height .2s ease-in-out;
+  margin: 0 auto;
+  /*width: 50%;*/
+ }
+
+ #scrollIndicator img:active {
+ /*color:white;*/
+ opacity: .2;
+ }
+
+  #scrollIndicator img:inactive {
+ color:none;
+ }
+
+
  @media screen and (max-width: 1300px) {
-  #scrollText {
-    display: block;
-    width: 50%;
-    margin: 0 auto;    
-   padding-top: 9%;
+  #scrollText img {
+     /* right: 49%; */
  }
 }
 
-@media screen and (max-width: 600px) {
-  #scrollText{
-    width: 90%;
-    padding-top: 40%;
-  }
+@media screen and (max-width: 900px) {
+   #scrollText p {
+font-size: 12px;
 }
+}
+
+/*end landing page*/
 
 
 /*work exp*/
+
 #workExp{
   display: block;
 }
+
 @media screen and (max-width: 847px) {
   #workExp {
     height: 1100px;
     /*display: flex;*/
 }
 }
+#workExp hr {
+  margin-bottom: 3%;
+  margin-top: 3%;
+  width : 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/*end exp*/
  /*end of fit section with backgroumd image*/
 #wall_2 {
     height: 900px;
@@ -394,6 +437,18 @@ margin-left: 80%;
     background-size: 100% 100%;
     /*background-color: red;*/
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 1100px) {
+#wall_2 {
+  height: 1000px;
+}
+}
+
+@media screen and (max-width: 800px) {
+#wall_2 {
+overflow: auto;
+}
 }
 
 
@@ -486,7 +541,7 @@ text-align: justify;
 /*padding-left: 27%;*/
 }
 #exp ul,  #exp2 ul{
-/*padding-left: 29%;*/
+margin-left: 2%;
 }
 
 #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
@@ -583,13 +638,22 @@ height: 1200px;
 }
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 900px) {
 #content_2 {
-  height: 1500px;
+  height: 1600px;
   /*display: flex;*/
   /*min-height:1400px;*/
 }
 }
+@media screen and (max-width: 800px) {
+#content_2 {
+  /*height: 1500px;*/
+  overflow: auto;
+  /*display: flex;*/
+  /*min-height:1400px;*/
+}
+}
+
 
 #skill1 , #skill2, #skill3 ,#skill4 {
   padding: 35px;
