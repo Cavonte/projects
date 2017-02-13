@@ -29,7 +29,7 @@ function showDivs(n) {
 var carousel= function() {  
     //while no one has cliked, change the current picture. and call the method in the next 3 seconds.
     if(!clicking) { 
-    console.log("Carousel");
+    // console.log("Carousel");
     myIndex+=1;
     showDivs(myIndex);
     }
