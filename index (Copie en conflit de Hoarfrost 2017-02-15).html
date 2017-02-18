@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script src="js/jquery.stellar.js"></script>
-    <script src="js/scrip.js"></script>
-    <!--script(src='js/jquery.nicescroll.js')-->
+    <script src="js/jquery.stellar.min-dist.js"></script>
+    <script src="js/scrip-dist.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script type="text/javascript" src="js/slideshow.js"></script>
     <script src="js/parallax.js"></script>
   </head>
@@ -21,15 +21,7 @@
     <div class="section">
       <div class="image" id="wall_1" data-stellar-background-ratio="0.3">     
         <div id="hello"><img src="Images/MainText.png"></div>
-        <div id="landingButtons">
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-1"><a class="linkedIn" href="https://ca.linkedin.com/in/edouardbrazier">LinkedIn</a></div>
-            <div class="col-5"></div>
-            <div class="col-1"> <a class="contacts" href="https://github.com/Cavonte">GitHub</a></div>
-            <div class="col-2"></div>
-          </div>
-        </div>
+        <div id="landingButtons"><a class="linkedIn" href="#">LinkedIn</a><a class="contacts" href="#">Contacts</a></div>
         <div class="row">
           <div class="col-4"></div>
           <div class="col-4" id="scrollText">
@@ -43,34 +35,47 @@
           <div class="col-4"></div>
         </div>
       </div>
-      <div class="content" id="content_1" style="height:auto;">
-        <div class="content_1-transition" id="detail">
-          <p id="center">Hello, I am Bruce, a future software engineer with a passion for Programming and web Design. I thrive in a challenging and team-orientaed environment.</p>
-        </div>
+      <div class="content" id="content_1">
+        <div class="content_1-transition" id="detail"><img src="Images/aboutMe.png"></div>
         <div class="content_1-transition" id="center">
           <hr>
         </div>
         <div id="skillTools" style="margin-top:-60px;">
           <header class="content_1-transition" id="headerProjects"> Skills and Tools </header>
           <div class="skillList" id="skills">
-            <div class="row skillFlex">
-              <div class="content_1-transition" id="divSkills">
-                <h4>Applications</h4>&#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio &#8226 PHPStorm  &#8226 Photoshop Cs5 &#8226 HPSA &#8226 Wamp &#8226 VMware Vsphere &#8226 Bamboo&#8226 Unity &#8226 IntelliJ Idea
+            <div class="row">
+              <div class="col-3">
+                <div class="content_1-transition" id="skill1">
+                  <p></p>
+                  <h4>Applications</h4>&#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio &#8226 PHPStorm &#8226 Photoshop Cs5 &#8226 HPSA &#8226 Wamp &#8226 VMware Vsphere &#8226 Bamboo &#8226 Unity
+                </div>
               </div>
-              <div class="content_1-transition" id="divSkills">
-                <h4>Programming</h4>&#8226 Java &#8226 C++ &#8226 C# JavaScript &#8226 Jquery &#8226 PHP&#8226 Python &#8226 CSS &#8226 Bash Scripting&#8226 Html5 &#8226 Jade &#8226 Tcl &#8226 Lua &#8226 Expect
+              <div class="col-3">   
+                <div class="content_1-transition" id="skill2">
+                  <p></p>
+                  <h4>Programming</h4>
+                  &#8226 Java &#8226 JavaScript &#8226 Html &#8226 CSS &#8226 Bash Scripting &#8226 PHP &#8226 Python &#8226 Jade &#8226 Jquery &#8226 C++ &#8226 Tcl &#8226 Lua &#8226 Expect
+                  &#8226 C#
+                </div>
               </div>
-              <div class="content_1-transition" id="divSkills">
-                <h4>Tools</h4>&#8226 MySQL &#8226 MongoDB &#8226 Play Framework &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
+              <div class="col-3 contentTransitionRight">  
+                <div id="skill3">
+                  <p></p>
+                  <h4>Other</h4>&#8226 MySQL &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
+                </div>
               </div>
-              <div class="content_1-transition" id="divSkills">
-                <h4>Operating Systems</h4>&#8226Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
+              <div class="col-3 contentTransitionRight">   
+                <div id="skill4">
+                  <p></p>
+                  <h4>Operating Systems</h4>&#8226 Windows Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
+                </div>
               </div>
+              <div class="col-1"></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="image" id="wall_2" data-stellar-background-ratio="0.1" style="height:auto;">
+      <div class="image" id="wall_2" data-stellar-background-ratio="0.1">
         <div id="workExp">
           <header class="content_2-transition" id="headerWork"> Work Experience
             <div class="row" id="experience1">
@@ -117,7 +122,7 @@
           </header>
         </div>
       </div>
-      <div class="content" id="content_2" style="height:auto;">
+      <div class="content" id="content_2">
         <div id="projects">
           <header class="content_3-transition" id="headerProjects"> Projects </header>
           <div id="proj">
@@ -192,7 +197,7 @@
           <div class="row" id="rowGallery">
             <div class="col-2"></div>
             <div class="col-1"><a class="w3-btn-floating" id="leftSlider" onclick="plusDivs(-1)">❮</a></div>
-            <div class="col-6" id="slideShow"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc6.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc8.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc9.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc10.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/bsys.png" style="min-width:200px; min-height:120px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/cat.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%;">
+            <div class="col-6" id="slideShow"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc6.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc8.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc9.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc10.png" style="height:700px;"><img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="min-width:500px; min-height:300px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/bsys.png" style="min-width:500px; min-height:300px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="min-width:500px; min-height:300px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/cat.jpg" style="min-width:500px; min-height:300px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="min-width:500px; min-height:300px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="min-width:500px; min-height:300px; width: 90%; height: 80%;"><img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="min-width:500px; min-height:300px; width: 90%; height: 80%;">
               <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:auto;"></div>
             </div>
             <div class="col-1"> <a class="w3-btn-floating" id="rightSlider" onclick="plusDivs(+1)">❯ </a></div>
@@ -205,40 +210,42 @@
       <div id="contacts">
         <header id="headerContact">Get in touch</header>
         <div class="row contentFooter">
-          <div class="col-2"></div>
-          <div class="col-6">
-            <ul class="contactsList">
-              <li>
-                <Strong>Github  @Cavonte   </Strong><a href="https://github.com/Cavonte">https://github.com/Cavonte</a>
-              </li>
-              <li>
-                <Strong>Linkedin Bruce Edouard Brazier   </Strong><a class="btn" href="https://ca.linkedin.com/in/edouardbrazier">https://ca.linkedin.com/in/edouardbrazier</a>
-              </li>
-              <li>
-                <Strong>Email   </Strong><a class="btn" href="edouaard.12@live.ca">Edouard.12@live.ca </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4" style="Float: left;">
+          <div class="col-2">
             <ul class="toolsList">
               <li><strong>Created with</strong></li>
               <li>Jade</li>
               <li>Jquery</li>
               <li>CSS3</li>
             </ul>
+          </div>
+          <div class="col-2">
             <ul class="creditsList">
               <li><strong>Credits</strong></li>
               <li>Stellar.js</li>
+              <li>Parallax.js</li>
               <li>NiceScroll.js</li>
               <li>W3 Animation/Css</li>
             </ul>
+          </div>
+          <div class="col-8">
+            <div class="row contactsList">
+              <div class="col-4">
+                <Strong>Github  @Cavonte </br> </Strong><a href="https://github.com/Cavonte">https://github.com/Cavonte</a>
+              </div>
+              <div class="col-4">
+                <Strong>Linkedin Bruce Edouard Brazier </br> </Strong><a class="btn" href="https://ca.linkedin.com/in/edouardbrazier">https://ca.linkedin.com/in/edouardbrazier</a>
+              </div>
+              <div class="col-4">
+                <Strong>Email </br>  </Strong><a class="btn" href="edouaard.12@live.ca">Edouard.12@live.ca            </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <nav class="navbar">
       <ul>
-        <li><a class="navHome is-active" id="navHome" href="#wall_1" onclick="selectNav('#navHome')">Home</a></li>
+        <li><a class="navHome" id="navHome" href="#wall_1" onclick="selectNav('#navHome')">Home</a></li>
         <li id="hr"> 
           <hr>
         </li>

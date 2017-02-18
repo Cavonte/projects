@@ -12,9 +12,9 @@ html(lang='en')
     link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
     link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(src='js/jquery.stellar.min-dist.js')
-    script(src='js/scrip-dist.js')
-    script(src='js/jquery.nicescroll.min.js')
+    script(src='js/jquery.stellar.js')
+    script(src='js/scrip.js')
+    //script(src='js/jquery.nicescroll.js')
     script(type='text/javascript', src='js/slideshow.js')
     script(src='js/parallax.js')
           
@@ -25,8 +25,14 @@ html(lang='en')
         #hello
           img(src='Images/MainText.png')
         #landingButtons
-          a.linkedIn(href='#') LinkedIn
-          a.contacts(href='#') Contacts
+          .row
+            .col-2
+            .col-1
+              a.linkedIn(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
+            .col-5
+            .col-1  
+              a.contacts(href='https://github.com/Cavonte') GitHub
+            .col-2
         .row
           .col-4
           .col-4#scrollText
@@ -39,41 +45,41 @@ html(lang='en')
               .col-4
           .col-4
         
-      #content_1.content
+      #content_1.content(style='height:auto;')
         #detail.content_1-transition
-          //- p.center
-          //- |Hello, I am Bruce, a future software enginneer with a passion for programming and web design. I thrive in a challenging and team-orientaed environment.
-          img(src='Images/aboutMe.png')
+          p#center
+            |Hello, I am Bruce, a future software engineer with a passion for Programming and web Design. I thrive in a challenging and team-orientaed environment.
+          //- img(src='Images/aboutMe.png')
         #center.content_1-transition
           //- img(src='Images/lineAbout.png')
           hr
         #skillTools(style='margin-top:-60px;')
          header#headerProjects.content_1-transition  Skills and Tools 
          #skills.skillList
-            .row
-              .col-3
-                #skill1.content_1-transition
-                  p
-                  h4 Applications
-                  |&#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio &#8226 PHPStorm &#8226 Photoshop Cs5 &#8226 HPSA &#8226 Wamp &#8226 VMware Vsphere &#8226 Bamboo &#8226 Unity
-              .col-3    
+            .row.skillFlex
+              //- .col-3
+               #skill1.content_1-transition
+              #divSkills.content_1-transition
+                h4 Applications
+                |&#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio &#8226 PHPStorm  &#8226 Photoshop Cs5 &#8226 HPSA &#8226 Wamp &#8226 VMware Vsphere &#8226 Bamboo&#8226 Unity &#8226 IntelliJ Idea
+              //- .col-3    
                 #skill2.content_1-transition
-                  p
-                  h4 Programming
-                  |&#8226 Java &#8226 JavaScript &#8226 Html &#8226 CSS &#8226 Bash Scripting &#8226 PHP &#8226 Python &#8226 Jade &#8226 Jquery &#8226 C++ &#8226 Tcl &#8226 Lua &#8226 Expect
-                  |&#8226 C#
-              .col-3.contentTransitionRight   
+              #divSkills.content_1-transition
+                h4 Programming
+                |&#8226 Java &#8226 C++ &#8226 C# JavaScript &#8226 Jquery &#8226 PHP&#8226 Python &#8226 CSS &#8226 Bash Scripting&#8226 Html5 &#8226 Jade &#8226 Tcl &#8226 Lua &#8226 Expect
+                  
+              //- .col-3.content_1-transition   
                 #skill3
-                  p
-                  h4 Other
-                  |&#8226 MySQL &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
-              .col-3.contentTransitionRight    
+              #divSkills.content_1-transition
+                h4 Tools
+                |&#8226 MySQL &#8226 MongoDB &#8226 Play Framework &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
+              //- .col-3.content_1-transition    
                 #skill4
-                  p
-                  h4 Operating Systems
-                  |&#8226 Windows Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
-              .col-1
-      #wall_2.image(data-stellar-background-ratio='0.1')
+              #divSkills.content_1-transition
+                h4 Operating Systems
+                |&#8226Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
+              //- .col-1
+      #wall_2.image(data-stellar-background-ratio='0.1' style='height:auto;')
         #workExp
           header#headerWork.content_2-transition  Work Experience
             .row#experience1
@@ -116,7 +122,7 @@ html(lang='en')
                     li
                       h5 Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN
               .col-3
-      #content_2.content
+      #content_2.content(style='height:auto;')
         #projects
           header#headerProjects.content_3-transition  Projects 
           #proj
@@ -194,24 +200,24 @@ html(lang='en')
             .col-1
               a.w3-btn-floating#leftSlider(onclick='plusDivs(-1)') ❮
             .col-6#slideShow
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc1.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc3.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc4.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc5.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc6.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc7.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc8.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc9.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc10.png', style='height:700px;')
-              img.mySlides.w3-animate-zoom(src='../Images/padd.jpg', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/bsys.png', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/tiger.jpg', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/cat.jpg', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              //- img.mySlides.w3-animate-zoom(src='../Images/page5.png', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              //- img.mySlides.w3-animate-zoom(src='../Images/page3.png', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/AC.jpg', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/Bokeh 3.jpg', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/Space.jpg', style='min-width:500px; min-height:300px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc1.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc3.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc4.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc5.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc6.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc7.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc8.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc9.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc10.png', style='height:80%; min-height:400px;')
+              img.mySlides.w3-animate-zoom(src='../Images/padd.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/bsys.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/tiger.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/cat.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              //- img.mySlides.w3-animate-zoom(src='../Images/page5.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              //- img.mySlides.w3-animate-zoom(src='../Images/page3.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/AC.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/Bokeh 3.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/Space.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               .w3-center.w3-section.w3-large.w3-text-white.w3-display-bottommiddle(style='width:auto;')
             .col-1  
               a.w3-btn-floating#rightSlider(onclick='plusDivs(+1)') ❯ 
@@ -221,37 +227,37 @@ html(lang='en')
       header#headerContact Get in touch
       .row.contentFooter
         .col-2
+        .col-6
+          ul.contactsList
+            li
+              Strong Github  @Cavonte   
+              a(href='https://github.com/Cavonte') https://github.com/Cavonte
+            li
+              Strong Linkedin Bruce Edouard Brazier   
+              a.btn(href='https://ca.linkedin.com/in/edouardbrazier') https://ca.linkedin.com/in/edouardbrazier
+            li
+              Strong Email   
+              a.btn(href='edouaard.12@live.ca') Edouard.12@live.ca 
+        .col-4(style='Float: left;')
           ul.toolsList
             li
              strong Created with
             li Jade
             li Jquery
             li CSS3
-        .col-2
           ul.creditsList
             li
               strong Credits
             li Stellar.js
-            li Parallax.js
             li NiceScroll.js
             li W3 Animation/Css
-        .col-8
-          .row.contactsList
-            .col-4
-              Strong Github  @Cavonte </br> 
-              a(href='https://github.com/Cavonte') https://github.com/Cavonte
-            .col-4
-              Strong Linkedin Bruce Edouard Brazier </br> 
-              a.btn(href='https://ca.linkedin.com/in/edouardbrazier') https://ca.linkedin.com/in/edouardbrazier
-            .col-4
-              Strong Email </br>  
-              a.btn(href='edouaard.12@live.ca') Edouard.12@live.ca            
+                   
       //- #wall_4.image(data-stellar-background-ratio='0.4')
      
     nav.navbar
       ul
         li
-          a.navHome#navHome(href='#wall_1'  onclick='selectNav(\'#navHome\')') Home
+          a.navHome.is-active#navHome(href='#wall_1'  onclick='selectNav(\'#navHome\')') Home
         li#hr 
           hr
         li 
