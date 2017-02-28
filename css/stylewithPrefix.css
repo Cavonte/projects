@@ -13,6 +13,10 @@ body {
   z-index: 1;
 }
 
+.smooth {
+  margin: 20px;
+}
+
 .content {
   height: 1000px;
   width:100%;
@@ -27,6 +31,12 @@ body {
   z-index: 2;
   top: 15%;
   right: 6%;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar{
+    display: none;
+    }
 }
 
 .navbar ul {
@@ -75,63 +85,47 @@ body {
 /*transitions*/
 .content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
   opacity: 0;
-  -webkit-transform: translateX(-40px);
-  -ms-transform: translateX(-40px);
-      transform: translateX(-40px);
+  transform: translateX(-40px);
   transition: all 0.5s ease-in-out;
 }
 
 .contentTransitionRight {
   opacity: 0;
-  -webkit-transform: translateX(40px);
-  -ms-transform: translateX(40px);
-      transform: translateX(40px);
+  transform: translateX(40px);
   transition: all 0.5s ease-in-out;
 }
 
 .is-showing-right {
   opacity: 1 ;
-  -webkit-transform: translateX(-20px);
-  -ms-transform: translateX(-20px);
-      transform: translateX(-20px);
+  transform: translateX(-20px);
 }
 
 .is-showing {
   opacity: 1 ;
-  -webkit-transform: translateX(30px);
-  -ms-transform: translateX(30px);
-      transform: translateX(30px);
+  transform: translateX(30px);
 }
 
 @media screen and (max-width: 1280){
   .content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
     opacity: 0;
-    -webkit-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-        transform: translateX(-20px);
+    transform: translateX(-20px);
     transition: all 0.5s ease-in-out;
   }
 
   .contentTransitionRight {
     opacity: 0;
-    -webkit-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-        transform: translateX(40px);
+    transform: translateX(40px);
     transition: all 0.5s ease-in-out;
   }
 
   .is-showing-right {
     opacity: 1 ;
-    -webkit-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-        transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 
   .is-showing {
     opacity: 1 ;
-    -webkit-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-        transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 /*end transitions*/
@@ -157,6 +151,12 @@ body {
   z-index: -10;
 }
 
+.beforeloading {
+  display: none;
+}
+
+
+
 
 
 .footerList, .toolsList, .creditsList, .contactsList {
@@ -166,6 +166,8 @@ body {
 }
 
 .contentFooter {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   color: white;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -191,20 +193,21 @@ body {
   padding-top: 10%;
 }
 
-/*.center p {
-padding: 65px;
-margin-top: 20px;
-font-size: 16px;
-color: white;
-font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-font-variant: normal;
-font-weight: 10;
-text-align: justify;
-}*/
+.center {
+
+}
 #center {
-  width: 50%;
+  padding: 35px;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 50;
+  width: 45%;
+  min-width: 350px;
   margin: 0 auto;
-  padding-top:60px;
 }
 
 #detailsAboutMe {
@@ -223,7 +226,7 @@ text-align: justify;
     margin: 0  auto;
     width: 100%;
     padding: 20px;
-    
+
   }
   #detailsAboutMe {
    left: 5%;
@@ -242,7 +245,7 @@ text-align: justify;
     margin: 0  auto;
     width: 100%;
     padding: 20px;
-    
+
   }
   #detailsAboutMe {
    left: 5%;
@@ -275,13 +278,15 @@ text-align: justify;
 
 /*landing page*/
 #wall_1 {
-  background: url(../Images/darkBackground.png) no-repeat;
+  background: url(/Images/Background.jpg) no-repeat;
   background-attachment: fixed;  
+  -webkit-backface-visibility: hidden;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1300px) {
   #wall_1 {
-    background: url(../Images/darkBackground.png) no-repeat;
+    background: url(/Images/Background.jpg) no-repeat;
     background-attachment: fixed;
     max-height: 800px;  
   }
@@ -289,7 +294,7 @@ text-align: justify;
 
 @media screen and (max-width: 600px) {
   #wall_1 {
-    background: url(../Images/darkBackground.png) no-repeat;
+    background: url(/Images/Background.jpg) no-repeat;
     background-attachment: fixed;
     max-height: 600px;  
   }
@@ -317,7 +322,7 @@ text-align: justify;
   width: 50%;
   margin: 0 auto; 
   margin-top: 3%;
-  
+
 
 }
 /*buttons for front page*/
@@ -398,7 +403,6 @@ text-align: justify;
   right: 46%;
   width: 50px;
   height: 50px;
-  -webkit-animation: width .2s height .2s ease-in-out;
   animation: width .2s height .2s ease-in-out;
   margin: 0 auto;
   /*width: 50%;*/
@@ -520,7 +524,7 @@ text-align: justify;
     display: block;
     margin: auto;  
     -webkit-text-decoration-style: bold;  
-    text-decoration-style: bold;
+            text-decoration-style: bold;
     font-size: 40px;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -644,10 +648,12 @@ text-align: justify;
 /*content 2*/
 
 #projects {
-  display: inline-block;
+  display: block;
+  flex-wrap: wrap;
 }
 
 #content_2 {
+
   height: 1200px;
   /*overflow: auto;*/
 }
@@ -669,6 +675,8 @@ text-align: justify;
 @media screen and (max-width: 800px) {
   #content_2 {
     /*height: 1500px;*/
+    display: inline-flex;
+    flex-wrap: wrap;
     overflow: auto;
     /*display: flex;*/
     /*min-height:1400px;*/
@@ -678,6 +686,17 @@ text-align: justify;
 
 #skill1 , #skill2, #skill3 ,#skill4 {
   padding: 35px;
+}
+
+.skillFlex  {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#divSkills  {
+  padding: 10px;
+  width: 400px;
 }
 
 .skillList {
@@ -702,7 +721,7 @@ text-align: justify;
 
 #wall_3 {
   background: url(../Images/page5.jpg) repeat; 
-  height: 1000px; 
+  height: 1100px; 
   background-size: 100% 100%;
   /*background-color: red;*/
   background-attachment: fixed;
@@ -710,10 +729,7 @@ text-align: justify;
 
 @media screen and (max-width: 1280px) {
   #wall_3 {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    /*max-height: 700px;*/
+    height: 800px;
   }
   
 }
@@ -723,16 +739,16 @@ text-align: justify;
 
 #rowGallery {
   position: relative;
-  height: 400px;
-  min-height: 400px;
+  height: 100%;
+  min-height: 600px;
 }
 #leftSlider, #rightSlider {
   position: absolute;
-  top:70%;  
+  top:50%;  
 }
 #rightSlider {
   position: absolute;
-  top:70%;
+  top:50%;
   margin-left: -4%;
 }
 
@@ -744,7 +760,8 @@ text-align: justify;
 }
 #slideShow {
   /*max-width: 65%;*/
-  height: auto;
+  height: 100%;
+  min-height: 600px;
   /*width: 50%;
   margin: 0 auto;*/
   /*padding: 35px;*/

@@ -1,9 +1,12 @@
 var select=true;
 var wScrollTemp=0;
+
+
 $(window).scroll(function(){
 var wScroll= $(this).scrollTop();//variave which tracks how far we are
 var minus=500;	
 var delay= 700;
+setTimeout(function(){$('#content_3').removeClass('beforeloading');} , 5000);
 //from the top
 if ( Math.abs(wScroll-wScrollTemp)> 10 ) {
 		//when you reach half of the previous wall
@@ -68,47 +71,82 @@ if ( Math.abs(wScroll-wScrollTemp)> 10 ) {
 			}else{
 				// $('#navGallery').removeClass('is-active');
 			}
-			if (wScroll > $('#content_3').offset().top && wScroll < $('#wall_4').offset().top) {
+			//if (wScroll > $('#content_3').offset().top && wScroll < $('#wall_4').offset().top) {
 				// console.log("current section is : content_3" );
 				// $('#navGallery').addClass('is-active');
-			}else{
+			//}else{
 				// $('#navGallery').removeClass('is-active');
-			}
+			//}
 				// section dedicated to update the navigation bar on the side.
-				if (wScroll > $('#wall_1').offset().top && wScroll < $('#content_1').offset().top || wScroll ==0 ) {
+				if (wScroll >= $('#wall_1').offset().top && wScroll < $('#content_1').offset().top || wScroll ==0 ) {
+					$('#navGallery').removeClass('is-active');
+					$('#navProjects').removeClass('is-active');
+					$('#navExperience').removeClass('is-active');
+					$('#navSkills').removeClass('is-active');
+					$('#navHome').removeClass('is-active');
+
 					$('#navHome').addClass('is-active');
 				}
 				else {
 					$('#navHome').removeClass('is-active');
 				}
 				//when you reach half of the previous wall
-				if (wScroll > ($('#content_1').offset().top) && wScroll < $('#wall_2').offset().top) {
-					$('#navSkills').addClass('is-active');// hightlight the home element when the detected section is home
+				if (wScroll >= ($('#content_1').offset().top) && wScroll < $('#wall_2').offset().top) {
+					$('#navGallery').removeClass('is-active');
+					$('#navProjects').removeClass('is-active');
+					$('#navExperience').removeClass('is-active');
+					$('#navSkills').removeClass('is-active');
 					$('#navHome').removeClass('is-active');
+
+					$('#navSkills').addClass('is-active');// hightlight the home element when the detected section is home
+					
 				} else {
 					$('#navSkills').removeClass('is-active');// remove the highlight
 				}
-				if (wScroll > ($('#wall_2').offset().top) && wScroll < $('#content_2').offset().top ) {
-					$('#navExperience').addClass('is-active');// hightlight the home element when the detected section is home
+				if (wScroll >= ($('#wall_2').offset().top) && wScroll < $('#content_2').offset().top ) {
+
+					$('#navGallery').removeClass('is-active');
+					$('#navProjects').removeClass('is-active');
+					$('#navExperience').removeClass('is-active');
+					$('#navSkills').removeClass('is-active');
 					$('#navHome').removeClass('is-active');
+					$('#navExperience').addClass('is-active');
+					
 				} else {
 					$('#navExperience').removeClass('is-active');
 				}
-				if (wScroll > ($('#content_2').offset().top) && wScroll < $('#wall_3').offset().top) {
+				if (wScroll >= ($('#content_2').offset().top) && wScroll < $('#wall_3').offset().top) {
 					// console.log("current section is : content_2" );
+					$('#navGallery').removeClass('is-active');
+					$('#navProjects').removeClass('is-active');
+					$('#navExperience').removeClass('is-active');
+					$('#navSkills').removeClass('is-active');
+					$('#navHome').removeClass('is-active');
+
 					$('#navProjects').addClass('is-active');
 				} else {
 					$('#navProjects').removeClass('is-active');
 				}
-				if (wScroll > ($('#wall_3').offset().top) && wScroll < $('#content_3').offset().top ) {
+				if (wScroll >= ($('#wall_3').offset().top) && wScroll < $('#content_3').offset().top ) {
+					$('#navGallery').removeClass('is-active');
+					$('#navProjects').removeClass('is-active');
+					$('#navExperience').removeClass('is-active');
+					$('#navSkills').removeClass('is-active');
+					$('#navHome').removeClass('is-active');
+
 					$('#navGallery').addClass('is-active');
 				}else{
 					$('#navGallery').removeClass('is-active');
 				}
 				wScrollTemp=wScroll;
 			}
-			console.log(wScrollTemp + " " + wScroll);
+			//console.log(wScrollTemp + " " + wScroll);
 		});
 function selectNav(nav) {
-	setTimeout(function(){$(nav).addClass('is-active');} , 200);	
+	setTimeout(function(){$('#navGallery').removeClass('is-active');},300);
+	setTimeout(function(){$('#navProjects').removeClass('is-active');},300);
+	setTimeout(function(){$('#navExperience').removeClass('is-active');},300);
+	setTimeout(function(){$('#navSkills').removeClass('is-active');},300);
+	setTimeout(function(){$('#navHome').removeClass('is-active');},300);
+	setTimeout(function(){$(nav).addClass('is-active');} , 400);	
 }

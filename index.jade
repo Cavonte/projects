@@ -6,17 +6,23 @@ html(lang='en')
     
     //link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/normalize.css') 
     //link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/skeleton.css') 
-    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='css/stylewithPrefix-dist.css')
+    //link(rel='stylesheet', type='text/css', href='css/style.css')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,200', rel='stylesheet', type='text/css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
     link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
     link(rel='stylesheet', href='http://www.w3schools.com/lib/w3.css')
     script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(src='js/jquery.stellar.js')
-    script(src='js/scrip.js')
-    //script(src='js/jquery.nicescroll.js')
-    script(type='text/javascript', src='js/slideshow.js')
-    script(src='js/parallax.js')
+    //- script(src='js/jquery.stellar.js')
+    //- script(src='js/scrip.js')
+    //- script(src='js/jquery.nicescroll.js')
+    //- script(type='text/javascript', src='js/slideshow.js')
+    //- script(src='js/parallax.js')
+    script(src='js/jquery.stellar-dist.js')
+    script(src='js/scrip-dist.js')
+    script(src='js/jquery.nicescroll-dist.js')
+    script(src='js/slideshow-dist.js')
+    script(src='js/parallax-dist.js')
           
   body(onload='carousel()')
 
@@ -48,7 +54,7 @@ html(lang='en')
       #content_1.content(style='height:auto;')
         #detail.content_1-transition
           p#center
-            |Hello, I am Bruce, a future software engineer with a passion for Programming and web Design. I thrive in a challenging and team-orientaed environment.
+            |Hello, I am Bruce, a future software engineer with a passion for Programming and Web Design. I thrive in a challenging and team-oriented environment.
           //- img(src='Images/aboutMe.png')
         #center.content_1-transition
           //- img(src='Images/lineAbout.png')
@@ -66,7 +72,7 @@ html(lang='en')
                 #skill2.content_1-transition
               #divSkills.content_1-transition
                 h4 Programming
-                |&#8226 Java &#8226 C++ &#8226 C# JavaScript &#8226 Jquery &#8226 PHP&#8226 Python &#8226 CSS &#8226 Bash Scripting&#8226 Html5 &#8226 Jade &#8226 Tcl &#8226 Lua &#8226 Expect
+                |&#8226 Java &#8226 C++ &#8226 C# JavaScript &#8226 Jquery &#8226 PHP&#8226 Python &#8226 CSS &#8226 Bash Scripting&#8226 Html5 &#8226 Jade &#8226 JUnit &#8226 Tcl &#8226 Lua &#8226 Expect
                   
               //- .col-3.content_1-transition   
                 #skill3
@@ -122,6 +128,7 @@ html(lang='en')
                     li
                       h5 Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN
               .col-3
+            span.smooth
       #content_2.content(style='height:auto;')
         #projects
           header#headerProjects.content_3-transition  Projects 
@@ -188,7 +195,8 @@ html(lang='en')
                     | Designed and implemented a matching algorithm where a user can look for a property/tenant that meets his preferences.
                   li
                     | Programmed the server-side of the website using PHP as well as a user database using Mysql
-              .col-3     
+              .col-3 
+        span.smooth    
       #wall_3.image(data-stellar-background-ratio='0.4')
         #gallery
           header#headerGallery Gallery
@@ -210,11 +218,13 @@ html(lang='en')
               img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc9.png', style='height:80%; min-height:400px;')
               img.mySlides.w3-animate-zoom(src='../Images/Screenshots/sc10.png', style='height:80%; min-height:400px;')
               img.mySlides.w3-animate-zoom(src='../Images/padd.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/bsys.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/bsys.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/mia.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/tiger.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/cat.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              //- img.mySlides.w3-animate-zoom(src='../Images/page5.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              //- img.mySlides.w3-animate-zoom(src='../Images/page3.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/Cat1_opt.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')               
+              img.mySlides.w3-animate-zoom(src='../Images/sta_opt.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/tre_opt.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
+              img.mySlides.w3-animate-zoom(src='../Images/bo2.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%') 
               img.mySlides.w3-animate-zoom(src='../Images/AC.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/Bokeh 3.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/Space.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
@@ -222,7 +232,7 @@ html(lang='en')
             .col-1  
               a.w3-btn-floating#rightSlider(onclick='plusDivs(+1)') ❯ 
             .col-2 
-    #content_3.content
+    #content_3.content.beforeloading
      #contacts
       header#headerContact Get in touch
       .row.contentFooter
@@ -265,12 +275,12 @@ html(lang='en')
         li#hr 
           hr  
         li
-          a#navExperience(href='#wall_2' onclick='selectNav(\'#navExperience\')') Experience
+          a#navExperience(href='#wall_2' onclick='selectNav(\'#navExperience\');selectNav(\'#navExperience\')') Experience
         li#hr 
           hr
         li
-          a#navProjects(href='#content_2' onclick='selectNav(\'#navProjects\')') Projects
+          a#navProjects(href='#content_2' onclick='selectNav(\'#navProjects\');selectNav(\'#navProjects\')') Projects
         li#hr 
           hr
         li
-          a#navGallery(href='#wall_3' onclick='selectNav(\'#navGallery\')') Gallery
+          a#navGallery(href='#wall_3' onclick='selectNav(\'#navGallery\');selectNav(\'#navGallery\')') Gallery
