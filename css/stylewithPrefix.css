@@ -278,7 +278,7 @@ body {
 
 /*landing page*/
 #wall_1 {
-  background: url(/Images/Background.jpg) no-repeat;
+  background: url(../Images/Background.jpg) no-repeat;
   background-attachment: fixed;  
   -webkit-backface-visibility: hidden;
   background-size: cover;
@@ -286,7 +286,7 @@ body {
 
 @media screen and (max-width: 1300px) {
   #wall_1 {
-    background: url(/Images/Background.jpg) no-repeat;
+    background: url(../Images/Background.jpg) no-repeat;
     background-attachment: fixed;
     max-height: 800px;  
   }
@@ -294,7 +294,7 @@ body {
 
 @media screen and (max-width: 600px) {
   #wall_1 {
-    background: url(/Images/Background.jpg) no-repeat;
+    background: url(../Images/Background.jpg) no-repeat;
     background-attachment: fixed;
     max-height: 600px;  
   }
@@ -528,7 +528,7 @@ body {
     font-weight: 300;
   }
 
-  #exp,#exp2,#proj,#proj2,#proj3,#proj4 {
+  #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
     /*padding: 65px;*/
     margin-top: 45px;
     font-size: 16px;
@@ -540,7 +540,7 @@ body {
   }
 
   @media screen and (max-width: 1280px) {
-    #exp,#exp2,#proj,#proj2,#proj3,#proj4{
+    #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7{
       padding-top: 20px;
       /*margin: 0px 40px 0 0;*/
       font-size: 13px;

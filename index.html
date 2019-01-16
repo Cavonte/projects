@@ -7,11 +7,13 @@
     <!--link(rel='stylesheet', type='text/css', href='css/skeleton-2.04/skeleton.css') -->
     <link rel="stylesheet" type="text/css" href="css/stylewithPrefix-dist.css">
     <!--link(rel='stylesheet', type='text/css', href='css/style.css')-->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,200" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,200" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/jquery.stellar-dist.js"></script>
+    <script src="js/scrip-dist.js"></script>
     <script src="js/jquery.nicescroll-dist.js"></script>
     <script src="js/slideshow-dist.js"></script>
     <script src="js/parallax-dist.js"></script>
@@ -139,8 +141,69 @@
       </div>
       <div class="content" id="content_2" style="height:auto;">
         <div id="projects">
-          <header class="content_3-transition" id="headerProjects"> Projects </header>
+          <header class="content_3-transition" id="headerProjects"> Noteworthy Projects </header>
           <div id="proj">
+            <div class="row">
+              <div class="col-3 content_3-transition" id="tagProject">Tags : .Net, C#, Spring Framework, Java, JavaScript, Stanford Core NLP, SimpleNLG</div>
+              <div class="col-6 content_3-transition" id="contentProject">
+                <h3> RobotJournaliste (Capstone Project, with CBC as a Stakeholder), September 2017 to May 2018</h3>
+                <ul class="a">
+                  <li>Collaborated with a team of 6 to create software whose goal is to automate the creation and publication of articles. The publications would cover the Olympics and major Sport Events</li>
+                  <li>Led the creation of an AI-based corrector which given a French publication, will parse it and return a coherent, set of corrected sentences. Designed, documented and tested the API calls for the service. Assessed the accuracy of the correction using a test set and a blue score throughout the development.</li>
+                  <li>The software was composed of a React Front-end, a .net backend for the publications,(+ processing) and a Spring Boot backend to handle the language processing and correction.</li>
+                  <li>Designed, documented and tested the API calls for both Backends.</li>
+                  <li>
+                     Performed multiple demonstrations of a working product to the stakeholder.</li>
+                </ul>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <div id="proj2">
+            <div class="row">
+              <div class="col-3 content_3-transition" id="tagProject">Tags : C++, OpenGl, Blender</div>
+              <div class="col-6 content_3-transition" id="contentProject">
+                <h3> Graphics Engine (OpenGL Desktop Application) Winter 2019 - Present</h3>
+                <ul class="a">
+                  <li>Developed a custom graphics engine with C++ and OpenGL consisting of placing 3d assets in a modular room with the desired texture and color. </li>
+                  <li>Included features are lighting, shadows, collision, color mapping, texture mapping, and a UI.</li>
+                </ul>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <div id="proj3">
+            <div class="row">
+              <div class="col-3 content_3-transition" id="tagProject">Tags : Unity, C#, Photoshop</div>
+              <div class="col-6 content_3-transition" id="contentProject">
+                <h3> Fast-paced 2d Platformer (Unity Game) Fall 2018</h3>
+                <ul class="a">
+                  <li>Developed a couch co-op and 2D platformer called BattleCats. Up to 4 players work together to navigate a cartoony world filled with traps and enemies. (Similar to Lovers in a Dangerous Spacetime)</li>
+                  <li>Designed and implemented the core mechanics which features amongst other things; the ship the players interact with, and the onboard stations (turret, shield, navigation)</li>
+                  <li>Included features are lighting, shadows, collision, color mapping, texture mapping, and a UI.</li>
+                  <li>
+                     Trailer, Game design documents and Demo can be found at this link:</li><a href="http://pomoroad.com/battlecats/">http://pomoroad.com/battlecats/</a>
+                  <li>
+                     Trailer available on Youtube:</li><a href="https://www.youtube.com/watch?v=pj0Cw7H0dVo">Trailer</a>
+                </ul>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <div id="proj4">
+            <div class="row">
+              <div class="col-3 content_3-transition" id="tagProject">Tags :  Play Framework, Java, Xamarin, C#, jUnit, MongoDB, Genymotion</div>
+              <div class="col-6 content_3-transition" id="contentProject">
+                <h3> Ridr (Android) </h3>
+                <ul class="a">
+                  <li>Programmed a Ride-Hailing and Ride-Sharing application similar to Uber with the goal of creating a trusted network of drivers. Targeted at the South Asian Market </li>
+                  <li>Integrated features such as Driver/Client communication, Ride Request, Google Maps Integration, Diverse type of Payments, Ride Review, Report System, etc.                 </li>
+                </ul>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <div id="proj5">
             <div class="row">
               <div class="col-3 content_3-transition" id="tagProject">Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench</div>
               <div class="col-6 content_3-transition" id="contentProject">
@@ -157,13 +220,13 @@
               <div class="col-3"></div>
             </div>
           </div>
-          <div id="proj2">
+          <div id="proj6">
             <div class="row">
               <div class="col-3 content_3-transition" id="tagProject">Tags : GitHub, PHP, MySQL, Photoshop</div>
               <div class="col-6 content_3-transition" id="contentProject">
-                <h3>Vp Webmaster (Bsys Concordia) Fall 2015</h3>
+                <h3>Vp Webmaster (Bsys Concordia Now Terminated), Fall 2015</h3>
                 <ul class="a">
-                  <li>Maintain the site. i.e. update the content, fix broken links and images, add new pictures, content, and events</li>
+                  <li>Maintained the site. i.e. update the content, fix broken links and images, add new pictures, content, and events</li>
                   <li>Work with the other Executives Members to ensure the progress and well-being of the club</li>
                   <li>Create and maintain an emergency backup using version control and the hosting service.</li>
                 </ul>
@@ -171,24 +234,9 @@
               <div class="col-3"></div>
             </div>
           </div>
-          <div id="proj3">
-            <div class="row">
-              <div class="col-3 content_3-transition" id="tagProject">Tags : SVN, Eclipse, Data Structures, Java GUI</div>
-              <div class="col-6 content_3-transition" id="contentProject">
-                <h3>DEC Integrative Project 2014-2015</h3>
-                <ul class="a">
-                  <li>Worked with a team member to fulfill academic requirements for integrative project course by creating an interactive and educative game.</li>
-                  <li> Submitted weekly reports to supervisor </li>
-                  <li>Developed and executed the physics and the calculation of the game. (Debugging, research and consultation)</li>
-                  <li>Designed the visual components of the project (Controlling and updating the frame and other components)</li>
-                </ul>
-              </div>
-              <div class="col-3"></div>
-            </div>
-          </div>
-          <div id="proj4">
+          <div id="proj7">
             <div class="row">      
-              <div class="col-3 content_3-transition" id="tagProject">Tags : WampServer64,PHP, HTML5, CSS, MySQL, JavaScript, Bootstrap, Sublime, Photoshop</div>
+              <div class="col-3 content_3-transition" id="tagProject">Tags : WampServer64, PHP, HTML5, CSS, MySQL, JavaScript, Bootstrap, Sublime 2, Photoshop</div>
               <div class="col-6 content_3-transition" id="contentProject">
                 <h3>Rental Website February 2015</h3>
                 <ul class="a">
@@ -212,7 +260,7 @@
           <div class="row" id="rowGallery">
             <div class="col-2"></div>
             <div class="col-1"><a class="w3-btn-floating" id="leftSlider" onclick="plusDivs(-1)">❮</a></div>
-            <div class="col-6" id="slideShow"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc6.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc8.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc9.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc10.png" style="height:80%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/bsys.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/mia.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/Cat1_opt.png" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="min-width:200px; min-height:120px; width: 90%; height: 80%">
+            <div class="col-6" id="slideShow"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc1.png" style="height:60%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc3.png" style="height:60%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc4.png" style="height:60%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc5.png" style="height:60%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Screenshots/sc7.png" style="height:60%; min-height:400px;"><img class="mySlides w3-animate-zoom" src="../Images/Kobe.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/dogo.png" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/padd.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/bsys.png" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/tiger.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/Cat.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/AC.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/Bokeh 3.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%"><img class="mySlides w3-animate-zoom" src="../Images/Space.jpg" style="min-width:200px; min-height:782px; width: 90%; height: 80%">
               <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:auto;"></div>
             </div>
             <div class="col-1"> <a class="w3-btn-floating" id="rightSlider" onclick="plusDivs(+1)">❯ </a></div>
