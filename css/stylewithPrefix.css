@@ -742,6 +742,9 @@ body {
 #leftSlider, #rightSlider {
   position: absolute;
   top:50%;  
+  color:white;
+  font-weight: bolder;
+  font-size: 30px;
 }
 #rightSlider {
   position: absolute;
