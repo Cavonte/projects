@@ -18,8 +18,8 @@ html(lang='en')
     //- script(src='js/jquery.nicescroll.js')
     //- script(type='text/javascript', src='js/slideshow.js')
     //- script(src='js/parallax.js')
-    script(src='js/jquery.stellar-dist.js')
-    script(src='js/scrip-dist.js')
+    //- script(src='js/jquery.stellar-dist.js')
+    //- script(src='js/scrip-dist.js')
     script(src='js/jquery.nicescroll-dist.js')
     script(src='js/slideshow-dist.js')
     script(src='js/parallax-dist.js')
@@ -66,24 +66,27 @@ html(lang='en')
               //- .col-3
                #skill1.content_1-transition
               #divSkills.content_1-transition
-                h4 Applications
-                |&#8226 Eclipse &#8226 Visual Studio 2013 &#8226 Android Studio &#8226 PHPStorm  &#8226 Photoshop Cs5 &#8226 HPSA &#8226 Wamp &#8226 VMware Vsphere &#8226 Bamboo&#8226 Unity &#8226 IntelliJ Idea
-              //- .col-3    
-                #skill2.content_1-transition
+                h4 Tools
+                | &#8226 Symfony &#8226 Redis &#8226 Nginx &#8226 Docker &#8226 Play Framework &#8226 Bamboo &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
+              
               #divSkills.content_1-transition
                 h4 Programming
-                |&#8226 Java &#8226 C++ &#8226 C# JavaScript &#8226 Jquery &#8226 PHP&#8226 Python &#8226 CSS &#8226 Bash Scripting&#8226 Html5 &#8226 Jade &#8226 JUnit &#8226 Tcl &#8226 Lua &#8226 Expect
+                |&#8226 Java &#8226 PHP &#8226 C# &#8226 C++ &#8226 JavaScript &#8226 MySQL &#8226 Jquery &#8226 Lua &#8226 Python &#8226 JUnit &#8226 PHPUnit &#8226 Bash Scripting &#8226 Jade  &#8226 Tcl  &#8226 Expect &#8226 CSS  &#8226 Html5
+
+              #divSkills.content_1-transition
+                h4 Applications
+                |&#8226 Unity &#8226 Android Studio &#8226 PHPStorm &#8226 Photoshop CC  &#8226 Wamp &#8226 VMware Vsphere &#8226 IntelliJ Idea &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 HPSA
+                
+              //- .col-3    
+                #skill2.content_1-transition
                   
               //- .col-3.content_1-transition   
                 #skill3
-              #divSkills.content_1-transition
-                h4 Tools
-                |&#8226 MySQL &#8226 MongoDB &#8226 Play Framework &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin
               //- .col-3.content_1-transition    
                 #skill4
-              #divSkills.content_1-transition
-                h4 Operating Systems
-                |&#8226Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
+              //- #divSkills.content_1-transition
+              //-   h4 Operating Systems
+              //-   |&#8226Vista/8/8.1/Server 2003 &#8226 Ubuntu 14 &#8226 Linux Enterprise
               //- .col-1
       #wall_2.image(data-stellar-background-ratio='0.1' style='height:auto;')
         #workExp
@@ -91,7 +94,32 @@ html(lang='en')
             .row#experience1
               .col-1
               .col-2
-                a#muxlab(href='http://www.nuance.fr/index.htm')
+                a#mindgeek(href='https://www.mindgeek.com/')
+                  img#mindgeekPic(src='Images/mindgeek.png')
+              .col-6
+                #exp.content_2-transition
+                  h3  Software Engineer Intern Summer 2017 &#38; 2018, Mindgeek, Montreal, QC
+                  ul.a
+                    li
+                      | Improved and maintained a very high traffic streaming website and its Contnet Management System. The site averages at 11 Million visits per day
+                    li
+                      | Used OpenResty, Redis and Log analysis to enhance content surfacing. Documented and presented the entire process to facilitate knowledge transfer
+                    li
+                      | Performed and documented the upgrade of the web site's framework and its dependencies. Used this opportunity to patch known vulnerabilities in the project                 
+                    li
+                      | Created traffic analysis document using Elastic Search for content creators
+                    li
+                      | Participated in the code review, daily meetings and the task estimation process
+                    li
+                      | Improved the current onboarding process for future hires
+                    li
+                      h4 Stack: PHP(Symfony), MySQL, PHPUnit, Redis, Lua, Nginx, Docker, Composer, Git, Atlassian 
+              .col-3
+            hr
+            .row#experience2
+              .col-1
+              .col-2
+                a#muxlab(href='http://muxlab.com/')
                   img#muxlabPic(src='Images/muxlab.jpg')
               .col-6
                 #exp.content_2-transition
@@ -99,35 +127,41 @@ html(lang='en')
                   ul.a
                     li
                       | Designed, developed and integrated drivers for the Muxlab Products (Over IP Matrices and Network Controllers)
-                    li Performed verification and validation of the developed products
+                    li
+                      | Performed verification and validation of the developed products
                     li
                       | Interacted with 3rd party software and frameworks and integrated them with the Muxlab products
-                    li Documented projects and drivers according to Muxlab’s Standards
+                    li
+                      | Documented projects and drivers according to Muxlab’s Standards
                     li
                       | Supported both internal and external customers such as quality assurance and Muxlab Partners
                     li
-                      h5 Technologies: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet
+                      h4 Stack: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet
               .col-3
             hr
-            .row#experience2
+            .row#experience3
               .col-1
               .col-2
-                a#nuance(href='http://muxlab.com/')
+                a#nuance(href='http://www.nuance.fr/index.htm')
                   img#nuancePic(src='Images/nuance.png')
               .col-6  
                 #exp2.content_2-transition
                   h3  Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC 
                   ul.a
-                    li Contributed to the design, development and evolution of the system/products
-                    li  Designed, documented, implemented and tested the server components
-                    li  Ensured products meet all relevant specifications and quality standards
+                    li 
+                      | Deployed and maintained different versions of the internal products to Internal and external clients
+                    li 
+                      | Improved the team’s productivity by automating a daily task using Bash Scripting and Expect 
                     li
-                      | Supported internal customers such as quality assurance, professional services, and hosted operations staff
+                      | Performed an inventory of the local servers to reduce hardware expenditures
                     li
                       | Implemented a software that increased the team’s efficiency by automating a daily task.
                     li
-                      h5 Technologies: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN
+                      | Supported internal customers such as quality assurance, professional services, and hosted operations staff
+                    li
+                      h4 Stack: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN, Bash Scripting
               .col-3
+
             span.smooth
       #content_2.content(style='height:auto;')
         #projects
@@ -140,7 +174,7 @@ html(lang='en')
                 h3  Conference Room Reservation System (Mobile) Fall 2016
                 ul.a
                   li
-                    | Mobile Application where a user can Reserve a conference room, join a waitlist and manage room bookings.
+                    | Designed a mobile Application where a user can reserve the hundreds of study rooms at Concordia, join a waitlist and manage room bookings.
                   li
                     | Worked with a team of 6 members using the Agile Methodology and sprints of 2 weeks. Used GitHub for Version control, Issues, tasks distribution and Milestone tracking
                   li
@@ -221,10 +255,7 @@ html(lang='en')
               img.mySlides.w3-animate-zoom(src='../Images/bsys.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/mia.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/tiger.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/Cat1_opt.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')               
-              img.mySlides.w3-animate-zoom(src='../Images/sta_opt.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/tre_opt.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
-              img.mySlides.w3-animate-zoom(src='../Images/bo2.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%') 
+              img.mySlides.w3-animate-zoom(src='../Images/Cat1_opt.png', style='min-width:200px; min-height:120px; width: 90%; height: 80%')             
               img.mySlides.w3-animate-zoom(src='../Images/AC.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/Bokeh 3.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
               img.mySlides.w3-animate-zoom(src='../Images/Space.jpg', style='min-width:200px; min-height:120px; width: 90%; height: 80%')
