@@ -602,7 +602,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-
   #contentProject1, #contentProject2, #contentProject3, #contentProject4 {
     width: 500px;
     margin: 0 auto;
@@ -718,7 +717,7 @@ body {
 
 #wall_3 {
   background: url(../Images/page5.jpg) repeat; 
-  height: 1100px; 
+  height: 1300px; 
   background-size: 100% 100%;
   /*background-color: red;*/
   background-attachment: fixed;
@@ -726,7 +725,7 @@ body {
 
 @media screen and (max-width: 1280px) {
   #wall_3 {
-    height: 800px;
+    height: 1000px;
   }
   
 }
@@ -805,5 +804,37 @@ body {
   background-size: 100% 100%;
   /*background-color: red;*/
   background-attachment: fixed;
+}
+
+
+
+
+/*modal*/
+
+.modalparent {
+  margin: auto;
+  width:80%;
+  padding: 10px;
+}
+
+.modalrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.modalcolumn {
+  width: 15%;
+  flex: 15%;
+  padding: 0 8px;
+}
+
+.modalcolumn img {
+  margin: 8px;
+  vertical-align: middle;
+}
+
+.modalimage:hover {
+  box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
 }
 
