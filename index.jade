@@ -273,12 +273,12 @@ html(lang='en')
           header#headerGallery Gallery
           #paraGallery
             p
-             |Here are a few Screenshots of the Conference Room Scheduler and other works (Image Editing).
+             |Here are some stills of the projects mentionned above.
 
-          //- div#myModal.modal
-          //-   span.close &times;
-          //-   img.mySlides.w3-animate-zoom(src='Images/robot3.png', style=' width:90%;min-width:600px; height:60%; min-height:780px;')
-          //-   div#caption
+          div#modalpopup.modalpopup
+            span.close &times;
+            img.modal-content#img01(src='Images/robot3.png')
+            div#caption            
 
           div.modalparent
             div.modalrow
@@ -371,6 +371,8 @@ html(lang='en')
             li Stellar.js
             li NiceScroll.js
             li W3 Animation/Css
+
+          script(src='js/modal-dist.js')
                    
       //- #wall_4.image(data-stellar-background-ratio='0.4')
      
