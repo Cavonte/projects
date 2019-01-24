@@ -34,7 +34,3 @@ modal.onclick = function()
 {
 	  modal.style.display = "none";
 }
-
-
-
-
