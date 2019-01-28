@@ -4,24 +4,25 @@
 # This is executed in linear time.
 # And Should take O(N) in regards to space as the worst possible case is to store all the number and not find anything.
 
-def find_sum(givenlist,k):
-    if len(givenlist) < 2:
-        print("Invalid input. Given:", givenlist)
+
+def find_sum(given_list, k):
+    if len(given_list) < 2:
+        print("Invalid input. Given:", given_list)
         return
     localmap = {}
     counter = 0
     print("Starting list")
-    for number in givenlist:
+    for number in given_list:
         #     check if the the second number exist already
         if number in localmap:
-            print("Found", givenlist, "index", counter, "plus", localmap[number])
+            print("Found", given_list, "index", counter, "plus", localmap[number])
             return
-            # key = sum to be found - number encoutered,  value = currentIndex
+            # key = sum to be found - number encountered,  value = currentIndex
         localmap[k - number] = counter
         print("adding", k - number)
         counter = counter + 1
 
-    print("could not find the number in", givenlist)
+    print("could not find the number in", given_list)
 
 
 expected = [10, 9, 4, 1, 15, 3, 7]

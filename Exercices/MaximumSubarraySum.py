@@ -1,12 +1,12 @@
 # Given an array of integer(positive and negative) find the subarray with the maximum sum
 
 # Kadanes algorithm
+
+
 def findMaximumSubarraySum(inputArray):
     maxSoFar = 0
     maxAthisIndex = 0
-    counter = 0
-    start  = 0
-    temp = 0
+    start = 0
     end = 0
 
     for i in range(0, len(inputArray)):
@@ -25,7 +25,10 @@ def findMaximumSubarraySum(inputArray):
 
     print(start,end)
     return maxSoFar
-input = [-1,2,4,-3,5,2,-5,2]
+
+
+input = [-1, 2, 4, -3, 5, 2, -5, 2]
+
 print(findMaximumSubarraySum(input))
 
 a = [-13, -3, -25, -20, -3, -16, -23, -12, -5, -22, -15, -4, -7]
