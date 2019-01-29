@@ -1,0 +1,20 @@
+Name of Project/Topic  (Personal or Academic)	2015-present
+Concordia University, Montreal, QC
+•	Include 2-3 bullet points to describe the projects goals, how many people were involved, what you did and the results/outcomes of the project.
+•	Use action verbs to give your experience more impact  
+•	Simple formula: Accomplished [X] as measured by [Y] by doing [Z]
+•	If you participated in a competition share what place you came in
+•	If your project is now being implemented or received recognition or an award than say that
+•	Technical knowledge, programming applied or equipment used: This is a great place to highlight the technical knowledge applied to back up what you wrote in the bullets
+•	Think of class projects where you did some research, designed or worked in groups, Mini-Capstone or Capstone projects and projects you are working on through the associations/groups you belong to
+Core Competencies:  For example Critical thinking, Problem assessment and analysis, Adaptability
+
+
+RobotJournaliste (RadioCanada Capstone Project)   September 2017 to May 2018
+-Software whose goal is to automate the creation and publication of news articles with the collaboration of RadioCanada
+-Software composed of a React Front-end, a .net backend for the publications,(+ processing) and a Spring Boot backend to handle the language processing and correction.
+-Worked with a team of 6 over the course of 13 2-week long iterations.
+-Implemented with 2 teammates an AI based corrector which given a french publication, will process and return a coherent, set of corrected sentences
+-Designed, documented and tested the API calls for both Backends
+-Reported regularly to the StakeHolders through Meetings, Reports and Requirements Sign-Offs
+Technologies: c#,Java,React,MySQL,Stanford Core NLP, SimpleNLG, JBleu Score Library,Visual Studio with Resharper, Intellij, WebStorm
