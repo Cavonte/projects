@@ -14,8 +14,6 @@ class Node:
         self.value = value
         self.children = children
 
-
-
 #should work even if not a binary tree
 def iterative_bfs_traversal(given_root):
     tree_elements = []
@@ -63,8 +61,6 @@ root = Node(0,[node2,node3])
 print(recursiveanswer(node4))
 print(recursiveanswer(root))
 print(recursiveanswer(node7))
-
-
 
 for node in iterative_bfs_traversal(root):
     print(node.value)
