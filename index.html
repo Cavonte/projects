@@ -8,14 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"> </script>
-    <script src="js/jquery.stellar-dist.js"></script>
-    <script src="js/scrip-dist.js"></script>
-    <script src="js/jquery.nicescroll-dist.js"></script>
-    <script src="js/slideshow-dist.js"></script>
-    <script src="js/parallax-dist.js"></script>
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"> </script>
+    <script type="text/JavaScript" src="js/jquery.stellar-dist.js"></script>
+    <script type="text/JavaScript" src="js/scrip-dist.js"></script>
+    <script type="text/JavaScript" src="js/jquery.nicescroll-dist.js"></script>
+    <script type="text/JavaScript" src="js/parallax-dist.js"></script>
   </head>
-  <body onload="carousel()">
+  <body>
     <div class="section">
       <div class="image" id="wall_1" data-stellar-background-ratio="0.3">     
         <div id="hello"><img src="Images/MainText.png"></div>
@@ -34,7 +33,7 @@
             <p>Scroll down for more information about me</p>
             <div class="row">
               <div class="col-4"> </div>
-              <div class="col-4" id="scrollIndicator"><a href="#content_1" onclick="selectNav('#navSkills')"><img src="Images/scrolldown.png"></a></div>
+              <div class="col-4" id="scrollIndicator"><a onclick="smoothScroll('content_1')"><img src="Images/scrolldown.png"></a></div>
               <div class="col-4"></div>
             </div>
           </div>
@@ -221,7 +220,7 @@
           </div>
         </div><span class="smooth">   </span>
       </div>
-      <div class="image" id="wall_3" data-stellar-background-ratio="0.4">
+      <div class="image" id="wall_3" data-stellar-background-ratio="0.1">
         <div id="gallery">
           <header id="headerGallery">Gallery</header>
           <div id="paraGallery">
@@ -281,23 +280,23 @@
     </div>
     <nav class="navbar">
       <ul>
-        <li><a class="navHome is-active" id="navHome" href="#wall_1" onclick="selectNav('#navHome')">Home</a></li>
+        <li><a class="navHome is-active" id="navHome" onclick="smoothScroll('wall_1')">Home</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li> <a id="navSkills" href="#content_1" onclick="selectNav('#navSkills')">Skills</a></li>
+        <li> <a id="navSkills" onclick="smoothScroll('content_1')">Skills</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li><a id="navExperience" href="#wall_2" onclick="selectNav('#navExperience');selectNav('#navExperience')">Experience</a></li>
+        <li><a id="navExperience" onclick="smoothScroll('wall_2')">Experience</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li><a id="navProjects" href="#content_2" onclick="selectNav('#navProjects');selectNav('#navProjects')">Projects</a></li>
+        <li><a id="navProjects" onclick="smoothScroll('content_2')">Projects</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li><a id="navGallery" href="#wall_3" onclick="selectNav('#navGallery');selectNav('#navGallery')">Gallery</a></li>
+        <li><a id="navGallery" onclick="smoothScroll('wall_3')">Gallery</a></li>
       </ul>
     </nav>
   </body>

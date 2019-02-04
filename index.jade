@@ -9,15 +9,13 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
     link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
     link(rel='stylesheet', href="https://www.w3schools.com/w3css/4/w3.css")
-    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')  
-    script(src='js/jquery.stellar-dist.js')
-    script(src='js/scrip-dist.js')
-    script(src='js/jquery.nicescroll-dist.js')
-    script(src='js/slideshow-dist.js')
-    script(src='js/parallax-dist.js')
+    script(type='text/JavaScript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')  
+    script(type='text/JavaScript', src='js/jquery.stellar-dist.js')
+    script(type='text/JavaScript', src='js/scrip-dist.js')
+    script(type='text/JavaScript', src='js/jquery.nicescroll-dist.js')
+    script(type='text/JavaScript', src='js/parallax-dist.js')
           
-  body(onload='carousel()')
-
+  body
     .section
       #wall_1.image(data-stellar-background-ratio='0.3')      
         #hello
@@ -38,7 +36,7 @@ html(lang='en')
             .row
               .col-4 
               .col-4#scrollIndicator
-                a(href='#content_1' onclick='selectNav(\'#navSkills\')')
+                a(onclick='smoothScroll(\'content_1\')')
                   img(src='Images/scrolldown.png')
               .col-4
           .col-4
@@ -231,7 +229,7 @@ html(lang='en')
                     | Obtained the highest mark of the class
               .col-3        
         span.smooth    
-      #wall_3.image(data-stellar-background-ratio='0.4')
+      #wall_3.image(data-stellar-background-ratio='0.1')
         #gallery
           header#headerGallery Gallery
           #paraGallery
@@ -308,20 +306,20 @@ html(lang='en')
     nav.navbar
       ul
         li
-          a.navHome.is-active#navHome(href='#wall_1'  onclick='selectNav(\'#navHome\')') Home
+          a.navHome.is-active#navHome(onclick='smoothScroll(\'wall_1\')') Home
         li#hr 
           hr
         li 
-          a#navSkills(href='#content_1'  onclick='selectNav(\'#navSkills\')') Skills
+          a#navSkills(onclick='smoothScroll(\'content_1\')') Skills
         li#hr 
           hr  
         li
-          a#navExperience(href='#wall_2' onclick='selectNav(\'#navExperience\');selectNav(\'#navExperience\')') Experience
+          a#navExperience(onclick='smoothScroll(\'wall_2\')') Experience
         li#hr 
           hr
         li
-          a#navProjects(href='#content_2' onclick='selectNav(\'#navProjects\');selectNav(\'#navProjects\')') Projects
+          a#navProjects(onclick='smoothScroll(\'content_2\')') Projects
         li#hr 
           hr
         li
-          a#navGallery(href='#wall_3' onclick='selectNav(\'#navGallery\');selectNav(\'#navGallery\')') Gallery
+          a#navGallery(onclick='smoothScroll(\'wall_3\')') Gallery
