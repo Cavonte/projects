@@ -66,6 +66,11 @@ body {
   transition: font-weight 100ms, font-size 100ms;
 }
 
+#navHome {
+  font-weight: bold;
+  font-size: 22px;
+}
+
 #hr {
   margin: 0 auto;
   margin-bottom: 45px;

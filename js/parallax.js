@@ -10,11 +10,8 @@ $(window).scroll(function() {
 	setTimeout(function() {
 		$('#content_3').removeClass('beforeloading');
 	}, 5000);
-	//from the top
 	if (Math.abs(wScroll - wScrollTemp) > 10) {
-		//when you reach half of the previous wall
 		if (wScroll > ($('#content_1').offset().top - minus) && wScroll < $('#wall_2').offset().top) {
-			console.log("current section is : content_1");
 			$('.content_1-transition').each(function(i) {
 				setTimeout(function() {
 					$('.content_1-transition').eq(i).addClass('is-showing');
@@ -38,8 +35,7 @@ $(window).scroll(function() {
 			// }, (delay * (Math.exp((j+5) * 0.14))) - delay);			
 			// });
 		}
-		if (wScroll > ($('#wall_2').offset().top - 300) && wScroll < $('#content_2').offset().top) {
-			// console.log("current section is : wall_2" );
+		if (wScroll > ($('#wall_2').offset().top) && wScroll < $('#content_2').offset().top) {
 			$('.content_2-transition').each(function(i) {
 				setTimeout(function() {
 					$('.content_2-transition').eq(i).addClass('is-showing');
@@ -53,7 +49,6 @@ $(window).scroll(function() {
 			// });
 		}
 		if (wScroll > ($('#content_2').offset().top - minus) && wScroll < $('#wall_3').offset().top) {
-			// console.log("current section is : content_2" );
 			$('.content_3-transition').each(function(i) {
 				setTimeout(function() {
 					$('.content_3-transition').eq(i).addClass('is-showing');
@@ -63,7 +58,6 @@ $(window).scroll(function() {
 			//$('.content_3-transition').removeClass('is-showing');
 		}
 		if (wScroll > ($('#wall_3').offset().top - 500) && wScroll < $('#content_3').offset().top) {
-			// console.log("current section is : wall_3" );				
 			$('.content_4-transition').each(function(i) {
 				setTimeout(function() {
 					$('.content_4-transition').eq(i).addClass('is-showing');
