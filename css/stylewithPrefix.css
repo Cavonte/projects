@@ -531,7 +531,8 @@ body {
   #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
     /*padding: 65px;*/
     margin-top: 45px;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.5em;
     color: white;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-variant: normal;

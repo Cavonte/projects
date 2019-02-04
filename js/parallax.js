@@ -3,7 +3,8 @@ var wScrollTemp=0;
 
 
 $(window).scroll(function(){
-var wScroll= $(this).scrollTop();//variave which tracks how far we are
+var wScroll= $(this).scrollTop();
+//variave which tracks how far we are
 var minus=500;	
 var delay= 700;
 setTimeout(function(){$('#content_3').removeClass('beforeloading');} , 5000);
@@ -11,8 +12,8 @@ setTimeout(function(){$('#content_3').removeClass('beforeloading');} , 5000);
 if ( Math.abs(wScroll-wScrollTemp)> 10 ) {
 		//when you reach half of the previous wall
 		if (wScroll > ($('#content_1').offset().top-minus) && wScroll < $('#wall_2').offset().top) {
-			// console.log("current section is : content_1" );
-			// $('#navSkills').addClass('is-active');// hightlight the home element when the detected section is home
+			console.log("current section is : content_1" );
+			$('#navSkills').addClass('is-active');// hightlight the home element when the detected section is home
 			$('.content_1-transition').each(function(i){
 				setTimeout(function(){
 					$('.content_1-transition').eq(i).addClass('is-showing');
