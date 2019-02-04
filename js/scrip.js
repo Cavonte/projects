@@ -21,36 +21,36 @@ $(document).ready(function(){
     $(this).css("font-weight","bold");
     $(this).css("font-size","22px");
     }, function(){
-    // $(this).css("font-weight","normal");
-    // $(this).css("font-size","17px");  
+    $(this).css("font-weight","normal");
+    $(this).css("font-size","17px");  
   });
   $("#navProjects").hover(function(){
     $(this).css("font-weight","bold");
     $(this).css("font-size","22px");
     }, function(){
-    // $(this).css("font-weight","normal");
-    // $(this).css("font-size","17px");    
+    $(this).css("font-weight","normal");
+    $(this).css("font-size","17px");    
   });
   $("#navExperience").hover(function(){
     $(this).css("font-weight","bold");
     $(this).css("font-size","22px");
     }, function(){
-    // $(this).css("font-weight","normal");
-    // $(this).css("font-size","17px");  
+    $(this).css("font-weight","normal");
+    $(this).css("font-size","17px");  
   });
   $("#navSkills").hover(function(){
     $(this).css("font-weight","bold");
     $(this).css("font-size","22px");
     }, function(){
-    // $(this).css("font-weight","normal");
-    // $(this).css("font-size","17px");  
+    $(this).css("font-weight","normal");
+    $(this).css("font-size","17px");  
   });
   $("#navHome").hover(function(){
     $(this).css("font-weight","bold");
     $(this).css("font-size","22px");
     }, function(){
-    // $(this).css("font-weight","normal");
-    // $(this).css("font-size","17px");  
+    $(this).css("font-weight","normal");
+    $(this).css("font-size","17px");  
   });
 });
  

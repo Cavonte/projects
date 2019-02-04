@@ -75,19 +75,19 @@ $(window).scroll(function() {
 		//}else{
 		//}
 		// section dedicated to update the navigation bar on the side.
-		if (wScroll >= $('#wall_1').offset().top && wScroll < $('#content_1').offset().top || wScroll == 0) {
+		if ( (wScroll >= $('#wall_1').offset().top - minus) && wScroll < $('#content_1').offset().top || wScroll == 0) {
 			selectNav('#navHome');
 		}
 		if (wScroll >= ($('#content_1').offset().top) && wScroll < $('#wall_2').offset().top) {
 			selectNav('#navSkills');
 		}
-		if (wScroll >= ($('#wall_2').offset().top) && wScroll < $('#content_2').offset().top) {
+		if (wScroll >= ($('#wall_2').offset().top - 300) && wScroll < $('#content_2').offset().top) {
 			selectNav('#navExperience');
 		}
-		if (wScroll >= ($('#content_2').offset().top) && wScroll < $('#wall_3').offset().top) {
+		if (wScroll >= ($('#content_2').offset().top - minus) && wScroll < $('#wall_3').offset().top) {
 			selectNav('#navProjects');
 		}
-		if (wScroll >= ($('#wall_3').offset().top) && wScroll < $('#content_3').offset().top) {
+		if (wScroll >= ($('#wall_3').offset().top - minus) && wScroll < $('#content_3').offset().top) {
 			selectNav('#navGallery');
 		}
 		wScrollTemp = wScroll;
