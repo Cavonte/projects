@@ -42,7 +42,7 @@
       </div>
       <div class="content" id="content_1" style="height:auto;">
         <div class="content_1-transition" id="detail">
-          <p id="center">Hello, I am Bruce, a future software engineer with a passion for Programming and Web Design. I thrive in a challenging and team-oriented environment.</p>
+          <p id="center">Hello, I am Bruce, a future software engineer with a passion for Programming and Web Development.<br>I thrive in a challenging and team-oriented environment.</p>
         </div>
         <div class="content_1-transition" id="center">
           <hr>
@@ -222,14 +222,14 @@
       </div>
       <div class="image" id="wall_3" data-stellar-background-ratio="0.1">
         <div id="gallery">
-          <header id="headerGallery">Gallery</header>
-          <div id="paraGallery">
+          <header class="content_4-transition" id="headerGallery">Gallery</header>
+          <div class="content_4-transition" id="paraGallery">
             <p>Here are some stills of the projects mentionned above.</p>
           </div>
-          <div class="modalpopup" id="modalpopup"><span class="close">&times;</span><img class="modal-content" id="img01" src="Images/robot3.png">
+          <div class="content_4-transition modalpopup" id="modalpopup"><span class="close">&times;</span><img class="modal-content" id="img01" src="Images/robot3.png">
             <div id="caption">           </div>
           </div>
-          <div class="modalparent">
+          <div class="modalparent content_4-transition">
             <div class="modalrow">
               <div class="modalcolumn"><img class="modalimage" src="Images/Kobe.jpg" style="max-width:100%" alt="Image Editing Work"><img class="modalimage" src="Images/dogo.png" style="max-width:100%" alt="Image Editing Work"><img class="modalimage" src="Images/padd.jpg" style="max-width:100%" alt="Image Editing Work"><img class="modalimage" src="Images/bsys.png" style="max-width:100%" alt="Image Editing Work"><img class="modalimage" src="Images/tiger.jpg" style="max-width:100%" alt="Image Editing Work"><img class="modalimage" src="Images/Cat.jpg" style="max-width:100%" alt="Image Editing Work"></div>
               <div class="modalcolumn"><img class="modalimage" src="Images/GraphicsEngine1.png" style="max-width:100%" alt="Graphics Engine Output"><img class="modalimage" src="Images/graphicsEngine2.png" style="max-width:100%" alt="Graphics Engine Output"><img class="modalimage" src="Images/GraphicsEngine3.png" style="max-width:100%" alt="Graphics Engine Output"><img class="modalimage" src="Images/graphicsEngine4.png" style="max-width:100%" alt="Graphics Engine Output"></div>
@@ -280,11 +280,11 @@
     </div>
     <nav class="navbar">
       <ul>
-        <li><a class="navHome is-active" id="navHome" onclick="smoothScroll('wall_1')">Home</a></li>
+        <li><a id="navHome" onclick="smoothScroll('wall_1')">Home</a></li>
         <li id="hr"> 
           <hr>
         </li>
-        <li> <a id="navSkills" onclick="smoothScroll('content_1')">Skills</a></li>
+        <li> <a id="navSkills" onclick="smoothScroll('content_1'); selectNav('#navSkills')">Skills</a></li>
         <li id="hr"> 
           <hr>
         </li>

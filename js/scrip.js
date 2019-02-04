@@ -5,7 +5,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(
-
   function() { 
     $("html").niceScroll({
         cursorcolor:"rgba(30,30,30,.5)",
@@ -14,11 +13,47 @@ $(document).ready(
         mousescrollstep:50,
         cursorborder:"0px solid #fff",
     });
-      
-
   }
-
 );
+
+$(document).ready(function(){
+  $("#navGallery").hover(function(){
+    $(this).css("font-weight","bold");
+    $(this).css("font-size","22px");
+    }, function(){
+    // $(this).css("font-weight","normal");
+    // $(this).css("font-size","17px");  
+  });
+  $("#navProjects").hover(function(){
+    $(this).css("font-weight","bold");
+    $(this).css("font-size","22px");
+    }, function(){
+    // $(this).css("font-weight","normal");
+    // $(this).css("font-size","17px");    
+  });
+  $("#navExperience").hover(function(){
+    $(this).css("font-weight","bold");
+    $(this).css("font-size","22px");
+    }, function(){
+    // $(this).css("font-weight","normal");
+    // $(this).css("font-size","17px");  
+  });
+  $("#navSkills").hover(function(){
+    $(this).css("font-weight","bold");
+    $(this).css("font-size","22px");
+    }, function(){
+    // $(this).css("font-weight","normal");
+    // $(this).css("font-size","17px");  
+  });
+  $("#navHome").hover(function(){
+    $(this).css("font-weight","bold");
+    $(this).css("font-size","22px");
+    }, function(){
+    // $(this).css("font-weight","normal");
+    // $(this).css("font-size","17px");  
+  });
+});
+ 
 
 $(document).ready(
     function() {

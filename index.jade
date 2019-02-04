@@ -44,7 +44,7 @@ html(lang='en')
       #content_1.content(style='height:auto;')
         #detail.content_1-transition
           p#center
-            |Hello, I am Bruce, a future software engineer with a passion for Programming and Web Design. I thrive in a challenging and team-oriented environment.
+            |Hello, I am Bruce, a future software engineer with a passion for Programming and Web Development.<br>I thrive in a challenging and team-oriented environment.
           //- img(src='Images/aboutMe.png')
         #center.content_1-transition
           //- img(src='Images/lineAbout.png')
@@ -231,17 +231,17 @@ html(lang='en')
         span.smooth    
       #wall_3.image(data-stellar-background-ratio='0.1')
         #gallery
-          header#headerGallery Gallery
-          #paraGallery
+          header.content_4-transition#headerGallery Gallery
+          #paraGallery.content_4-transition
             p
              |Here are some stills of the projects mentionned above.
 
-          div#modalpopup.modalpopup
+          div.content_4-transition#modalpopup.modalpopup
             span.close &times;
             img.modal-content#img01(src='Images/robot3.png')
             div#caption            
 
-          div.modalparent
+          div.modalparent.content_4-transition
             div.modalrow
               div.modalcolumn
                 img.modalimage(src='Images/Kobe.jpg',  style='max-width:100%' alt='Image Editing Work') 
@@ -306,11 +306,11 @@ html(lang='en')
     nav.navbar
       ul
         li
-          a.navHome.is-active#navHome(onclick='smoothScroll(\'wall_1\')') Home
+          a#navHome(onclick='smoothScroll(\'wall_1\')') Home
         li#hr 
           hr
         li 
-          a#navSkills(onclick='smoothScroll(\'content_1\')') Skills
+          a#navSkills(onclick='smoothScroll(\'content_1\'); selectNav(\'#navSkills\')') Skills
         li#hr 
           hr  
         li
