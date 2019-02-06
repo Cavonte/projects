@@ -716,7 +716,7 @@ body {
 
 #wall_3 {
   background: url(../Images/page5.png) round; 
-  height: 1300px; 
+  height: 1320px; 
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -822,8 +822,8 @@ body {
 }
 
 .modalcolumn {
-  width: 15%;
-  flex: 15%;
+  width: 10%;
+  flex: 10%;
   padding: 0 8px;
 }
 
