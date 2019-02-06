@@ -10,7 +10,7 @@ $(document).ready(
         cursorcolor:"rgba(30,30,30,.5)",
         zindex:999,
         scrollspeed:100,
-        mousescrollstep:50,
+        mousescrollstep:25,
         cursorborder:"0px solid #fff",
     });
   }
