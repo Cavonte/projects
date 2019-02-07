@@ -72,7 +72,7 @@ $(window).scroll(function() {
 		if ( (wScroll >= $('#wall_1').offset().top - minus) && wScroll < $('#content_1').offset().top || wScroll == 0) {
 			selectNav('#navHome');
 		}
-		if (wScroll >= ($('#content_1').offset().top) && wScroll < $('#wall_2').offset().top) {
+		if (wScroll >= ($('#content_1').offset().top -300) && wScroll < $('#wall_2').offset().top) {
 			selectNav('#navSkills');
 		}
 		if (wScroll >= ($('#wall_2').offset().top - 300) && wScroll < $('#content_2').offset().top) {

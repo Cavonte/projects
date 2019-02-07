@@ -15,6 +15,7 @@ body {
     margin:0;
     background: #282b2e;
     line-height: 2.0;
+    font-size: 23px;
   }
 
   .image {
@@ -565,9 +566,8 @@ body {
   }
 
   #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
-    /*padding: 65px;*/
     margin-top: 45px;
-    font-size: 18px;
+    /*font-size: 18px;*/
     line-height: 1.5em;
     color: white;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -576,11 +576,27 @@ body {
     text-align: justify;
   }
 
-  @media screen and (max-width: 1280px) {
-    #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7{
+  @media screen and (min-resolution: 200dpi),
+  (min-resolution: 2dppx),
+  (-webkit-min-device-pixel-ratio: 2){
+    #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
       padding-top: 20px;
+      font-size: 22px;
+      line-height: 1.8em;
+      color: white;
       /*margin: 0px 40px 0 0;*/
       font-size: 13px;
+    }
+
+    #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
+      margin-top: 45px;
+      font-size: 23px;
+      line-height: 1.8em;
+      color: white;
+      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+      font-variant: normal;
+      font-weight: 10;
+      text-align: justify;
     }
 
     #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
@@ -588,18 +604,8 @@ body {
    }
  }
 
- @media screen and (max-width: 600px) {
-  #exp,#exp2,#proj,#proj2,#proj3,#proj4{
-    padding: 0px;
-    /*margin: 0px 40px 0 0;*/
-    font-size: 12px;
-  }
-}
 
-#exp h3,  #exp2 h3 {
-  /*padding-left: 27%;*/
-}
-#exp ul,  #exp2 ul{
+ #exp ul,  #exp2 ul{
   margin-left: 2%;
 }
 
@@ -609,20 +615,6 @@ body {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-variant: normal;
   font-weight: bold;
-}
-@media screen and (max-width: 1280px) {
-  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-    font-size: 19px;
-    color: white;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-variant: normal;
-    font-weight: 300;
-  }
-
-  #exp ul,  #exp2 ul, #proj ul,#proj2 ul,#proj3 ul,#proj4 ul {
-    /*padding-left: 15%;*/
-  }
-
 }
 
 #contentProject {
@@ -638,17 +630,6 @@ body {
  margin-top:20px;  
 }
 
-@media screen and (max-width: 600px) {
-  #contentProject1, #contentProject2, #contentProject3, #contentProject4 {
-    width: 500px;
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-
-  #tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
-    display: none;
-  }
-}
 /*beginning of the grid for for the projects.*/
 * {
   box-sizing: border-box;
