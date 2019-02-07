@@ -576,59 +576,70 @@ body {
     text-align: justify;
   }
 
-  @media screen and (min-resolution: 200dpi),
-  (min-resolution: 2dppx),
-  (-webkit-min-device-pixel-ratio: 2){
-    #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
-      padding-top: 20px;
-      font-size: 22px;
-      line-height: 1.8em;
-      color: white;
-      /*margin: 0px 40px 0 0;*/
-      font-size: 13px;
-    }
 
-    #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
-      margin-top: 45px;
-      font-size: 23px;
-      line-height: 1.8em;
-      color: white;
-      font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-      font-variant: normal;
-      font-weight: 10;
-      text-align: justify;
-    }
 
-    #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
-     font-size: 35px;
-   }
+  #exp ul,  #exp2 ul{
+    margin-left: 2%;
+  }
+
+  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
+    font-size: 19px;
+    color: white;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-variant: normal;
+    font-weight: bold;
+  }
+
+  #contentProject {
+    padding-left: 5%;    
+    /*margin-left: 5%;*/
+  }
+
+  #tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
+   display: block;
+   float : left;
+   width:15%;
+   height:15%;
+   margin-top:20px;  
  }
 
 
- #exp ul,  #exp2 ul{
-  margin-left: 2%;
-}
+ @media screen and (min-resolution: 200dpi),
+ (min-resolution: 2dppx),
+ (-webkit-min-device-pixel-ratio: 2){
+  #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 1.8em;
+    color: white;
+    /*margin: 0px 40px 0 0;*/
+    font-size: 13px;
+  }
 
-#exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-  font-size: 19px;
+  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
+    font-size: 26px;
+    color: white;
+    line-height: 1.8em;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-variant: normal;
+    font-weight: bold;
+  }
+
+  #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
+   font-size: 35px;
+ }
+
+ #detailsJob2 li, #detailsJob li, #detailsJob3 li  {
+  font-size: 24px;
+  padding: 12px;
+  line-height: 1.8em;
   color: white;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-variant: normal;
-  font-weight: bold;
+
+}
 }
 
-#contentProject {
-  padding-left: 5%;    
-  /*margin-left: 5%;*/
-}
-
-#tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
- display: block;
- float : left;
- width:15%;
- height:15%;
- margin-top:20px;  
-}
 
 /*beginning of the grid for for the projects.*/
 * {
