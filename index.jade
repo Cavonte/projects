@@ -70,9 +70,11 @@ html(lang='en')
           .row#experience1
             .col-1
             .col-2.content_2-transition
-              a#mindgeek(href='https://www.mindgeek.com/')
+              a#mindgeek.non_mobile_logo(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
-            .col-6
+            .col-6.logo_parent
+              a#mindgeek.mobile_logo(href='https://www.mindgeek.com/')
+                img#mindgeekPic(src='Images/mindgeek.png')
               #exp.content_2-transition
                 h3  Software Engineer Intern Summer 2017 &#38; 2018, Mindgeek, Montreal, QC
                 ul#detailsJob
@@ -83,11 +85,11 @@ html(lang='en')
                   li
                     | Performed and documented the upgrade of the web site's framework and its dependencies. Used this opportunity to patch known vulnerabilities in the project                 
                   li
-                    | Created traffic analysis document using Elastic Search for content creators
+                    | Created traffic analysis documents using Elastic Search for content creators
                   li
-                    | Improved a client-facing reporting tool through the optimization of the MySql queries
+                    | Enhanced a client-facing reporting tool through the optimization of the MySql queries
                   li
-                    | Improved the current onboarding process for future hires
+                    | Refined the current onboarding process for future hires
                   li
                     h4 Stack: PHP(Symfony), MySQL, PHPUnit, Redis, Lua, Nginx, Docker, Composer, Git, Atlassian 
             .col-3
@@ -95,9 +97,11 @@ html(lang='en')
           .row#experience2
             .col-1
             .col-2.content_2-transition
-              a#muxlab(href='http://muxlab.com/')
+              a#muxlab.non_mobile_logo(href='http://muxlab.com/')
                 img#muxlabPic(src='Images/muxlab.jpg')
-            .col-6
+            .col-6.logo_parent
+              a#muxlab.mobile_logo(href='http://muxlab.com/')
+                img#muxlabPic(src='Images/muxlab.jpg')
               #exp.content_2-transition
                 h3  Software Engineer Intern Summer 2016 Muxlab, Montreal, QC
                 ul#detailsJob2
@@ -118,9 +122,11 @@ html(lang='en')
           .row#experience3
             .col-1
             .col-2.content_2-transition
-              a#nuance(href='http://www.nuance.fr/index.htm')
+              a#nuance.non_mobile_logo(href='http://www.nuance.fr/index.htm')
                 img#nuancePic(src='Images/nuance.png')
-            .col-6  
+            .col-6.logo_parent
+              a#nuance.mobile_logo(href='http://www.nuance.fr/index.htm')
+                img#nuancePic(src='Images/nuance.png')  
               #exp2.content_2-transition
                 h3  Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC 
                 ul#detailsJob3
@@ -130,8 +136,6 @@ html(lang='en')
                     | Improved the team’s productivity by automating a daily task using Bash Scripting and Expect 
                   li
                     | Performed an inventory of the local servers to reduce hardware expenditures
-                  li
-                    | Implemented a software that increased the team’s efficiency by automating a daily task.
                   li
                     | Supported internal customers such as quality assurance, professional services, and hosted operations staff
                   li
@@ -242,14 +246,14 @@ html(lang='en')
             div.modalrow
               div.modalcolumn.content_4-transition
                 img.modalimage(src='Images/robot3.png', style='max-width:90%' alt='Template Creator - CBC News Publisher')
-                img.modalimage(src='Images/PNG.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/PNG.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')               
+                img.modalimage(src='Images/nlp3.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
+                img.modalimage(src='Images/nlp4.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')               
                 img.modalimage(src='Images/nlp.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')              
 
 
               div.modalcolumn.content_4-transition                
                 img.modalimage(src='Images/publicationCreator.png', style='max-width:100%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/PNG.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
+                img.modalimage(src='Images/nlp2.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
                 //- img.modalimage(src='Images/nlp5.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
                 img.modalimage(src='Images/GraphicsEngine1.png', style='max-width:90%' alt='Graphics Engine Output')
                 img.modalimage(src='Images/graphicsEngine2.png', style='max-width:90%' alt='Graphics Engine Output')

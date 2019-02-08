@@ -126,7 +126,9 @@ body {
     transform: translateX(30px);
   }
 
-  @media screen and (max-width: 1280){
+@media screen and (min-resolution: 200dpi),
+(min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2){
     .content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
       opacity: 0;
       transform: translateX(-20px);
@@ -530,116 +532,66 @@ body {
   width:70%;
   height:50%;   
 }
-@media screen and (max-width: 1300px) {
-  #nuancePic , #muxlabPic , #mindgeekPic {
-    height: 100%;
-    width: 100%;
-    margin-top: 50%;
-    border: 1px solid #ddd;}
-  }
 
-  @media screen and (max-width: 600px) {
-    #nuancePic , #muxlabPic , #mindgeekPic {
-      height: 100%;
-      width: 100%;
-      margin-top:15%;
-      border: 1px solid #ddd;
-    }
-  }
-
-  #muxlabPic:hover, #nuancePic:hover , #mindgeekPic:hover {
-    box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
-  }
+#muxlabPic:hover, #nuancePic:hover , #mindgeekPic:hover {
+  box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
+}
 
 
-  /*Headers of the section*/
-  #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
-    font-size: 35;
-    display: block;
-    margin: auto;  
-    -webkit-text-decoration-style: bold;  
-    text-decoration-style: bold;
-    font-size: 40px;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-  }
+/*Headers of the section*/
+#headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
+  font-size: 35;
+  display: block;
+  margin: auto;  
+  -webkit-text-decoration-style: bold;  
+  text-decoration-style: bold;
+  font-size: 40px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
 
-  #exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
-    margin-top: 45px;
-    /*font-size: 18px;*/
-    line-height: 1.5em;
-    color: white;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-variant: normal;
-    font-weight: 10;
-    text-align: justify;
-  }
-
-
-
-  #exp ul,  #exp2 ul{
-    margin-left: 2%;
-  }
-
-  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-    font-size: 19px;
-    color: white;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-variant: normal;
-    font-weight: bold;
-  }
-
-  #contentProject {
-    padding-left: 5%;    
-    /*margin-left: 5%;*/
-  }
-
-  #tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
-   display: block;
-   float : left;
-   width:15%;
-   height:15%;
-   margin-top:20px;  
- }
-
-
- @media screen and (min-resolution: 200dpi),
- (min-resolution: 2dppx),
- (-webkit-min-device-pixel-ratio: 2){
-  #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
-    padding-top: 20px;
-    font-size: 22px;
-    line-height: 1.8em;
-    color: white;
-    /*margin: 0px 40px 0 0;*/
-    font-size: 13px;
-  }
-
-  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-    font-size: 26px;
-    color: white;
-    line-height: 1.8em;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-variant: normal;
-    font-weight: bold;
-  }
-
-  #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
-   font-size: 35px;
- }
-
- #detailsJob2 li, #detailsJob li, #detailsJob3 li  {
-  font-size: 24px;
-  padding: 12px;
-  line-height: 1.8em;
+#exp,#exp2,#proj,#proj2,#proj3,#proj4,#proj5,#proj6,#proj7 {
+  margin-top: 45px;
+  /*font-size: 18px;*/
+  line-height: 1.5em;
   color: white;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-variant: normal;
-
+  font-weight: 10;
+  text-align: justify;
 }
+
+
+
+#exp ul,  #exp2 ul{
+  margin-left: 2%;
 }
 
+#exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
+  font-size: 19px;
+  color: white;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-variant: normal;
+  font-weight: bold;
+}
+
+#contentProject {
+  padding-left: 5%;    
+  /*margin-left: 5%;*/
+}
+
+#tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
+ display: block;
+ float : left;
+ width:15%;
+ height:15%;
+ margin-top:20px;  
+}
+
+.mobile_logo {
+  display: none;
+}
 
 /*beginning of the grid for for the projects.*/
 * {
@@ -668,6 +620,72 @@ body {
 .col-12 {width: 100%;}
 
 
+
+@media screen and (min-resolution: 200dpi),
+(min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2){
+
+  #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 1.8em;
+    color: white;
+    /*margin: 0px 40px 0 0;*/
+    font-size: 13px;
+  }
+
+  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
+    font-size: 26px;
+    color: white;
+    line-height: 1.8em;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-variant: normal;
+    font-weight: bold;
+  }
+
+  #headerWork,#headerProjects,#headerSkills, #headerGallery, #headerOther, #headerContact{
+   font-size: 35px;
+   display: inline-block;
+ }
+
+ #detailsJob2 li, #detailsJob li, #detailsJob3 li  {
+  font-size: 24px;
+  padding: 12px;
+  line-height: 1.8em;
+  color: white;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-variant: normal;
+}
+
+.non_mobile_logo {
+  display: none;
+}
+
+.mobile_logo {
+  display: inline-block;
+}
+
+#nuancePic , #muxlabPic , #mindgeekPic {
+  height: 60%;
+  width: 60%;
+  margin-top:5%;
+  border: 1px solid #ddd;
+}
+
+.logo_parent {
+  text-align: center;
+}
+
+.col-6 {  width: 70%;}
+.col-1 { width: 7.5% }
+.col-2 { width: 7.5% }
+.col-3 { width: 15% }
+
+}
+
+
+
+
 /*end of grid*/
 
 /*content 2*/
@@ -686,24 +704,6 @@ body {
   #content_2 {
     height: 1400px;
     /*display: inline-flex;*/
-    /*min-height:1400px;*/
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #content_2 {
-    height: 1600px;
-    /*display: flex;*/
-    /*min-height:1400px;*/
-  }
-}
-@media screen and (max-width: 800px) {
-  #content_2 {
-    /*height: 1500px;*/
-    display: inline-flex;
-    flex-wrap: wrap;
-    overflow: auto;
-    /*display: flex;*/
     /*min-height:1400px;*/
   }
 }
