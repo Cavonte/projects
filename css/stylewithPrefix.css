@@ -126,9 +126,9 @@ body {
     transform: translateX(30px);
   }
 
-@media screen and (min-resolution: 200dpi),
-(min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2){
+  @media screen and (min-resolution: 200dpi),
+  (min-resolution: 2dppx),
+  (-webkit-min-device-pixel-ratio: 2){
     .content_1-transition, .content_2-transition, .content_3-transition , .content_4-transition {
       opacity: 0;
       transform: translateX(-20px);
@@ -318,10 +318,11 @@ body {
 (min-resolution: 2dppx),
 (-webkit-min-device-pixel-ratio: 2){
   #wall_1 {
-    background: url(../Images/Background.jpg) repeat-x;
+    background: url(../Images/BackgroundMobil.jpg) repeat-x;
     background-attachment: fixed;
+    background-size : cover;
     width: auto;  
-    height: auto;
+    height: 1400px;
   }
 }
 
@@ -354,8 +355,6 @@ body {
 /*buttons for front page*/
 
 .linkedIn {
- /*position: absolute;*/
- /*right: 60%;*/
  box-shadow:inset 0px 0px 0px 0px #ffffff;
  background-color:#ffffff;
  border-radius:8px;
@@ -381,8 +380,6 @@ body {
 }
 
 .contacts {
-  /*position: absolute;*/
-  /*right: 37% ;*/
   box-shadow:inset 0px 0px 0px 0px #ffffff;
   background-color:#ffffff;
   border-radius:8px;
@@ -408,9 +405,6 @@ body {
 }
 
 #scrollText {
-  /*display: block;*/
-  /* margin: 0 auto; */
-  /* width: 50%; */
   margin-top: 5%;
   position: relative;
   max-height: 200px;
@@ -423,6 +417,7 @@ body {
   font-weight: 10;
 }
 
+
 #scrollIndicator img {
   position: absolute;
   top:80%;
@@ -431,7 +426,11 @@ body {
   height: 50px;
   animation: width .2s height .2s ease-in-out;
   margin: 0 auto;
-  /*width: 50%;*/
+}
+
+.mobile_scroll_text
+{
+  display: none;
 }
 
 @media screen and (min-resolution: 200dpi),
@@ -440,6 +439,57 @@ body {
   #scrollIndicator img {
     display: none;
   }
+
+  .mobile_scroll_text
+  {
+    display: inline-block;
+    margin: 20px;
+    font-size: 35px;
+  }
+
+  .non_mobile_scroll_text
+  {
+    display: none;
+  }
+
+  #scrollText {
+    margin-top: 5%;
+    position: relative;
+    max-height: 200px;
+  }
+  #scrollText p {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-variant: normal;
+    font-weight: 10;
+  }
+
+  #hello img
+  {
+    width: 90%;
+  }
+
+
+  .linkedIn, .contacts {
+   border:2px solid #dcdcdc;
+   border-radius: 10px;
+   display:inline-block;
+   cursor:pointer;
+   color:#666666;
+   font-weight: 20;
+   font-size:22px;
+   font-weight:bold;
+   padding:40px;
+   width: 60%;
+ }
+
+ .button_parent {
+  text-align: center;
+  padding-top: 50px;
+}
+
 }
 
 #scrollIndicator img:active {
@@ -649,9 +699,10 @@ body {
  }
 
  #detailsJob2 li, #detailsJob li, #detailsJob3 li  {
-  font-size: 24px;
+  font-size: 26px;
   padding: 12px;
   line-height: 1.8em;
+  font-weight: 30;
   color: white;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-variant: normal;

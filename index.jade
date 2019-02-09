@@ -21,7 +21,7 @@ html(lang='en')
         #hello
           img(src='Images/MainText.png')
         #landingButtons
-          .row
+          .row.non_mobile_scroll_text
             .col-2
             .col-1
               a.linkedIn(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
@@ -29,9 +29,15 @@ html(lang='en')
             .col-1  
               a.contacts(href='https://github.com/Cavonte') GitHub
             .col-2
+          .button_parent
+            p.mobile_scroll_text Scroll down for more information about me
+          .button_parent
+            a.linkedIn.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
+          .button_parent
+            a.contacts.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
         .row
           .col-4
-          .col-4#scrollText
+          .col-4#scrollText.non_mobile_scroll_text
             p Scroll down for more information about me
             .row
               .col-4 
@@ -73,7 +79,7 @@ html(lang='en')
               a#mindgeek.non_mobile_logo(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
             .col-6.logo_parent
-              a#mindgeek.mobile_logo(href='https://www.mindgeek.com/')
+              a#mindgeek.mobile_logo.content_2-transition(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
               #exp.content_2-transition
                 h3  Software Engineer Intern Summer 2017 &#38; 2018, Mindgeek, Montreal, QC
@@ -100,7 +106,7 @@ html(lang='en')
               a#muxlab.non_mobile_logo(href='http://muxlab.com/')
                 img#muxlabPic(src='Images/muxlab.jpg')
             .col-6.logo_parent
-              a#muxlab.mobile_logo(href='http://muxlab.com/')
+              a#muxlab.mobile_logo.content_2-transition(href='http://muxlab.com/')
                 img#muxlabPic(src='Images/muxlab.jpg')
               #exp.content_2-transition
                 h3  Software Engineer Intern Summer 2016 Muxlab, Montreal, QC
@@ -122,7 +128,7 @@ html(lang='en')
           .row#experience3
             .col-1
             .col-2.content_2-transition
-              a#nuance.non_mobile_logo(href='http://www.nuance.fr/index.htm')
+              a#nuance.non_mobile_logo.content_2-transition(href='http://www.nuance.fr/index.htm')
                 img#nuancePic(src='Images/nuance.png')
             .col-6.logo_parent
               a#nuance.mobile_logo(href='http://www.nuance.fr/index.htm')
@@ -151,7 +157,7 @@ html(lang='en')
                 | Tags : .Net, C#, Spring Framework, Java, JavaScript, Stanford Core NLP, SimpleNLG
               .col-6.content_3-transition#contentProject
                 h3  RobotJournaliste (Capstone Project, with CBC as a Stakeholder), September 2017 to May 2018
-                ul.a
+                ul
                   li
                     | Collaborated with a team of 6 to create software whose goal is to automate the creation and publication of articles. The publications would cover the Olympics and major Sport Events
                   li
@@ -169,7 +175,7 @@ html(lang='en')
                 | Tags : C++, OpenGl, Blender
               .col-6.content_3-transition#contentProject
                 h3  Graphics Engine (OpenGL Desktop Application)
-                ul.a
+                ul
                   li
                     | Developed a custom graphics engine with C++ and OpenGL consisting of placing 3d assets in a modular room with the desired texture and color. 
                   li
@@ -183,7 +189,7 @@ html(lang='en')
                 | Tags : Unity, C#, Photoshop
               .col-6.content_3-transition#contentProject
                 h3  Fast-paced 2d Platformer (Unity Game) Fall 2018
-                ul.a
+                ul
                   li
                     | Developed a couch co-op and 2D platformer called BattleCats. Up to 4 players work together to navigate a cartoony world filled with traps and enemies. (Similar to Lovers in a Dangerous Spacetime)
                   li
@@ -203,7 +209,7 @@ html(lang='en')
                 | Tags :  Play Framework, Java, Xamarin, C#, jUnit, MongoDB, Genymotion
               .col-6.content_3-transition#contentProject
                 h3  Ridr, Ride-Hailing Application (Android) 
-                ul.a
+                ul
                   li
                     | Programmed a Ride-Hailing and Ride-Sharing application similar to Uber with the goal of creating a trusted network of drivers. Targeted at the South Asian Market 
                   li
@@ -215,7 +221,7 @@ html(lang='en')
                 | Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench
               .col-6.content_3-transition#contentProject
                 h3  Conference Room Reservation System (Mobile) Fall 2016
-                ul.a
+                ul
                   li
                     | Designed a mobile Application where a user can reserve the hundreds of study rooms at Concordia, join a waitlist and manage room bookings.
                   li
@@ -253,7 +259,7 @@ html(lang='en')
 
               div.modalcolumn.content_4-transition                
                 img.modalimage(src='Images/publicationCreator.png', style='max-width:100%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/nlp2.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
+                img.modalimage(src='Images/nlp2.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
                 //- img.modalimage(src='Images/nlp5.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
                 img.modalimage(src='Images/GraphicsEngine1.png', style='max-width:90%' alt='Graphics Engine Output')
                 img.modalimage(src='Images/graphicsEngine2.png', style='max-width:90%' alt='Graphics Engine Output')
