@@ -827,16 +827,8 @@ body {
 
 #wall_3 {
   background: url(../Images/page5.png) round;
-  height: auto; 
-  /*background-size: 100% 100%;*/
+  background-size: 100% 100%;
   background-attachment: fixed;
-}
-
-@media screen and (max-width: 1280px) {
-  #wall_3 {
-    height: 1000px;
-  }
-  
 }
 
 
