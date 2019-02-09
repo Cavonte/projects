@@ -16,13 +16,9 @@ body {
     background: #282b2e;
     line-height: 2.0;
     font-size: 23px;
+    overflow: auto;
   }
 
-  .image {
-    width: 110%;
-    background: #55e6c5;
-    z-index: 1;
-  }
 }
 
 .image {
@@ -318,7 +314,7 @@ body {
 (min-resolution: 2dppx),
 (-webkit-min-device-pixel-ratio: 2){
   #wall_1 {
-    background: url(../Images/BackgroundMobil.jpg) repeat-x;
+    background: url(../Images/Background.jpg) repeat-x;
     background-attachment: fixed;
     background-size : cover;
     width: auto;  
@@ -507,12 +503,6 @@ body {
 }
 
 
-@media screen and (max-width: 1300px) {
-  #scrollText img {
-   /* right: 49%; */
- }
-}
-
 @media screen and (max-width: 900px) {
  #scrollText p {
   font-size: 12px;
@@ -618,17 +608,12 @@ body {
   margin-left: 2%;
 }
 
-#exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
+#exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3, #proj5 h3 {
   font-size: 19px;
   color: white;
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-variant: normal;
   font-weight: bold;
-}
-
-#contentProject {
-  padding-left: 5%;    
-  /*margin-left: 5%;*/
 }
 
 #tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
@@ -641,6 +626,10 @@ body {
 
 .mobile_logo {
   display: none;
+}
+
+#contentProject {
+  padding-left: 5%;    
 }
 
 /*beginning of the grid for for the projects.*/
@@ -684,8 +673,8 @@ body {
     font-size: 13px;
   }
 
-  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3 {
-    font-size: 26px;
+  #exp h3,  #exp2 h3, #proj h3,#proj2 h3,#proj3 h3,#proj4 h3, #proj5 h3 {
+    font-size: 30px;
     color: white;
     line-height: 1.8em;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -698,7 +687,11 @@ body {
    display: inline-block;
  }
 
- #detailsJob2 li, #detailsJob li, #detailsJob3 li  {
+ .mobile_projects {
+  display: none;
+}
+
+#detailsJob2 li, #detailsJob li, #detailsJob3 li {
   font-size: 26px;
   padding: 12px;
   line-height: 1.8em;
@@ -727,10 +720,26 @@ body {
   text-align: center;
 }
 
-.col-6 {  width: 70%;}
-.col-1 { width: 7.5% }
-.col-2 { width: 7.5% }
+.col-6 {  width: 75%;}
+.col-1 { width: 5% }
+.col-2 { width: 5% }
 .col-3 { width: 15% }
+
+#contentProject {
+  padding-left: 0%;    
+}
+
+
+#detailsproj1 li, #detailsproj2 li, #detailsproj3 li, #detailsproj4 li, #detailsproj5 li, #detailsproj3 a
+{
+  font-size: 26px;
+  padding: 12px;
+  line-height: 1.8em;
+  font-weight: 30;
+  color: white;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-variant: normal;
+}
 
 }
 
@@ -817,9 +826,9 @@ body {
 }
 
 #wall_3 {
-  background: url(../Images/page5.png) round; 
-  height: 1320px; 
-  background-size: 100% 100%;
+  background: url(../Images/page5.png) round;
+  height: auto; 
+  /*background-size: 100% 100%;*/
   background-attachment: fixed;
 }
 
@@ -970,6 +979,11 @@ body {
   cursor: pointer;
 }
 
+.reservation_image
+{
+ max-height:170px;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
@@ -977,3 +991,34 @@ body {
   }
 }
 
+
+@media screen and (min-resolution: 200dpi),
+(min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2)
+{
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+  }
+
+  .reservation_image
+  {
+   max-height:100px;
+  }
+
+ .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 60px;
+}
+
+.modal-content {
+  width: 100%;
+}
+}

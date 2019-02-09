@@ -82,7 +82,7 @@ html(lang='en')
               a#mindgeek.mobile_logo.content_2-transition(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
               #exp.content_2-transition
-                h3  Software Engineer Intern Summer 2017 &#38; 2018, Mindgeek, Montreal, QC
+                h3  Software Engineer Intern Summer 2017 &#38; Summer 2018, Mindgeek, Montreal, QC
                 ul#detailsJob
                   li
                     | Improved and maintained a very high traffic streaming website and its Content Management System. The site averages at 11 Million visits per day
@@ -153,11 +153,13 @@ html(lang='en')
           header#headerProjects.content_3-transition  Noteworthy Projects 
           #proj
             .row
-              .col-3.content_3-transition#tagProject
-                | Tags : .Net, C#, Spring Framework, Java, JavaScript, Stanford Core NLP, SimpleNLG
+              .col-1
+              .col-2.content_3-transition#tagProject
+                .mobile_projects
+                  | Tags : .Net, C#, Spring Framework, Java, JavaScript, Stanford Core NLP, SimpleNLG
               .col-6.content_3-transition#contentProject
                 h3  RobotJournaliste (Capstone Project, with CBC as a Stakeholder), September 2017 to May 2018
-                ul
+                ul#detailsproj1
                   li
                     | Collaborated with a team of 6 to create software whose goal is to automate the creation and publication of articles. The publications would cover the Olympics and major Sport Events
                   li
@@ -171,11 +173,13 @@ html(lang='en')
               .col-3
           #proj2
             .row
-              .col-3.content_3-transition#tagProject
-                | Tags : C++, OpenGl, Blender
+              .col-1
+              .col-2.content_3-transition#tagProject
+                .mobile_projects
+                  | Tags : C++, OpenGl, Blender
               .col-6.content_3-transition#contentProject
                 h3  Graphics Engine (OpenGL Desktop Application)
-                ul
+                ul#detailsproj2
                   li
                     | Developed a custom graphics engine with C++ and OpenGL consisting of placing 3d assets in a modular room with the desired texture and color. 
                   li
@@ -185,11 +189,13 @@ html(lang='en')
               .col-3
           #proj3
             .row
-              .col-3.content_3-transition#tagProject
-                | Tags : Unity, C#, Photoshop
+              .col-1
+              .col-2.content_3-transition#tagProject
+                .mobile_projects
+                  | Tags : Unity, C#, Photoshop
               .col-6.content_3-transition#contentProject
                 h3  Fast-paced 2d Platformer (Unity Game) Fall 2018
-                ul
+                ul#detailsproj3
                   li
                     | Developed a couch co-op and 2D platformer called BattleCats. Up to 4 players work together to navigate a cartoony world filled with traps and enemies. (Similar to Lovers in a Dangerous Spacetime)
                   li
@@ -205,11 +211,13 @@ html(lang='en')
               .col-3
           #proj4
             .row
-              .col-3.content_3-transition#tagProject
-                | Tags :  Play Framework, Java, Xamarin, C#, jUnit, MongoDB, Genymotion
+              .col-1
+              .col-2.content_3-transition#tagProject
+                .mobile_projects
+                  | Tags :  Play Framework, Java, Xamarin, C#, jUnit, MongoDB, Genymotion
               .col-6.content_3-transition#contentProject
                 h3  Ridr, Ride-Hailing Application (Android) 
-                ul
+                ul#detailsproj4
                   li
                     | Programmed a Ride-Hailing and Ride-Sharing application similar to Uber with the goal of creating a trusted network of drivers. Targeted at the South Asian Market 
                   li
@@ -217,11 +225,13 @@ html(lang='en')
               .col-3
           #proj5
             .row
-              .col-3.content_3-transition#tagProject
-                | Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench
+              .col-1
+              .col-2.content_3-transition#tagProject
+                .mobile_projects
+                  | Tags : Android Studio, Java, XML, Rest Web Services (Spring), GenyMotion, MySQL Workbench
               .col-6.content_3-transition#contentProject
                 h3  Conference Room Reservation System (Mobile) Fall 2016
-                ul
+                ul#detailsproj5
                   li
                     | Designed a mobile Application where a user can reserve the hundreds of study rooms at Concordia, join a waitlist and manage room bookings.
                   li
@@ -232,8 +242,6 @@ html(lang='en')
                     | Executed most visual design stages from Concept to Implementation and Quality Assurance
                   li
                     | Optimized the response time of the application using Multi-threading and Code Refactoring
-                  li 
-                    | Obtained the highest mark of the class
               .col-3        
         span.smooth    
       #wall_3.image(data-stellar-background-ratio='0.1' style='height:auto;')
@@ -267,11 +275,11 @@ html(lang='en')
               div.modalcolumn.content_4-transition
                 img.modalimage(src='Images/GraphicsEngine3.png', style='max-width:90%' alt='Graphics Engine Output')
                 img.modalimage(src='Images/graphicsEngine4.png', style='max-width:90%' alt='Graphics Engine Output')
-                img.modalimage(src='Images/Screenshots/sc1.png', style='max-width:100%; max-height:170px' alt='Concordia Room Reservation System')
-                img.modalimage(src='Images/Screenshots/sc3.png', style='max-width:100%; max-height:170px' alt='Concordia Room Reservation System')
-                img.modalimage(src='Images/Screenshots/sc4.png', style='max-width:100%; max-height:170px' alt='Concordia Room Reservation System')
-                img.modalimage(src='Images/Screenshots/sc5.png', style='max-width:100%; max-height:170px' alt='Concordia Room Reservation System')
-                img.modalimage(src='Images/Screenshots/sc7.png', style='max-width:100%; max-height:170px' alt='Concordia Room Reservation System')
+                img.modalimage.reservation_image(src='Images/Screenshots/sc1.png', style='max-width:100%;' alt='Concordia Room Reservation System')
+                img.modalimage.reservation_image(src='Images/Screenshots/sc3.png', style='max-width:100%;' alt='Concordia Room Reservation System')
+                img.modalimage.reservation_image(src='Images/Screenshots/sc4.png', style='max-width:100%;' alt='Concordia Room Reservation System')
+                img.modalimage.reservation_image(src='Images/Screenshots/sc5.png', style='max-width:100%;' alt='Concordia Room Reservation System')
+                img.modalimage.reservation_image(src='Images/Screenshots/sc7.png', style='max-width:100%;' alt='Concordia Room Reservation System')
 
               div.modalcolumn.content_4-transition
                 img.modalimage(src='Images/ridr1.PNG', style='max-width:100%; max-height:170px' alt='Ride Reservation Application') 
