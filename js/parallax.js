@@ -9,7 +9,7 @@ $(window).scroll(function() {
 	var delay = 700;
 	setTimeout(function() {
 		$('#content_3').removeClass('beforeloading');
-	}, 5000);
+	}, 2000);
 	if (Math.abs(wScroll - wScrollTemp) > 10) {
 		if (wScroll > ($('#content_1').offset().top - minus) && wScroll < $('#wall_2').offset().top) {
 			$('.content_1-transition').each(function(i) {
