@@ -6,6 +6,7 @@ html(lang='en')
 
     link(rel='stylesheet', href="https://www.w3schools.com/w3css/4/w3.css")
     link(rel='stylesheet', type='text/css', href='css/stylewithPrefix-dist.css')
+    link(rel='stylesheet', type='text/css', href='css/lightbox-dist.css')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,200', rel='stylesheet', type='text/css')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
     link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
@@ -14,6 +15,7 @@ html(lang='en')
     script(type='text/JavaScript', src='js/scrip-dist.js')
     script(type='text/JavaScript', src='js/jquery.nicescroll-dist.js')
     script(type='text/JavaScript', src='js/parallax-dist.js')
+
           
   body
     .section
@@ -146,7 +148,9 @@ html(lang='en')
                   li
                     h4 Stack: Bamboo, VMware Vsphere, HPSA, Expect, Tortoise SVN, Bash Scripting
             .col-3
-          span.smooth
+        span.smooth
+        span.smooth          
+
       #content_2.content(style='height:auto;')
         #projects
           header#headerProjects.content_3-transition  Noteworthy Projects 
@@ -170,7 +174,33 @@ html(lang='en')
                   li 
                     | Performed multiple demonstrations of a working product to the stakeholder.
               .col-3
+            ul.image_set_proj_1.content_3-transition
+              li                
+                a(data-lightbox="project1", href='Images/robot3.png',  data-title='Template Creator - CBC News Publisher')
+                  img.modalimage(src='Images/robot3.png', alt='Template Creator - CBC News Publisher')
+              li
+                a(data-lightbox="project1", href='Images/twitterfeed.png',  data-title='Publication Example - CBC News Publisher') 
+                  img.modalimage(src='Images/twitterfeed.png',  alt='Publication Example - CBC News Publisher')
+              li
+                a(data-lightbox="project1", href='Images/nlp3.PNG',  data-title='Sentence Parser/Corrector - CBC News Publisher') 
+                  img.modalimage(src='Images/nlp3.PNG',  alt='Sentence Parser/Corrector - CBC News Publisher')
+              li
+                a(data-lightbox="project1", href='Images/nlp4.PNG',  data-title='Sentence Parser/Corrector - CBC News Publisher')
+                  img.modalimage(src='Images/nlp4.PNG',  alt='Sentence Parser/Corrector - CBC News Publisher')               
+              li
+                a(data-lightbox="project1", href='Images/nlp.PNG', data-title='Sentence Parser/Corrector - CBC News Publisher')
+                  img.modalimage(src='Images/nlp.PNG',  alt='Sentence Parser/Corrector - CBC News Publisher')                                
+              li
+                a(data-lightbox="project1", href='Images/publicationCreator.png',  data-title='Sentence Parser/Corrector - CBC News Publisher')
+                  img.modalimage(src='Images/publicationCreator.png', alt='Sentence Parser/Corrector - CBC News Publisher')                
+              li
+                a(data-lightbox="project1", href='Images/nlp2.PNG',  data-title='Sentence Parser/Corrector - CBC News Publisher')
+                  img.modalimage(src='Images/nlp2.PNG',  alt='Sentence Parser/Corrector - CBC News Publisher')                
+              li
+                a(data-lightbox="project1", href='Images/nlp.PNG',  data-title='Sentence Parser/Corrector - CBC News Publisher')
+                  img.modalimage(src='Images/nlp.PNG', alt='Sentence Parser/Corrector - CBC News Publisher')          
           #proj2
+            hr.content_3-transition  
             .row
               .col-1
               .col-2.content_3-transition#tagProject
@@ -186,8 +216,23 @@ html(lang='en')
                   li
                     | Refactored the initial project using an OOP approach for increased clarity and maintainability
               .col-3
+            ul.image_set_proj_2.content_3-transition
+              li                
+                a(data-lightbox="project2", href='Images/GraphicsEngine1.png',  data-title='Graphics Engine Output')
+                  img.modalimage(src='Images/GraphicsEngine1.png', style='max-width:90%' alt='Graphics Engine Output')
+              li
+                a(data-lightbox="project2", href='Images/graphicsEngine2.png',  data-title='Graphics Engine Output') 
+                  img.modalimage(src='Images/graphicsEngine2.png', style='max-width:90%' alt='Graphics Engine Output')
+              li
+                a(data-lightbox="project2", href='Images/GraphicsEngine3.png',  data-title='Graphics Engine Output') 
+                  img.modalimage(src='Images/GraphicsEngine3.png', style='max-width:90%' alt='Graphics Engine Output')
+              li
+                a(data-lightbox="project2", href='Images/graphicsEngine4.png',  data-title='Graphics Engine Output')
+                  img.modalimage(src='Images/graphicsEngine4.png', style='max-width:90%' alt='Graphics Engine Output')
+
           #proj3
             .row
+              hr.content_3-transition
               .col-1
               .col-2.content_3-transition#tagProject
                 .mobile_projects
@@ -207,23 +252,10 @@ html(lang='en')
                   li 
                     | Trailer available on Youtube:
                   a(href='https://www.youtube.com/watch?v=pj0Cw7H0dVo') Trailer
-              .col-3
-          #proj4
-            .row
-              .col-1
-              .col-2.content_3-transition#tagProject
-                .mobile_projects
-                  | Tags :  Play Framework, Java, Xamarin, C#, jUnit, MongoDB, Genymotion
-              .col-6.content_3-transition#contentProject
-                h3  Ridr, Ride-Hailing Application (Android) 
-                ul#detailsproj4
-                  li
-                    | Programmed a Ride-Hailing and Ride-Sharing application similar to Uber with the goal of creating a trusted network of drivers. Targeted at the South Asian Market 
-                  li
-                    | Integrated features such as Driver/Client communication, Ride Request, Google Maps Integration, Diverse type of Payments, Ride Review, Report System, etc.                 
-              .col-3
+              .col-3                
           #proj5
             .row
+              hr.content_3-transition
               .col-1
               .col-2.content_3-transition#tagProject
                 .mobile_projects
@@ -241,62 +273,89 @@ html(lang='en')
                     | Executed most visual design stages from Concept to Implementation and Quality Assurance
                   li
                     | Optimized the response time of the application using Multi-threading and Code Refactoring
-              .col-3        
+              .col-3
+            ul.image_set_proj_4.content_3-transition
+              li                
+                a(data-lightbox="project4", href='Images/Screenshots/sc1.png',  data-title='Concordia Room Reservation System')
+                  img.modalimage.reservation_image(src='Images/Screenshots/sc1.png' alt='Concordia Room Reservation System') 
+              li
+                a(data-lightbox="project4", href='Images/Screenshots/sc3.png',  data-title='Concordia Room Reservation System') 
+                  img.modalimage.reservation_image(src='Images/Screenshots/sc3.png' alt='Concordia Room Reservation System')
+              li
+                a(data-lightbox="project4", href='Images/Screenshots/sc4.png',  data-title='Concordia Room Reservation System') 
+                  img.modalimage.reservation_image(src='Images/Screenshots/sc4.png' alt='Concordia Room Reservation System')
+              li
+                a(data-lightbox="project4", href='Images/Screenshots/sc5.png',  data-title='Concordia Room Reservation System') 
+                  img.modalimage.reservation_image(src='Images/Screenshots/sc5.png' alt='Concordia Room Reservation System')
+              li
+                a(data-lightbox="project4", href='Images/Screenshots/sc7.png',  data-title='Concordia Room Reservation System') 
+                   img.modalimage.reservation_image(src='Images/Screenshots/sc7.png' alt='Concordia Room Reservation System')
+          #proj4
+            .row
+              hr.content_3-transition
+              .col-1
+              .col-2.content_3-transition#tagProject
+                .mobile_projects
+                  | Tags :  Play Framework, Java, Xamarin, C#, jUnit, MongoDB, Genymotion
+              .col-6.content_3-transition#contentProject
+                h3  Ridr, Ride-Hailing Application (Android) 
+                ul#detailsproj4
+                  li
+                    | Programmed a Ride-Hailing and Ride-Sharing application similar to Uber with the goal of creating a trusted network of drivers. Targeted at the South Asian Market 
+                  li
+                    | Integrated features such as Driver/Client communication, Ride Request, Google Maps Integration, Diverse type of Payments, Ride Review, Report System, etc.                 
+              .col-3
+            ul.image_set_proj_3.content_3-transition
+              li                
+                a(data-lightbox="project2", href='Images/ridr1.PNG',  data-title='Ride Reservation Application')
+                  img.modalimage(src='Images/ridr1.PNG', style='max-width:100%; max-height:170px' alt='Ride Reservation Application') 
+              li
+                a(data-lightbox="project2", href='Images/ridr2.png',  data-title='Ride Reservation Application') 
+                  img.modalimage(src='Images/ridr2.png', style='max-width:90%' alt='Ride Reservation Application')
+       
         span.smooth    
       #wall_3.image(data-stellar-background-ratio='0.1')
         #gallery
           header.content_4-transition#headerGallery Gallery
           #paraGallery.content_4-transition
             p
-             |Here are some stills of the projects mentionned above.
+             |Here are some still from my work with Photoshop
 
-          div.content_4-transition#modalpopup.modalpopup
-            span.close &times;
-            img.modal-content#img01(src='Images/robot3.png')
-            div#caption            
+            ul.image_set_gallery_1.content_4-transition
+              li                
+                a(data-lightbox="stills1", href='Images/Kobe.jpg',  data-title='Image Editing Work')
+                  img.modalimage(src='Images/Kobe.jpg',  alt='Image Editing Work')  
+              li
+                a(data-lightbox="stills1", href='Images/dogo.pn',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/dogo.png',   alt='Image Editing Work')
+              li
+                a(data-lightbox="stills1", href='Images/padd.jpg',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/padd.jpg',  alt='Image Editing Work')
+              li
+                a(data-lightbox="stills1", href='mages/bsys.png',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/bsys.png',  alt='Image Editing Work')
+              li
+                a(data-lightbox="stills1", href='Images/tiger.jpg',  data-title='Concordia Room Reservation System') 
+                  img.modalimage(src='Images/tiger.jpg',  alt='Image Editing Work')
 
-          div.modalparent
-            div.modalrow
-              div.modalcolumn.content_4-transition
-                img.modalimage(src='Images/robot3.png', style='max-width:90%' alt='Template Creator - CBC News Publisher')
-                img.modalimage(src='Images/twitterfeed.png', style='max-width:90%' alt='Publication Example - CBC News Publisher')
-                img.modalimage(src='Images/nlp3.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/nlp4.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')               
-                //- img.modalimage(src='Images/nlp.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')              
+            ul.image_set_gallery_2.content_4-transition
+              li                
+                a(data-lightbox="stills2", href='Images/AC.jpg',  data-title='Image Editing Work')
+                  img.modalimage(src='Images/AC.jpg', alt='Image Editing Work')
+              li
+                a(data-lightbox="stills2", href='Images/Bokeh 3.jpg',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/Bokeh 3.jpg',  alt='Image Editing Work')
+              li
+                a(data-lightbox="stills2", href='Images/solex.jpg',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/solex.jpg', alt='Image Editing Work')
+              li
+                a(data-lightbox="stills2", href='Images/Space.jpg',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/Space.jpg', alt='Image Editing Work')
+              li
+                a(data-lightbox="stills2", href='Images/Cat.jpg',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/Cat.jpg', alt='Image Editing Work')
+            span.smooth          
 
-
-              div.modalcolumn.content_4-transition                
-                img.modalimage(src='Images/publicationCreator.png', style='max-width:100%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/nlp2.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/nlp.PNG', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher') 
-                //- img.modalimage(src='Images/nlp5.png', style='max-width:90%' alt='Sentence Parser/Corrector - CBC News Publisher')
-                img.modalimage(src='Images/GraphicsEngine1.png', style='max-width:90%' alt='Graphics Engine Output')
-                img.modalimage(src='Images/graphicsEngine2.png', style='max-width:90%' alt='Graphics Engine Output')
-              
-              div.modalcolumn.content_4-transition
-                img.modalimage(src='Images/GraphicsEngine3.png', style='max-width:90%' alt='Graphics Engine Output')
-                img.modalimage(src='Images/graphicsEngine4.png', style='max-width:90%' alt='Graphics Engine Output')
-                img.modalimage.reservation_image(src='Images/Screenshots/sc1.png', style='max-width:100%;' alt='Concordia Room Reservation System')
-                img.modalimage.reservation_image(src='Images/Screenshots/sc3.png', style='max-width:100%;' alt='Concordia Room Reservation System')
-                img.modalimage.reservation_image(src='Images/Screenshots/sc4.png', style='max-width:100%;' alt='Concordia Room Reservation System')
-                img.modalimage.reservation_image(src='Images/Screenshots/sc5.png', style='max-width:100%;' alt='Concordia Room Reservation System')
-                img.modalimage.reservation_image(src='Images/Screenshots/sc7.png', style='max-width:100%;' alt='Concordia Room Reservation System')
-
-              div.modalcolumn.content_4-transition
-                img.modalimage(src='Images/ridr1.PNG', style='max-width:100%; max-height:170px' alt='Ride Reservation Application') 
-                img.modalimage(src='Images/Kobe.jpg',  style='max-width:90%' alt='Image Editing Work') 
-                img.modalimage(src='Images/dogo.png',  style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/padd.jpg',  style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/bsys.png',  style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/tiger.jpg', style='max-width:90%' alt='Image Editing Work')
-
-
-              div.modalcolumn.content_4-transition
-                img.modalimage(src='Images/AC.jpg',      style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/Bokeh 3.jpg', style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/solex.jpg',   style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/Space.jpg',   style='max-width:90%' alt='Image Editing Work')
-                img.modalimage(src='Images/Cat.jpg',   style='max-width:90%' alt='Image Editing Work')
     #content_3.content.beforeloading
      #contacts
       header#headerContact Get in touch
@@ -328,7 +387,7 @@ html(lang='en')
             li W3 Animation/Css
             li W3 Animated Modal
 
-          script(src='js/modal-dist.js')                   
+          script(src='js/lightbox-dist.js')                   
      
     nav.navbar
       ul

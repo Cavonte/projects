@@ -532,8 +532,6 @@ body {
   margin-right: auto;
 }
 
-/*end exp*/
-/*end of fit section with backgroumd image*/
 #wall_2 {
   height: 900px;
   background: url(../Images/page3.png) repeat; 
@@ -603,7 +601,6 @@ body {
 }
 
 
-
 #exp ul,  #exp2 ul{
   margin-left: 2%;
 }
@@ -614,6 +611,14 @@ body {
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-variant: normal;
   font-weight: bold;
+}
+
+#proj hr,#proj2 hr,#proj3 hr,#proj4 hr, #proj5 hr {
+ margin-bottom: 3%;
+  margin-top: 3%;
+  width : 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #tagsProject2, #tagsProject3 , #tagsProject4 , #tagsProject1 {
@@ -829,6 +834,7 @@ body {
   background: url(../Images/page5.png) round;
   background-size: 100% 100%;
   background-attachment: fixed;
+  height: auto;
 }
 
 
@@ -856,14 +862,11 @@ body {
 
 #wall_4 {
   background: url(../Images/page5.jpg) repeat; 
-  max-height: 500px; 
+  /*max-height: 500px; */
   background-size: 100% 100%;
   /*background-color: red;*/
   background-attachment: fixed;
 }
-
-
-
 
 /*modal*/
 
@@ -890,15 +893,60 @@ body {
   vertical-align: middle;
 }
 
+
+.image_set_proj_1,.image_set_proj_2,.image_set_proj_3,.image_set_proj_4,.image_set_proj_5, .image_set_gallery_1 li, .image_set_gallery_2 li
+{
+  display: block; 
+  padding: 0;     
+  margin: 0;
+  margin-top: 10px;      
+  text-align: center;
+}
+
+.image_set_proj_1 li,.image_set_proj_2 li,.image_set_proj_3 li,.image_set_proj_4 li,.image_set_proj_5 li, .image_set_gallery_1 li, .image_set_gallery_2 li
+{
+  display: inline-block; /* Get all images to show in a row */
+  width: 7%;            /* Show 4 logos per row */
+  text-align: center; 
+}
+
 .modalimage {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  height: 90%;
+  max-height: 300px;
+  width: 90%;
+  max-width: 300px;
 }
+
+@media screen and (min-resolution: 200dpi),
+(min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2)
+(max-width: 1440px){
+
+  .modalimage {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 90%;
+    max-height: 300px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .image_set_proj_1 li,.image_set_proj_2 li,.image_set_proj_3 li,.image_set_proj_4 li,.image_set_proj_5 li, .image_set_gallery_1 li, .image_set_gallery_2 li
+  {
+    display: inline-block; /* Get all images to show in a row */
+    width: 20%;            /* Show 4 logos per row */
+    text-align: center; 
+  }
+}
+
 
 .modalimage:hover {
   box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .modalpopup {
@@ -964,6 +1012,8 @@ body {
   transition: 0.3s;
 }
 
+
+
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -973,7 +1023,7 @@ body {
 
 .reservation_image
 {
- max-height:170px;
+ width: 90%;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -1000,7 +1050,7 @@ body {
   .reservation_image
   {
    max-height:100px;
-  }
+ }
 
  .close {
   position: absolute;
