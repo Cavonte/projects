@@ -64,6 +64,12 @@ $(window).scroll(function() {
 				}, (delay * (Math.exp(i * 0.14))) - delay);
 			});
 		}
+
+		$('.content_4-transition').each(function(i) {
+			setTimeout(function() {
+				$('.content_4-transition').eq(i).addClass('is-showing');
+			}, 10000);
+		});
 		//if (wScroll > $('#content_3').offset().top && wScroll < $('#wall_4').offset().top) {
 		// console.log("current section is : content_3" );
 		//}else{

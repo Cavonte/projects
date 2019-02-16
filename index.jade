@@ -47,7 +47,8 @@ html(lang='en')
                 a(onclick='smoothScroll(\'content_1\')')
                   img(src='Images/scrolldown.png')
               .col-4
-          .col-4
+          .col-3
+
         
       #content_1.content(style='height:auto;')
         #detail.content_1-transition
@@ -57,27 +58,34 @@ html(lang='en')
           hr
         #skillTools(style='margin-top:-60px;')
          header#headerProjects.content_1-transition  Skills and Tools 
-         #skills.skillList
-            .row.skillFlex
-              #divSkills.content_1-transition
-                h4 Programming
-                |&#8226 Java &#8226 PHP &#8226 C# &#8226 C++ &#8226 JavaScript &#8226 MySQL &#8226 Jquery &#8226 Lua &#8226 Python &#8226 JUnit &#8226 PHPUnit &#8226 Bash Scripting &#8226 Jade/Pug  &#8226 Tcl  &#8226 Expect &#8226 CSS  &#8226 Html5
+        .skillList
+            .skilllistparent
+              ul.skillFlex
+                li
+                  .liParent
+                    #divSkills.content_1-transition
+                      h3 Programming
+                      |&#8226 Java &#8226 PHP &#8226 C# &#8226 C++ &#8226 JavaScript &#8226 MySQL &#8226 Jquery &#8226 Lua &#8226 Python &#8226 JUnit &#8226 PHPUnit &#8226 Bash Scripting &#8226 Jade/Pug  &#8226 Tcl  &#8226 Expect &#8226 CSS  &#8226 Html5
 
-              #divSkills.content_1-transition
-                h4 Toolbox
-                |&#8226 Symfony &#8226 Redis &#8226 Nginx &#8226 Docker &#8226 Play Framework &#8226 Bamboo &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin &#8226 Photoshop CC &#8226 Unity &#8226 Android Studio
+                li
+                  .liParent
+                    #divSkills.content_1-transition
+                      h3 Toolbox
+                      |&#8226 Symfony &#8226 Redis &#8226 Nginx &#8226 Docker &#8226 Play Framework &#8226 Bamboo &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin &#8226 Photoshop CC &#8226 Unity &#8226 Android Studio
 
-              #divSkills.content_1-transition
-                h4 Applications
-                |&#8226 PHPStorm &#8226 Photoshop CC  &#8226 Wamp &#8226 VMware Vsphere &#8226 IntelliJ Idea &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 HPSA
+                li
+                  .liParent
+                    #divSkills.content_1-transition
+                      h3 Applications
+                      |&#8226 PHPStorm &#8226 Photoshop CC  &#8226 Wamp &#8226 VMware Vsphere &#8226 IntelliJ Idea &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 HPSA
 
       #wall_2.image(data-stellar-background-ratio='0.1' style='height:auto;')
         #workExp
           header#headerWork.content_2-transition  Work Experience
           .row#experience1
             .col-1
-            .col-2.content_2-transition
-              a#mindgeek.non_mobile_logo(href='https://www.mindgeek.com/')
+            .col-2
+              a#mindgeek.non_mobile_logo.content_2-transition(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
             .col-6.logo_parent
               a#mindgeek.mobile_logo.content_2-transition(href='https://www.mindgeek.com/')
@@ -132,7 +140,7 @@ html(lang='en')
               a#nuance.non_mobile_logo(href='http://www.nuance.fr/index.htm')
                 img#nuancePic(src='Images/nuance.png')
             .col-6.logo_parent
-              a#nuance.mobile_logo(href='http://www.nuance.fr/index.htm')
+              a#nuance.mobile_logo.content_2-transition(href='http://www.nuance.fr/index.htm')
                 img#nuancePic(src='Images/nuance.png')  
               #exp2.content_2-transition
                 h3  Software Engineer Intern Fall 2015 Nuance Communications, Montreal, QC 
@@ -219,16 +227,16 @@ html(lang='en')
             ul.image_set_proj_2.content_3-transition
               li                
                 a(data-lightbox="project2", href='Images/GraphicsEngine1.png',  data-title='Graphics Engine Output')
-                  img.modalimage(src='Images/GraphicsEngine1.png', style='max-width:90%' alt='Graphics Engine Output')
+                  img.modalimage(src='Images/GraphicsEngine1.png', alt='Graphics Engine Output')
               li
                 a(data-lightbox="project2", href='Images/graphicsEngine2.png',  data-title='Graphics Engine Output') 
-                  img.modalimage(src='Images/graphicsEngine2.png', style='max-width:90%' alt='Graphics Engine Output')
+                  img.modalimage(src='Images/graphicsEngine2.png', alt='Graphics Engine Output')
               li
                 a(data-lightbox="project2", href='Images/GraphicsEngine3.png',  data-title='Graphics Engine Output') 
-                  img.modalimage(src='Images/GraphicsEngine3.png', style='max-width:90%' alt='Graphics Engine Output')
+                  img.modalimage(src='Images/GraphicsEngine3.png',  alt='Graphics Engine Output')
               li
                 a(data-lightbox="project2", href='Images/graphicsEngine4.png',  data-title='Graphics Engine Output')
-                  img.modalimage(src='Images/graphicsEngine4.png', style='max-width:90%' alt='Graphics Engine Output')
+                  img.modalimage(src='Images/graphicsEngine4.png',  alt='Graphics Engine Output')
 
           #proj3
             .row
@@ -319,20 +327,20 @@ html(lang='en')
           header.content_4-transition#headerGallery Gallery
           #paraGallery.content_4-transition
             p
-             |Here are some still from my work with Photoshop
+             |Here are some stills from my work with Photoshop
 
             ul.image_set_gallery_1.content_4-transition
               li                
                 a(data-lightbox="stills1", href='Images/Kobe.jpg',  data-title='Image Editing Work')
                   img.modalimage(src='Images/Kobe.jpg',  alt='Image Editing Work')  
               li
-                a(data-lightbox="stills1", href='Images/dogo.pn',  data-title='Image Editing Work') 
+                a(data-lightbox="stills1", href='Images/dogo.png',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/dogo.png',   alt='Image Editing Work')
               li
                 a(data-lightbox="stills1", href='Images/padd.jpg',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/padd.jpg',  alt='Image Editing Work')
               li
-                a(data-lightbox="stills1", href='mages/bsys.png',  data-title='Image Editing Work') 
+                a(data-lightbox="stills1", href='Images/bsys.png',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/bsys.png',  alt='Image Editing Work')
               li
                 a(data-lightbox="stills1", href='Images/tiger.jpg',  data-title='Concordia Room Reservation System') 
@@ -340,19 +348,19 @@ html(lang='en')
 
             ul.image_set_gallery_2.content_4-transition
               li                
-                a(data-lightbox="stills2", href='Images/AC.jpg',  data-title='Image Editing Work')
+                a(data-lightbox="stills1", href='Images/AC.jpg',  data-title='Image Editing Work')
                   img.modalimage(src='Images/AC.jpg', alt='Image Editing Work')
               li
-                a(data-lightbox="stills2", href='Images/Bokeh 3.jpg',  data-title='Image Editing Work') 
-                  img.modalimage(src='Images/Bokeh 3.jpg',  alt='Image Editing Work')
+                a(data-lightbox="stills1", href='Images/Bokeh_3.jpg',  data-title='Image Editing Work') 
+                  img.modalimage(src='Images/Bokeh_3.jpg',  alt='Image Editing Work')
               li
-                a(data-lightbox="stills2", href='Images/solex.jpg',  data-title='Image Editing Work') 
+                a(data-lightbox="stills1", href='Images/solex.jpg',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/solex.jpg', alt='Image Editing Work')
               li
-                a(data-lightbox="stills2", href='Images/Space.jpg',  data-title='Image Editing Work') 
+                a(data-lightbox="stills1", href='Images/Space.jpg',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/Space.jpg', alt='Image Editing Work')
               li
-                a(data-lightbox="stills2", href='Images/Cat.jpg',  data-title='Image Editing Work') 
+                a(data-lightbox="stills1", href='Images/Cat.jpg',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/Cat.jpg', alt='Image Editing Work')
             span.smooth          
 
