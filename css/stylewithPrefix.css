@@ -351,15 +351,16 @@ body {
 
 .image_set_intro li
 {
-  display: inline-block; /* Get all images to show in a row */
-  width: 50%;            /* Show 4 logos per row */
+  display: inline-block; 
+  width: 30%;            
   text-align: center; 
+  margin-right:5%;
+  margin-left:5%;
 }
 
 #contactPic , #githubPic {
-  height: 100%;
-  width: 100%;
-  /*margin-top:10%;*/
+  height: 75%;
+  width: 75%;
 }
 
 #contact, #github {   
