@@ -31,20 +31,33 @@ html(lang='en')
         #hello
           img(src='Images/MainText.png')
         #landingButtons
-          .row.non_mobile_scroll_text
-            .col-2
-            .col-1
-              a.linkedIn(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
-            .col-5
-            .col-1  
-              a.contacts(href='https://github.com/Cavonte') GitHub
-            .col-2
+          //- .row.non_mobile_scroll_text
+          //-   .col-2
+          //-   .col-1
+          //-     //- a#mindgeek(href='https://www.mindgeek.com/')
+          //-       img#mindgeekPic(src='Images/mindgeek.png')
+          //-     a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
+          //-       img#contactPic(src='Images/logo_linkedin.png')
+          //-   .col-5
+          //-   .col-1  
+          //-     //- a#mindgeek(href='https://www.mindgeek.com/') 
+          //-       img#mindgeekPic(src='Images/mindgeek.png')
+          //-     a#github(href='https://github.com/Cavonte')
+          //-       img#githubPic(src='Images/logo_github.png')
+          //-   .col-2
+          ul.image_set_intro.non_mobile_scroll_text
+            li                
+              a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
+                img#contactPic(src='Images/logo_linkedin.png')
+            li
+              a#github(href='https://github.com/Cavonte')
+                img#githubPic(src='Images/logo_github.png')          
           .button_parent
             p.mobile_scroll_text Scroll down for more information about me
           .button_parent
-            a.linkedIn.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
+            a#contact.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
           .button_parent
-            a.contacts.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
+            a.github.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
         .row
           .col-4
           .col-4#scrollText.non_mobile_scroll_text
