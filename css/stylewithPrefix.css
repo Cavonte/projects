@@ -360,8 +360,8 @@ body {
 }
 
 #contactPic, #githubPic {
-  height: 50%;
-  width: 50%;
+  height: 35%;
+  width: 35%;
 }
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
@@ -404,8 +404,8 @@ body {
   height: 5%;
   max-width: 300px;
   max-height: 300px;
-  min-height: 100px;
-  min-width: 100px;
+  min-height: 75px;
+  min-width: 75px;
   animation: width .2s height .2s ease-in-out;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -849,21 +849,6 @@ body {
     background-attachment: fixed;
     height: auto;
   }
-
-  @media screen and (max-width: 1100px) {
-    #wall_3 {
-      /*height: 1000px;*/
-      background: url(../Images/page5-mobile.png) repeat; 
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    #wall_3 {
-      /*overflow: auto;*/
-      background: url(../Images/page5-mobile.png) repeat; 
-    }
-  }
-
 
   #contactColumns {
     max-width: 640px;
