@@ -9,12 +9,16 @@ html(lang='en')
     link(rel='stylesheet', href="https://www.w3schools.com/w3css/4/w3.css")
     link(rel='stylesheet', type='text/css', href='css/stylewithPrefix-dist.css')
     link(rel='stylesheet', type='text/css', href='css/lightbox-dist.css')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,200', rel='stylesheet', type='text/css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-    link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
+    link(href='css/fonts-dist.css', rel='stylesheet', type='text/css')
+    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='js/jquery-dist.js')
+
+    //- link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
+    link(rel='stylesheet', href='css/jquery-ui-dist.css')
+
     //- script(type='text/JavaScript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(type='text/JavaScript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js')
+    //- script(type='text/JavaScript', src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js')
+    script(type='text/JavaScript', src='js/jquery-ui-dist.js')
     script(type='text/JavaScript', src='js/jquery.stellar-dist.js')
     script(type='text/JavaScript', src='js/scrip-dist.js')
     script(type='text/JavaScript', src='js/jquery.nicescroll-dist.js')
@@ -23,36 +27,46 @@ html(lang='en')
           
   body
     .section
-      #wall_1.image(data-stellar-background-ratio='0.3')      
-        #hello
-          img(src='Images/MainText.png')
-        #landingButtons
-          .row.non_mobile_scroll_text
-            .col-2
-            .col-1
-              a.linkedIn(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
-            .col-5
-            .col-1  
-              a.contacts(href='https://github.com/Cavonte') GitHub
-            .col-2
-          .button_parent
-            p.mobile_scroll_text Scroll down for more information about me
-          .button_parent
-            a.linkedIn.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
-          .button_parent
-            a.contacts.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
-        .row
-          .col-4
-          .col-4#scrollText.non_mobile_scroll_text
-            p Scroll down for more information about me
-            .row
-              .col-4 
-              .col-4#scrollIndicator
-                a(onclick='smoothScroll(\'content_1\')')
-                  img(src='Images/scrolldown.png')
-              .col-4
-          .col-3
-
+      #wall_1.image(data-stellar-background-ratio='0.3')
+        #autoheight      
+          #hello
+            img(src='Images/MainText.png')
+          #landingButtons
+            //- .row.non_mobile_scroll_text
+            //-   .col-2
+            //-   .col-1
+            //-     //- a#mindgeek(href='https://www.mindgeek.com/')
+            //-       img#mindgeekPic(src='Images/mindgeek.png')
+            //-     a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
+            //-       img#contactPic(src='Images/logo_linkedin.png')
+            //-   .col-5
+            //-   .col-1  
+            //-     //- a#mindgeek(href='https://www.mindgeek.com/') 
+            //-       img#mindgeekPic(src='Images/mindgeek.png')
+            //-     a#github(href='https://github.com/Cavonte')
+            //-       img#githubPic(src='Images/logo_github.png')
+            //-   .col-2
+            .image_parent(style="text-align: center;")
+              ul.image_set_intro
+                li                
+                  a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
+                    img#contactPic(src='Images/logo_linkedin.png')
+                li
+                  a#github(href='https://github.com/Cavonte')
+                    img#githubPic(src='Images/logo_github.png')          
+            //- .button_parent
+            //-   p.mobile_scroll_text Scroll down for more information about me
+            //- .button_parent
+            //-   a#contact.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
+            //- .button_parent
+            //-   a.github.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
+          .paragraph_parent(style="text-align: center;")
+            #scrollText
+              p Scroll down for more information about me
+          .scroll_indicator_parent(style="text-align: center;")
+              #scrollIndicator
+                  a(onclick='smoothScroll(\'content_1\')')
+                    img(src='Images/scrolldown.png')
         
       #content_1.content(style='height:auto;')
         #detail.content_1-transition

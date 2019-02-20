@@ -51,7 +51,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px) or (max-width: 1000px){
   .navbar{
     display: none;
   }
@@ -152,6 +152,7 @@ body {
   /*footer*/
   /*container added such that the content of the page would be higher then the footer*/
   .section {
+    width: 99%;
     margin-bottom: 420px;
     z-index: 1;
   }
@@ -348,56 +349,40 @@ body {
 
 
 }
-/*buttons for front page*/
 
-.linkedIn {
- box-shadow:inset 0px 0px 0px 0px #ffffff;
- background-color:#ffffff;
- border-radius:8px;
- border:1px solid #dcdcdc;
- display:inline-block;
- cursor:pointer;
- color:#666666;
- font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
- font-variant: normal;
- font-weight: 10;
- font-size:16px;
- font-weight:bold;
- padding:12px 20px;
- text-decoration:none;
- text-shadow:0px 1px 0px #ffffff;
-}
-.linkedIn:hover {
-  background-color:#f6f6f6;
-}
-.linkedIn:active {
-  /*position:relative;*/
-  /*top:1px;*/
+.image_set_intro li
+{
+  display: inline-block; 
+  width: 30%;            
+  text-align: center; 
+  margin-right:5%;
+  margin-left:5%;
 }
 
-.contacts {
-  box-shadow:inset 0px 0px 0px 0px #ffffff;
-  background-color:#ffffff;
-  border-radius:8px;
-  border:1px solid #dcdcdc;
-  display:inline-block;
-  cursor:pointer;
-  color:#666666;
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  font-variant: normal; 
-  font-weight: 10;
-  font-size:16px;
-  font-weight:bold;
-  padding:12px 20px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #ffffff;
+#contactPic, #githubPic {
+  height: 35%;
+  width: 35%;
 }
-.contacts:hover {
-  background-color:#f6f6f6;
+@media screen and (min-resolution: 200dpi),
+(min-resolution: 2dppx),
+(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+  #contactPic, #githubPic {
+    height: 80%;
+    width: 80%;
+  }
 }
-.contacts:active {
-  /*position:relative;*/
-  /*top:1px;*/
+
+#githubPic
+{
+  border-radius: 10px;
+}
+
+#contact, #github {   
+  transition: 0.3s;
+}
+
+#githubPic:hover, #contactPic:hover{
+  box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
 }
 
 #scrollText {
@@ -415,13 +400,15 @@ body {
 
 
 #scrollIndicator img {
-  position: absolute;
-  top:80%;
-  right: 46%;
-  width: 50px;
-  height: 50px;
+  width: 5%;
+  height: 5%;
+  max-width: 300px;
+  max-height: 300px;
+  min-height: 75px;
+  min-width: 75px;
   animation: width .2s height .2s ease-in-out;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .mobile_scroll_text
@@ -432,10 +419,6 @@ body {
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
 (-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
-  #scrollIndicator img {
-    display: none;
-  }
-
   .mobile_scroll_text
   {
     display: inline-block;
@@ -450,8 +433,10 @@ body {
 
   #scrollText {
     margin-top: 5%;
+    margin-bottom:5%;
     position: relative;
-    max-height: 200px;
+    max-height: 300px;
+    height: auto;
   }
   #scrollText p {
     display: inline-block;
@@ -543,13 +528,13 @@ body {
 
 @media screen and (max-width: 1100px) {
   #wall_2 {
-    height: 1000px;
+    /*height: 1000px;*/
   }
 }
 
 @media screen and (max-width: 800px) {
   #wall_2 {
-    overflow: auto;
+    /*overflow: auto;*/
   }
 }
 
@@ -645,7 +630,7 @@ body {
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  display: table; 
 }
 [class*="col-"] {
   float: left;
@@ -762,9 +747,9 @@ body {
 }
 
 #content_2 {
-
+  width: 100%;
   height: 1200px;
-  /*overflow: auto;*/
+  overflow-x: hidden;
 }
 @media screen and (max-width: 1600px) {
   #content_2 {
@@ -843,7 +828,7 @@ body {
       padding: 15px;
       width: 90%;
       max-width:500px;
-        display: inline-block;
+      display: inline-block;
     }
 
     .skillList {
@@ -864,7 +849,6 @@ body {
     background-attachment: fixed;
     height: auto;
   }
-
 
   #contactColumns {
     max-width: 640px;
