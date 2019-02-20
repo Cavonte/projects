@@ -18,32 +18,25 @@
   </head>
   <body>
     <div class="section">
-      <div class="image" id="wall_1" data-stellar-background-ratio="0.3">     
-        <div id="hello"><img src="Images/MainText.png"></div>
-        <div id="landingButtons">
-          <div class="image_parent" style="text-align: center;">
-            <ul class="image_set_intro non_mobile_scroll_text">
-              <li>               <a id="contact" href="https://ca.linkedin.com/in/edouardbrazier"><img id="contactPic" src="Images/logo_linkedin.png"></a></li>
-              <li><a id="github" href="https://github.com/Cavonte"><img id="githubPic" src="Images/logo_github.png"></a></li>
-            </ul>
-          </div>
-          <div class="button_parent">
-            <p class="mobile_scroll_text">Scroll down for more information about me</p>
-          </div>
-          <div class="button_parent"><a class="mobile_scroll_text" id="contact" href="https://ca.linkedin.com/in/edouardbrazier">LinkedIn</a></div>
-          <div class="button_parent"><a class="github mobile_scroll_text" href="https://github.com/Cavonte">GitHub     </a></div>
-        </div>
-        <div class="row">
-          <div class="col-4"></div>
-          <div class="col-4 non_mobile_scroll_text" id="scrollText">
-            <p>Scroll down for more information about me</p>
-            <div class="row">
-              <div class="col-4"> </div>
-              <div class="col-4" id="scrollIndicator"><a onclick="smoothScroll('content_1')"><img src="Images/scrolldown.png"></a></div>
-              <div class="col-4"></div>
+      <div class="image" id="wall_1" data-stellar-background-ratio="0.3">
+        <div id="autoheight">     
+          <div id="hello"><img src="Images/MainText.png"></div>
+          <div id="landingButtons">
+            <div class="image_parent" style="text-align: center;">
+              <ul class="image_set_intro">
+                <li>               <a id="contact" href="https://ca.linkedin.com/in/edouardbrazier"><img id="contactPic" src="Images/logo_linkedin.png"></a></li>
+                <li><a id="github" href="https://github.com/Cavonte"><img id="githubPic" src="Images/logo_github.png"></a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-3"></div>
+          <div class="paragraph_parent" style="text-align: center;">
+            <div id="scrollText">
+              <p>Scroll down for more information about me</p>
+            </div>
+          </div>
+          <div class="scroll_indicator_parent" style="text-align: center;">
+            <div id="scrollIndicator"><a onclick="smoothScroll('content_1')"><img src="Images/scrolldown.png"></a></div>
+          </div>
         </div>
       </div>
       <div class="content" id="content_1" style="height:auto;">
@@ -84,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="image" id="wall_2" data-stellar-background-ratio="0.1" style="height:auto;">
+      <div class="image" id="wall_2" data-stellar-background-ratio="0.1" style="height:auto; width: 100%;">
         <div id="workExp">
           <header class="content_2-transition" id="headerWork"> Work Experience</header>
           <div class="row" id="experience1">

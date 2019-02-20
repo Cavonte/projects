@@ -27,50 +27,46 @@ html(lang='en')
           
   body
     .section
-      #wall_1.image(data-stellar-background-ratio='0.3')      
-        #hello
-          img(src='Images/MainText.png')
-        #landingButtons
-          //- .row.non_mobile_scroll_text
-          //-   .col-2
-          //-   .col-1
-          //-     //- a#mindgeek(href='https://www.mindgeek.com/')
-          //-       img#mindgeekPic(src='Images/mindgeek.png')
-          //-     a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
-          //-       img#contactPic(src='Images/logo_linkedin.png')
-          //-   .col-5
-          //-   .col-1  
-          //-     //- a#mindgeek(href='https://www.mindgeek.com/') 
-          //-       img#mindgeekPic(src='Images/mindgeek.png')
-          //-     a#github(href='https://github.com/Cavonte')
-          //-       img#githubPic(src='Images/logo_github.png')
-          //-   .col-2
-          .image_parent(style="text-align: center;")
-            ul.image_set_intro.non_mobile_scroll_text
-              li                
-                a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
-                  img#contactPic(src='Images/logo_linkedin.png')
-              li
-                a#github(href='https://github.com/Cavonte')
-                  img#githubPic(src='Images/logo_github.png')          
-          .button_parent
-            p.mobile_scroll_text Scroll down for more information about me
-          .button_parent
-            a#contact.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
-          .button_parent
-            a.github.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
-        .row
-          .col-4
-          .col-4#scrollText.non_mobile_scroll_text
-            p Scroll down for more information about me
-            .row
-              .col-4 
-              .col-4#scrollIndicator
-                a(onclick='smoothScroll(\'content_1\')')
-                  img(src='Images/scrolldown.png')
-              .col-4
-          .col-3
-
+      #wall_1.image(data-stellar-background-ratio='0.3')
+        #autoheight      
+          #hello
+            img(src='Images/MainText.png')
+          #landingButtons
+            //- .row.non_mobile_scroll_text
+            //-   .col-2
+            //-   .col-1
+            //-     //- a#mindgeek(href='https://www.mindgeek.com/')
+            //-       img#mindgeekPic(src='Images/mindgeek.png')
+            //-     a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
+            //-       img#contactPic(src='Images/logo_linkedin.png')
+            //-   .col-5
+            //-   .col-1  
+            //-     //- a#mindgeek(href='https://www.mindgeek.com/') 
+            //-       img#mindgeekPic(src='Images/mindgeek.png')
+            //-     a#github(href='https://github.com/Cavonte')
+            //-       img#githubPic(src='Images/logo_github.png')
+            //-   .col-2
+            .image_parent(style="text-align: center;")
+              ul.image_set_intro
+                li                
+                  a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
+                    img#contactPic(src='Images/logo_linkedin.png')
+                li
+                  a#github(href='https://github.com/Cavonte')
+                    img#githubPic(src='Images/logo_github.png')          
+            //- .button_parent
+            //-   p.mobile_scroll_text Scroll down for more information about me
+            //- .button_parent
+            //-   a#contact.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
+            //- .button_parent
+            //-   a.github.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
+          .paragraph_parent(style="text-align: center;")
+            #scrollText
+              p Scroll down for more information about me
+          .scroll_indicator_parent(style="text-align: center;")
+              #scrollIndicator
+                  a(onclick='smoothScroll(\'content_1\')')
+                    img(src='Images/scrolldown.png')
         
       #content_1.content(style='height:auto;')
         #detail.content_1-transition
@@ -101,7 +97,7 @@ html(lang='en')
                       h3 Applications
                       |&#8226 PHPStorm &#8226 Photoshop CC  &#8226 Wamp &#8226 VMware Vsphere &#8226 IntelliJ Idea &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 HPSA
 
-      #wall_2.image(data-stellar-background-ratio='0.1' style='height:auto;')
+      #wall_2.image(data-stellar-background-ratio='0.1' style='height:auto; width: 100%;')
         #workExp
           header#headerWork.content_2-transition  Work Experience
           .row#experience1
