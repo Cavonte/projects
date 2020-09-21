@@ -545,7 +545,7 @@ body {
   text-align:center;  
 }
 
-#nuancePic , #muxlabPic, #mindgeekPic {
+#nuancePic , #muxlabPic, #mindgeekPic , #coveoPic {
   height: 100%;
   width: 100%;
   margin-top:10%;
@@ -557,7 +557,7 @@ body {
   height:50%;   
 }
 
-#muxlabPic:hover, #nuancePic:hover , #mindgeekPic:hover {
+#muxlabPic:hover, #nuancePic:hover , #mindgeekPic:hover , #coveoPic  {
   box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
 }
 
@@ -700,7 +700,7 @@ body {
   display: inline-block;
 }
 
-#nuancePic , #muxlabPic , #mindgeekPic {
+#nuancePic , #muxlabPic , #mindgeekPic , #coveoPic {
   height: 60%;
   max-height: 400px;
   width: 60%;
