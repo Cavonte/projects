@@ -22,7 +22,7 @@ body {
 }
 
 .image {
-  height: 1200px;
+  height: auto;
   width: 100%;
   max-width: 100%;
   background: #55e6c5;
