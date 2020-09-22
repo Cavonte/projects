@@ -546,8 +546,8 @@ body {
 }
 
 #nuancePic , #muxlabPic, #mindgeekPic , #coveoPic {
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   margin-top:10%;
 }
 #nuance, #muxlab, #mindgeek {   
