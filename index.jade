@@ -10,10 +10,8 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='css/stylewithPrefix-dist.css')
     link(rel='stylesheet', type='text/css', href='css/lightbox-dist.css')
     link(href='css/fonts-dist.css', rel='stylesheet', type='text/css')
-    //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
     script(src='js/jquery-dist.js')
 
-    //- link(rel='stylesheet', href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css')
     link(rel='stylesheet', href='css/jquery-ui-dist.css')
    
     script(type='text/JavaScript', src='js/jquery-ui-dist.js')
@@ -30,20 +28,6 @@ html(lang='en')
           #hello
             img(src='Images/MainText.png')
           #landingButtons
-            //- .row.non_mobile_scroll_text
-            //-   .col-2
-            //-   .col-1
-            //-     //- a#mindgeek(href='https://www.mindgeek.com/')
-            //-       img#mindgeekPic(src='Images/mindgeek.png')
-            //-     a#contact(href="https://ca.linkedin.com/in/edouardbrazier")
-            //-       img#contactPic(src='Images/logo_linkedin.png')
-            //-   .col-5
-            //-   .col-1  
-            //-     //- a#mindgeek(href='https://www.mindgeek.com/') 
-            //-       img#mindgeekPic(src='Images/mindgeek.png')
-            //-     a#github(href='https://github.com/Cavonte')
-            //-       img#githubPic(src='Images/logo_github.png')
-            //-   .col-2
             .image_parent(style="text-align: center;")
               ul.image_set_intro
                 li                
@@ -51,13 +35,7 @@ html(lang='en')
                     img#contactPic(src='Images/logo_linkedin.png')
                 li
                   a#github(href='https://github.com/Cavonte')
-                    img#githubPic(src='Images/logo_github.png')          
-            //- .button_parent
-            //-   p.mobile_scroll_text Scroll down for more information about me
-            //- .button_parent
-            //-   a#contact.mobile_scroll_text(href="https://ca.linkedin.com/in/edouardbrazier") LinkedIn
-            //- .button_parent
-            //-   a.github.mobile_scroll_text(href='https://github.com/Cavonte') GitHub     
+                    img#githubPic(src='Images/logo_github.png')
           .paragraph_parent(style="text-align: center;")
             #scrollText
               p Scroll down for more information about me
@@ -69,7 +47,7 @@ html(lang='en')
       #content_1.content(style='height:auto;')
         #detail.content_1-transition
           p#center
-            |Hello, I am Bruce, a future software engineer with a passion for Programming and Web Development.<br>I thrive in a challenging and team-oriented environment.
+            |Hello, I am Bruce, a software developer with a passion for Programming and Technology.<br>I thrive in a challenging and team-oriented environment. Have a look around!
         #center.content_1-transition
           hr
         #skillTools(style='margin-top:-60px;')
@@ -81,30 +59,55 @@ html(lang='en')
                   .liParent
                     #divSkills.content_1-transition
                       h3 Programming
-                      |&#8226 Java &#8226 PHP &#8226 C# &#8226 C++ &#8226 JavaScript &#8226 MySQL &#8226 Jquery &#8226 Lua &#8226 Python &#8226 JUnit &#8226 PHPUnit &#8226 Bash Scripting &#8226 Jade/Pug  &#8226 Tcl  &#8226 Expect &#8226 CSS  &#8226 Html5
+                      |&#8226 Java &#8226 C# &#8226 Python &#8226 PHP &#8226 C++  &#8226 JavaScript &#8226 MySQL &#8226 Lua &#8226 Bash Scripting &#8226 Jade/Pug &#8226 CSS  &#8226 Html5
 
                 li
                   .liParent
                     #divSkills.content_1-transition
                       h3 Toolbox
-                      |&#8226 Symfony &#8226 Redis &#8226 Nginx &#8226 Docker &#8226 Play Framework &#8226 Bamboo &#8226 Agile Process &#8226 Jira &#8226 Tortoise SVN &#8226 Laravel &#8226 TCP/IP &#8226 Spring Framework &#8226 Xamarin &#8226 Photoshop CC &#8226 Unity &#8226 Android Studio
+                      |&#8226 AWS &#8226 Docker &#8226 Spring &#8226 .Net &#8226 Redis &#8226 InnoSetup &#8226 Nginx &#8226 ReactJS &&#8226 Symfony #8226 OpenGL &#8226 Play  
 
                 li
                   .liParent
                     #divSkills.content_1-transition
                       h3 Applications
-                      |&#8226 PHPStorm &#8226 Photoshop CC  &#8226 Wamp &#8226 VMware Vsphere &#8226 IntelliJ Idea &#8226 Eclipse &#8226 Visual Studio 2013 &#8226 HPSA
+                      |&#8226 Jetbrains Toolbox &#8226 Jenkins &#8226 Spinnaker &#8226 Photoshop &#8226 Unity &#8226 Android Studio &#8226 Jira &#8226 Bamboo
 
       #wall_2.image(data-stellar-background-ratio='0.1' style='height:auto;')
         #workExp
           header#headerWork.content_2-transition  Work Experience
           .row#experience1
             .col-1
-            .col-2
-              a#mindgeek.non_mobile_logo.content_2-transition(href='https://www.mindgeek.com/')
+            .col-2.content_2-transition
+              a#coveoPic.non_mobile_logo(href='https://www.coveo.com/')
+                img#coveoPic(src='Images/coveo.png')
+            .col-6.logo_parent.content_2-transition
+              a#coveoPic.mobile_logo(href='https://www.coveo.com/')
+                img#coveoPic(src='Images/coveo.png')
+              #exp.content_2-transition
+                h3  Software Developer - Connectivity Infrastructure, April 2019 - Present, Coveo, Montreal, QC
+                ul#detailsJob
+                  li
+                    | Released and maintained a client-side program managing Coveo’s software
+                  li
+                    | Patched known vulnerabilities in the projects as one of the volunteer Security Champions
+                  li
+                    | Reduced operation costs through the automatic scaling of production machines. (~100K/Year)                 
+                  li
+                    | Mitigates the risk of deployments through the implementation of a Canary Release System
+                  li
+                    | Assisted the support team with Customer Calls and GO Lives                  
+                  li
+                    h4 Stack: Java (Spring), C# (.Net), Python, PowerShell, Terraform, AWS, Docker, InnoSetup  
+            .col-3
+          hr.content_2-transition
+          .row#experience2
+            .col-1
+            .col-2.content_2-transition
+              a#mindgeek.non_mobile_logo(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
-            .col-6.logo_parent
-              a#mindgeek.mobile_logo.content_2-transition(href='https://www.mindgeek.com/')
+            .col-6.logo_parent.content_2-transition
+              a#mindgeek.mobile_logo(href='https://www.mindgeek.com/')
                 img#mindgeekPic(src='Images/mindgeek.png')
               #exp.content_2-transition
                 h3  Software Engineer Intern Summer 2017 &#38; Summer 2018, Mindgeek, Montreal, QC
@@ -125,14 +128,14 @@ html(lang='en')
                     h4 Stack: PHP(Symfony), MySQL, PHPUnit, Redis, Lua, Nginx, Docker, Composer, Git, Atlassian 
             .col-3
           hr.content_2-transition
-          .row#experience2
+          .row#experience3
             .col-1
             .col-2.content_2-transition
               a#muxlab.non_mobile_logo(href='http://muxlab.com/')
-                img#muxlabPic(src='Images/muxlab.jpg')
+                img#muxlabPic(src='Images/muxlab.png')
             .col-6.logo_parent
               a#muxlab.mobile_logo.content_2-transition(href='http://muxlab.com/')
-                img#muxlabPic(src='Images/muxlab.jpg')
+                img#muxlabPic(src='Images/muxlab.png')
               #exp.content_2-transition
                 h3  Software Engineer Intern Summer 2016 Muxlab, Montreal, QC
                 ul#detailsJob2
@@ -150,7 +153,7 @@ html(lang='en')
                     h4 Stack: Tcl, Lua, Fiddler, Rest, WinSCP, TCP/IP, RS-232, Hercules, Telnet
             .col-3
           hr.content_2-transition
-          .row#experience3
+          .row#experience4
             .col-1
             .col-2.content_2-transition
               a#nuance.non_mobile_logo(href='http://www.nuance.fr/index.htm')
@@ -343,7 +346,7 @@ html(lang='en')
           header.content_4-transition#headerGallery Gallery
           #paraGallery.content_4-transition
             p
-             |Here are some stills from my work with Photoshop
+             |Here are some stills from the work I have done with Photoshop
 
             ul.image_set_gallery_1.content_4-transition
               li                
@@ -359,7 +362,7 @@ html(lang='en')
                 a(data-lightbox="stills1", href='Images/bsys.png',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/bsys.png',  alt='Image Editing Work')
               li
-                a(data-lightbox="stills1", href='Images/tiger.jpg',  data-title='Concordia Room Reservation System') 
+                a(data-lightbox="stills1", href='Images/tiger.jpg',  data-title='Image Editing Work') 
                   img.modalimage(src='Images/tiger.jpg',  alt='Image Editing Work')
 
             ul.image_set_gallery_2.content_4-transition

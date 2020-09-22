@@ -22,7 +22,7 @@ body {
 }
 
 .image {
-  height: 1200px;
+  height: auto;
   width: 100%;
   max-width: 100%;
   background: #55e6c5;
@@ -152,14 +152,14 @@ body {
   /*footer*/
   /*container added such that the content of the page would be higher then the footer*/
   .section {
-    width: 99%;
+    width: 100%;
     margin-bottom: 420px;
     z-index: 1;
   }
 
   @media screen and (min-resolution: 200dpi),
   (min-resolution: 2dppx),
-  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
     .section {
       width:100%;
       height:100%;
@@ -545,9 +545,9 @@ body {
   text-align:center;  
 }
 
-#nuancePic , #muxlabPic, #mindgeekPic {
-  height: 100%;
-  width: 100%;
+#nuancePic , #muxlabPic, #mindgeekPic , #coveoPic {
+  height: 80%;
+  width: 80%;
   margin-top:10%;
 }
 #nuance, #muxlab, #mindgeek {   
@@ -557,7 +557,7 @@ body {
   height:50%;   
 }
 
-#muxlabPic:hover, #nuancePic:hover , #mindgeekPic:hover {
+#muxlabPic:hover, #nuancePic:hover , #mindgeekPic:hover , #coveoPic  {
   box-shadow: 0 0 4px 2px rgba(0, 140, 186, 0.5);
 }
 
@@ -653,7 +653,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+(-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
 
   #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
     padding-top: 20px;
@@ -700,7 +700,7 @@ body {
   display: inline-block;
 }
 
-#nuancePic , #muxlabPic , #mindgeekPic {
+#nuancePic , #muxlabPic , #mindgeekPic , #coveoPic {
   height: 60%;
   max-height: 400px;
   width: 60%;
@@ -817,13 +817,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2), or (min-width: 2500px){
-/*  .skillFlex  {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    }*/
-
+(-webkit-min-device-pixel-ratio: 2), or (min-width: 2560px){
     #divSkills  {
       padding: 15px;
       width: 90%;
@@ -934,7 +928,7 @@ body {
 
   @media screen and (min-resolution: 200dpi),
   (min-resolution: 2dppx),
-  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
 
     .modalimage {
       border-radius: 5px;
@@ -1049,7 +1043,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+(-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
