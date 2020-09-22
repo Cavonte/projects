@@ -152,14 +152,14 @@ body {
   /*footer*/
   /*container added such that the content of the page would be higher then the footer*/
   .section {
-    width: 99%;
+    width: 100%;
     margin-bottom: 420px;
     z-index: 1;
   }
 
   @media screen and (min-resolution: 200dpi),
   (min-resolution: 2dppx),
-  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
     .section {
       width:100%;
       height:100%;
@@ -653,7 +653,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+(-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
 
   #exp ul,#exp2 ul ,#proj ul,#proj2 ul,#proj3 ul,#proj4 ul,#proj5 ul,#proj6 ul,#proj7 ul{
     padding-top: 20px;
@@ -817,13 +817,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2), or (min-width: 2500px){
-/*  .skillFlex  {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    }*/
-
+(-webkit-min-device-pixel-ratio: 2), or (min-width: 2560px){
     #divSkills  {
       padding: 15px;
       width: 90%;
@@ -934,7 +928,7 @@ body {
 
   @media screen and (min-resolution: 200dpi),
   (min-resolution: 2dppx),
-  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+  (-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
 
     .modalimage {
       border-radius: 5px;
@@ -1049,7 +1043,7 @@ body {
 
 @media screen and (min-resolution: 200dpi),
 (min-resolution: 2dppx),
-(-webkit-min-device-pixel-ratio: 2) or (min-width: 2500px){
+(-webkit-min-device-pixel-ratio: 2) or (min-width: 2560px){
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
