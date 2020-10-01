@@ -9,12 +9,10 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.context.request.RequestContextHolder
 import org.springframework.web.context.request.ServletRequestAttributes
-import service.DataManagerService
 import service.SuggestionScoreService
-import utils.MatchGeneratorUtil
 
 @RestController
-class SuggestionController {
+class SuggestionController constructor(val suggestionScoreService: SuggestionScoreService) {
 
     /**
      * Main endpoint. Handles request with and without a location.
@@ -31,45 +29,48 @@ class SuggestionController {
     fun autoCompleteSuggestions(@RequestParam(name = "q") query: String,
                                 @RequestParam(name = "longitude", required = false) longitude: Double?,
                                 @RequestParam(name = "latitude", required = false) latitude: Double?,
-                                @RequestParam(name = "limit", required = false) limit: Int?): ResponseEntity<*>? {
+                                @RequestParam(name = "limit", required = false) limit: Int?): ResponseEntity<String>? {
 
         val finalLimit = if (limit == null || limit < 1) 20 else limit
+        val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
 
-        require(query.isNotEmpty()) {
-            val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
+        require(query.isNotEmpty() && !Regex("\\d+").containsMatchIn(query)) {
             return ResponseEntity.badRequest().body("Invalid Parameters. Given: " + request.queryString)
         }
 
-        if (invalidGetParameters(query, longitude, latitude)) {
-            val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
-            return ResponseEntity.badRequest().body("Invalid Parameters. Given: " + request.queryString)
-        }
-
-        val matchGenerator = MatchGeneratorUtil()
-        val filteredCities: List<GeoNameCity> = matchGenerator.reducedList(DataManagerService.cities, query)
-        val location = Coordinate()
-        val suggestionScore = SuggestionScoreService()
-        val storedSuggestion: MutableList<GeoNameCity> = suggestionScore.sortSuggestion(filteredCities, location, query)
-        val result: JSONArray = suggestionScore.prepareResultArray(storedSuggestion, location, finalLimit)
-        println(result.toString())
-        println("Request Ended.")
+        val location = Coordinate(longitude, latitude)
+        val result: JSONArray = suggestionScoreService.sortSuggestion(location, query, finalLimit)
+        println("$result . Request Ended.")
         return ResponseEntity.ok(result.toString())
     }
 
-
     /**
-     * Returns true if one of the parameters is invalid, e.g. empty string
+     * Alternated endpoint. Result are filtered by figuring out the country of the request using the coordinates.
      *
-     * @param query     from request
+     * @param query     for suggestion
      * @param longitude of request
-     * @param latitude  of request
-     * @return boolean is the request invalid
+     * @param latitude  request
+     * @return JSON Array with suggestion
+     * @throws JSONException At response creation
      */
-    private fun invalidGetParameters(query: String, longitude: Double?, latitude: Double?): Boolean {
-        if (longitude == null && latitude == null) {
-            return (Regex("\\d+").containsMatchIn(query))
-        } else {
-            return longitude == null || latitude == null || Regex("\\d+").containsMatchIn(query)
+    @RequestMapping(value = ["/suggestionsByCountry"], method = [RequestMethod.GET], produces = [MediaType.APPLICATION_JSON_VALUE])
+    @Throws(JSONException::class)
+    fun autoCompleteSuggestionsCountry(@RequestParam(name = "q") query: String,
+                                       @RequestParam(name = "longitude") longitude: Double,
+                                       @RequestParam(name = "latitude") latitude: Double,
+                                       @RequestParam(name = "limit", required = false) limit: Int?): ResponseEntity<String>?
+    {
+        val finalLimit = if (limit == null || limit < 1) 20 else limit
+        val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
+
+        require(query.isNotEmpty() && !Regex("\\d+").containsMatchIn(query)) {
+            return ResponseEntity.badRequest().body("Invalid Parameters. Given: " + request.queryString)
         }
+
+        val location = Coordinate(longitude, latitude)
+
+        val result: JSONArray = suggestionScoreService.sortSuggestion(location, query, finalLimit, filterByCountry = true)
+        println("$result . Request Ended.")
+        return ResponseEntity.ok(result.toString())
     }
 }
