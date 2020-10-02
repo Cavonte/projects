@@ -5,17 +5,23 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import service.SuggestionScoreService
 import utils.MatchGeneratorUtil
+import utils.WordSimilarityUtil
 
 @Configuration
 class DemoConfiguration {
     @Bean
+    fun wordSimUtil(): WordSimilarityUtil {
+        return WordSimilarityUtil()
+    }
+
+    @Bean
     fun matchGenerator(): MatchGeneratorUtil {
-        return MatchGeneratorUtil()
+        return MatchGeneratorUtil(wordSimUtil())
     }
 
     @Bean
     fun suggestionScore(): SuggestionScoreService {
-        return SuggestionScoreService(matchGenerator())
+        return SuggestionScoreService(wordSimUtil(), matchGenerator())
     }
 
     @Bean

@@ -10,7 +10,7 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-class MatchGeneratorUtil {
+class MatchGeneratorUtil(private val wordSimilarityUtil: WordSimilarityUtil) {
     /**
      * Filter the list of cities based on the query.
      * @param cities untouched list of cities
@@ -50,6 +50,9 @@ class MatchGeneratorUtil {
      */
     fun calculateScore(scoredList: List<GeoNameCity>, currentCity: GeoNameCity): Double {
         require(scoredList.isNotEmpty())
+        if (scoredList.size == 1)
+            return 1.toDouble()
+
         val index = scoredList.indexOf(currentCity) + 1.toDouble()
         val adjustedSize = scoredList.size.toDouble() + 1
         return 1 - index / adjustedSize
@@ -87,15 +90,16 @@ class MatchGeneratorUtil {
      * @return the name of the city closest to the coordinate passed.
      */
     private fun identifyClosestCity(location: Coordinate, allCities: List<GeoNameCity>): GeoNameCity {
-        var smallestDistance = 3000000.0
-        var closestCity = allCities[0]
-        for (city in allCities) {
-            val distance = calculateDistance(location, city)
-            if (distance < smallestDistance) {
-                smallestDistance = distance
-                closestCity = city
-            }
-        }
+        val closestCity: GeoNameCity
+
+        closestCity = allCities.stream().reduce { closestCity, city ->
+            if (calculateDistance(location, city) < calculateDistance(location, closestCity))
+                city
+            else
+                closestCity
+
+        }.get()
+
         return closestCity
     }
 
@@ -115,13 +119,12 @@ class MatchGeneratorUtil {
             "Invalid city name: $cityName"
         }
 
-        val helper = WordSimilarityUtil()
-        val weightedLevenshtein = WeightedLevenshtein(helper.getCharInterface())
-        val minimalChangeTolerance = 1.5
+        val weightedLevenshtein = WeightedLevenshtein(wordSimilarityUtil.getCharInterface())
+        val minimalChangeTolerance = 2.0
         val sanitizedQuery = query.trim { it <= ' ' }.replace("\\s+".toRegex(), " ").toLowerCase()
         val lowerCityName = cityName.toLowerCase()
         return (sanitizedQuery.contentEquals(lowerCityName)
                 || cityName.contains(sanitizedQuery)
-                || weightedLevenshtein.distance(cityName, sanitizedQuery) < minimalChangeTolerance)
+                || weightedLevenshtein.distance(lowerCityName, sanitizedQuery) < minimalChangeTolerance)
     }
 }

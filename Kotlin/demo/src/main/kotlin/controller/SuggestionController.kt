@@ -1,7 +1,6 @@
 package controller
 
 import entity.Coordinate
-import entity.GeoNameCity
 import org.springframework.boot.configurationprocessor.json.JSONArray
 import org.springframework.boot.configurationprocessor.json.JSONException
 import org.springframework.http.MediaType
@@ -13,6 +12,8 @@ import service.SuggestionScoreService
 
 @RestController
 class SuggestionController constructor(val suggestionScoreService: SuggestionScoreService) {
+
+    private val DEFAULT_LIMIT = 5
 
     /**
      * Main endpoint. Handles request with and without a location.
@@ -31,9 +32,9 @@ class SuggestionController constructor(val suggestionScoreService: SuggestionSco
                                 @RequestParam(name = "latitude", required = false) latitude: Double?,
                                 @RequestParam(name = "limit", required = false) limit: Int?): ResponseEntity<String>? {
 
-        val finalLimit = if (limit == null || limit < 1) 20 else limit
-        val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
+        val finalLimit = if (limit == null || limit < 1) DEFAULT_LIMIT else limit
 
+        val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
         require(query.isNotEmpty() && !Regex("\\d+").containsMatchIn(query)) {
             return ResponseEntity.badRequest().body("Invalid Parameters. Given: " + request.queryString)
         }
@@ -58,9 +59,8 @@ class SuggestionController constructor(val suggestionScoreService: SuggestionSco
     fun autoCompleteSuggestionsCountry(@RequestParam(name = "q") query: String,
                                        @RequestParam(name = "longitude") longitude: Double,
                                        @RequestParam(name = "latitude") latitude: Double,
-                                       @RequestParam(name = "limit", required = false) limit: Int?): ResponseEntity<String>?
-    {
-        val finalLimit = if (limit == null || limit < 1) 20 else limit
+                                       @RequestParam(name = "limit", required = false) limit: Int?): ResponseEntity<String>? {
+        val finalLimit = if (limit == null || limit < 1) DEFAULT_LIMIT else limit
         val request = (RequestContextHolder.getRequestAttributes() as ServletRequestAttributes?)!!.request
 
         require(query.isNotEmpty() && !Regex("\\d+").containsMatchIn(query)) {

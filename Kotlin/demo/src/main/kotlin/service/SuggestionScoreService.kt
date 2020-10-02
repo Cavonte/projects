@@ -12,7 +12,7 @@ import java.util.*
 import java.util.stream.Collectors
 
 @Service
-class SuggestionScoreService constructor(private val matchGenerator: MatchGeneratorUtil) {
+class SuggestionScoreService constructor(private val wordSimilarityUtil: WordSimilarityUtil, private val matchGenerator: MatchGeneratorUtil) {
 
     /**
      * Sort the suggestions based on the similarity with the city names and secondly based on the distance
@@ -30,8 +30,8 @@ class SuggestionScoreService constructor(private val matchGenerator: MatchGenera
         }
 
         val filteredCities: List<GeoNameCity> = matchGenerator.reducedList(DataManagerService.cities, query)
-        val helper = WordSimilarityUtil()
-        val weightedLevenshtein = WeightedLevenshtein(helper.getCharInterface())
+        val weightedLevenshtein = WeightedLevenshtein(wordSimilarityUtil.getCharInterface())
+
         var comparator: Comparator<GeoNameCity> = Comparator.comparing { city: GeoNameCity ->
             weightedLevenshtein.distance(query.trim { it <= ' ' }.toLowerCase(), city.name.toLowerCase())
         }
